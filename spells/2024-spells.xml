@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+        <update version="1.0.0">
+      <file name="2024-spells.xml" url="/spells/2024-spells.xml" />
+    </update>
+  </info>
+
+  <element name="Arcane Vigor" type="Spell" source="WOTC" id="ID_2024_SPELL_ARCANE_VIGOR">
+    <supports>Sorcerer, Wizard</supports>
+    <description>
+      <p>You tap into your life force to heal yourself. Roll one or two of your unexpended Hit Point Dice, and regain a number of Hit Points equal to the roll's total plus your spellcasting ability modifier. Those dice are then expended.</p>
+	  <p><b>Using a Higher-Level Spell Slot.</b> The number of unexpended Hit Dice you can roll increases by one for each spell slot level above 2.</p>
+    </description>
+    <setters>
+      <set name="level">2</set>
+      <set name="school">Abjuration</set>
+      <set name="time">1 bonus action</set>
+      <set name="duration">instantaneous</set>
+      <set name="range">Self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+	  <set name="materialComponent" />
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Befuddlement" type="Spell" source="WOTC" id="ID_2024_SPELL_BEFUDDLEMENT">
+    <supports>Bard, Druid, Warlock, Wizard, Spell Saving Throw</supports>
+    <description>
+      <p>You blast the mind of a creature that you can see within range. The target makes an Intelligence saving throw.</p>
+		<p>On a failed save, the target takes 10d12 Psychic damage and can't cast spells or take the Magic action. At the end of every 30 days, the target repeats the save, ending the effect on a success. The effect can also be ended by the Greater Restoration, Heal, or Wish spell.</p>
+		<p>On a successful save, the target takes half as much damage only.</p>
+    </description>
+    <setters>
+      <set name="level">8</set>
+      <set name="school">Enchantment</set>
+      <set name="time">1 action</set>
+      <set name="duration">instantaneous</set>
+      <set name="range">150 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+	  <set name="materialComponent">a key ring with no keys</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+  <element name="Drawmij’s Instant Summons" type="Spell" source="WOTC" id="ID_2024_SPELL_INSTANT_SUMMON">
+    <supports>Wizard</supports>
+    <description>
+      <p>You touch the sapphire used in the casting and an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an Invisible mark on that object and invisibly inscribes the object's name on the sapphire. Each time you cast this spell, you must use a different sapphire.</p>
+	  <p>Thereafter, you can take a Magic action to speak the object's name and crush the sapphire. The object instantly appears in your hand regardless of physical or planar distances, and the spell ends.</p>
+	  <p>If another creature is holding or carrying the object, crushing the sapphire doesn't transport it, but instead you learn who that creature is and where that creature is currently located.</p>
+    </description>
+    <setters>
+      <set name="level">6</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 minute</set>
+      <set name="duration">until dispelled</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+	  <set name="materialComponent">a sapphire worth 1,000+ GP</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+  <element name="Elementalism" type="Spell" source="WOTC" id="ID_2024_SPELL_ELEMENTALISM">
+    <supports> Druid, Sorcerer, Wizard</supports>
+    <description>
+      <p>You exert control over the elements, creating one of the following effects within range.</p>
+	  <p><b>Beckon Air.</b> You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot Cube. Doors and shutters being held open by someone or something aren't affected.</p>
+	  <p><b>Beckon Earth.</b> You create a thin shroud of dust or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand.<p><b>Beckon Fire.</b> You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot Cube. You choose the color and scent, and the embers can light candles, torches, or lamps in that area. The smoke's scent lingers for 1 minute.</p>
+	  <p><b>Beckon Water.</b> You create a spray of cool mist that lightly dampens creatures and objects in a 5-foot Cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface, and the water evaporates in 1 minute.</p>
+	  <p><b>Sculpt Element.</b> You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot Cube to assume a crude shape (such as that of a creature) for 1 hour.</p>
+    </description>
+    <setters>
+      <set name="level">0</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 action</set>
+      <set name="duration">instantaneous</set>
+      <set name="range">30 feet</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">false</set>
+	  <set name="materialComponent"/>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+    <element name="Drawmij’s Instant Summons" type="Spell" source="WOTC" id="ID_2024_SPELL_INSTANT_SUMMON">
+    <supports>Wizard</supports>
+    <description>
+      <p>You touch the sapphire used in the casting and an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an Invisible mark on that object and invisibly inscribes the object's name on the sapphire. Each time you cast this spell, you must use a different sapphire.</p>
+	  <p>Thereafter, you can take a Magic action to speak the object's name and crush the sapphire. The object instantly appears in your hand regardless of physical or planar distances, and the spell ends.</p>
+	  <p>If another creature is holding or carrying the object, crushing the sapphire doesn't transport it, but instead you learn who that creature is and where that creature is currently located.</p>
+    </description>
+    <setters>
+      <set name="level">6</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 minute</set>
+      <set name="duration">until dispelled</set>
+      <set name="range">touch</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">true</set>
+      <set name="hasMaterialComponent">true</set>
+	  <set name="materialComponent">a sapphire worth 1,000+ GP</set>
+      <set name="isConcentration">false</set>
+      <set name="isRitual">true</set>
+    </setters>
+  </element>
+</elements>
