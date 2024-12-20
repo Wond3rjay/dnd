@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<name>2024 Spells</name>
 		<update version="1.0.0">
 			<file name="2024-spells.index" url="https://github.com/Wond3rjay/dnd/blob/main/2024-spells.index"/>
 		</update>
