@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
+		<name>2024 Spells</name>
+		<author>WOTC</author>
 		<update version="1.0.0">
 			<file name="2024-spells.index" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells.index" />
 		</update>
