@@ -2,7 +2,7 @@
 <elements>
   <info>
         <update version="1.0.0">
-      <file name="2024-spells.xml" url="/spells/2024-spells.xml"/>
+      <file name="2024-spells.xml" url="https://github.com/Wond3rjay/dnd/blob/main/spells/2024-spells.xml"/>
     </update>
   </info>
 
