@@ -8,6 +8,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells.xml" />
+		<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml" />
 	</files>
 </index>

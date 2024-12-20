@@ -2,7 +2,7 @@
 <elements>
   <info>
     <update version="1.0.0">
-		<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells.xml"/>
+		<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml"/>
     </update>
   </info>
   <element name="Arcane Vigor" type="Spell" source="PHB24" id="ID_2024_SPELL_ARCANE_VIGOR">
