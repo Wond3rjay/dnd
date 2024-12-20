@@ -6,26 +6,6 @@
     </update>
   </info>
 
-  <element name="Arcane Vigor" type="Spell" source="WOTC" id="ID_2024_SPELL_ARCANE_VIGOR">
-    <supports>Sorcerer, Wizard</supports>
-    <description>
-      <p>You tap into your life force to heal yourself. Roll one or two of your unexpended Hit Point Dice, and regain a number of Hit Points equal to the roll's total plus your spellcasting ability modifier. Those dice are then expended.</p>
-	  <p><b>Using a Higher-Level Spell Slot.</b> The number of unexpended Hit Dice you can roll increases by one for each spell slot level above 2.</p>
-    </description>
-    <setters>
-      <set name="level">2</set>
-      <set name="school">Abjuration</set>
-      <set name="time">1 bonus action</set>
-      <set name="duration">instantaneous</set>
-      <set name="range">Self</set>
-      <set name="hasVerbalComponent">true</set>
-      <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-	  <set name="materialComponent"/>
-      <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
-  </element>
   <element name="Befuddlement" type="Spell" source="WOTC" id="ID_2024_SPELL_BEFUDDLEMENT">
     <supports>Bard, Druid, Warlock, Wizard, Spell Saving Throw</supports>
     <description>
