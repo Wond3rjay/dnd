@@ -4,6 +4,7 @@
 		<name>2024 Spells</name>
 		<author>WOTC</author>
 		<description>New Spells from PHB 5e24 to add it to our games.</description>
+		<source>WOTC PHB 2024</source>
 		<update version="1.0.0">
 			<file name="2024-spells.index" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells.index" />
 		</update>
