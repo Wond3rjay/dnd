@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
-        <update version="1.0.0">
-      <file name="2024-spells.xml" url="https://github.com/Wond3rjay/dnd/blob/main/spells/2024-spells.xml"/>
+    <update version="1.0.0">
+		<file name="2024-spells.xml" url="https://github.com/Wond3rjay/dnd/blob/main/spells/2024-spells.xml"/>
     </update>
   </info>
-
   <element name="Arcane Vigor" type="Spell" source="WOTC" id="ID_2024_SPELL_ARCANE_VIGOR">
     <supports>Sorcerer, Wizard</supports>
     <description>
@@ -79,17 +78,18 @@
 	  <p><b>Sculpt Element.</b> You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot Cube to assume a crude shape (such as that of a creature) for 1 hour.</p>
    </description>
    <setters>
-      <set name="level">6</set>
-      <set name="school">Conjuration</set>
-      <set name="time">1 minute</set>
-      <set name="duration">until dispelled</set>
-      <set name="range">touch</set>
+      <set name="level">0</set>
+      <set name="school">Transmutation</set>
+      <set name="time">1 Action</set>
+      <set name="duration">instantaneous</set>
+      <set name="range">30 feet</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">true</set>
-	  <set name="materialComponent">a sapphire worth 1,000+ GP</set>
+      <set name="hasMaterialComponent">false</set>
+	  <set name="materialComponent"/>
       <set name="isConcentration">false</set>
-      <set name="isRitual">true</set></setters>
+      <set name="isRitual">false</set>
+   </setters>
   </element>
   <element name="Fount of Moonlight" type="Spell" source="WOTC" id="ID_2024_SPELL_FOUNT_OF_MOONLIGHT">
     <supports>Bard, Druid, Spell Saving Throw</supports>
