@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <elements>
   <info>
         <update version="1.0.0">
@@ -53,7 +53,7 @@
       <p>You touch the sapphire used in the casting and an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an Invisible mark on that object and invisibly inscribes the object's name on the sapphire. Each time you cast this spell, you must use a different sapphire.</p>
 	  <p>Thereafter, you can take a Magic action to speak the object's name and crush the sapphire. The object instantly appears in your hand regardless of physical or planar distances, and the spell ends.</p>
 	  <p>If another creature is holding or carrying the object, crushing the sapphire doesn't transport it, but instead you learn who that creature is and where that creature is currently located.</p>
-    </description>
+	  </description>
     <setters>
       <set name="level">6</set>
       <set name="school">Conjuration</set>
@@ -69,27 +69,27 @@
     </setters>
   </element>
   <element name="Elementalism" type="Spell" source="WOTC" id="ID_2024_SPELL_ELEMENTALISM">
-    <supports> Druid, Sorcerer, Wizard</supports>
-    <description>
-      <p>You exert control over the elements, creating one of the following effects within range.</p>
+   <supports>Druid, Sorcerer, Wizard</supports>
+   <description>
+   <p>You exert control over the elements, creating one of the following effects within range.</p>
 	  <p><b>Beckon Air.</b> You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot Cube. Doors and shutters being held open by someone or something aren't affected.</p>
-	  <p><b>Beckon Earth.</b> You create a thin shroud of dust or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand.<p><b>Beckon Fire.</b> You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot Cube. You choose the color and scent, and the embers can light candles, torches, or lamps in that area. The smoke's scent lingers for 1 minute.</p>
+	  <p><b>Beckon Earth.</b> You create a thin shroud of dust or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand.</p>
+	  <p><b>Beckon Fire.</b> You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot Cube. You choose the color and scent, and the embers can light candles, torches, or lamps in that area. The smoke's scent lingers for 1 minute.</p>
 	  <p><b>Beckon Water.</b> You create a spray of cool mist that lightly dampens creatures and objects in a 5-foot Cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface, and the water evaporates in 1 minute.</p>
 	  <p><b>Sculpt Element.</b> You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot Cube to assume a crude shape (such as that of a creature) for 1 hour.</p>
-    </description>
-    <setters>
-      <set name="level">0</set>
-      <set name="school">Transmutation</set>
-      <set name="time">1 action</set>
-      <set name="duration">instantaneous</set>
-      <set name="range">30 feet</set>
+   </description>
+   <setters>
+      <set name="level">6</set>
+      <set name="school">Conjuration</set>
+      <set name="time">1 minute</set>
+      <set name="duration">until dispelled</set>
+      <set name="range">touch</set>
       <set name="hasVerbalComponent">true</set>
       <set name="hasSomaticComponent">true</set>
-      <set name="hasMaterialComponent">false</set>
-	  <set name="materialComponent"/>
+      <set name="hasMaterialComponent">true</set>
+	  <set name="materialComponent">a sapphire worth 1,000+ GP</set>
       <set name="isConcentration">false</set>
-      <set name="isRitual">false</set>
-    </setters>
+      <set name="isRitual">true</set></setters>
   </element>
   <element name="Fount of Moonlight" type="Spell" source="WOTC" id="ID_2024_SPELL_FOUNT_OF_MOONLIGHT">
     <supports>Bard, Druid, Spell Saving Throw</supports>
