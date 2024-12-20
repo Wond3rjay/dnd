@@ -46,7 +46,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Drawmijs Instant Summons" type="Spell" source="PHB24" id="ID_2024_SPELL_INSTANT_SUMMON">
+  <element name="Drawmij's Instant Summons" type="Spell" source="PHB24" id="ID_2024_SPELL_INSTANT_SUMMON">
     <supports>Wizard</supports>
     <description>
       <p>You touch the sapphire used in the casting and an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an Invisible mark on that object and invisibly inscribes the object's name on the sapphire. Each time you cast this spell, you must use a different sapphire.</p>
@@ -112,7 +112,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Jallarzis Storm of Radiance" type="Spell" source="PHB24" id="ID_2024_SPELL_STORM_OF_RADIANCE">
+  <element name="Jallarzi's Storm of Radiance" type="Spell" source="PHB24" id="ID_2024_SPELL_STORM_OF_RADIANCE">
     <supports>Warlock, Wizard, Spell Saving Throw</supports>
     <description>
       <p>You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high Cylinder centered on a point you can see within range. While in this area, creatures have the Blinded and Deafened conditions, and they can't cast spells with a Verbal component.</p>
@@ -213,7 +213,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Tashas Bubbling Cauldron" type="Spell" source="PHB24" id="ID_2024_BUBBLING_CAULDRON">
+  <element name="Tasha's Bubbling Cauldron" type="Spell" source="PHB24" id="ID_2024_BUBBLING_CAULDRON">
     <supports>Warlock, Wizard</supports>
     <description>
       <p>You conjure a claw-footed cauldron filled with bubbling liquid. The cauldron appears in an unoccupied space on the ground within 5 feet of you and lasts for the duration. The cauldron can't be moved and disappears when the spell ends, along with the bubbling liquid inside it.</p>
@@ -234,7 +234,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Yolandes Regal Presence" type="Spell" source="PHB24" id="ID_2024_REGAL_PRESENCE">
+  <element name="Yolande's Regal Presence" type="Spell" source="PHB24" id="ID_2024_REGAL_PRESENCE">
     <supports>Bard, Wizard</supports>
     <description>
       <p>You surround yourself with unearthly majesty in a 10-foot Emanation. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. On a failed save, the target takes 4d6 Psychic damage and has the Prone condition, and you can push it up to 10 feet away. On a successful save, the target takes half as much damage only. A creature makes this save only once per turn.</p>
