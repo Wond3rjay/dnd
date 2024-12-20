@@ -2,10 +2,10 @@
 <index>
 	<info>
 		<update version="1.0.0">
-			<file name="2024-spells.index" url="https://github.com/Wond3rjay/dnd/blob/main/2024-spells.index"/>
+			<file name="2024-spells.index" url="https://github.com/Wond3rjay/dnd/blob/main/2024-spells.index" />
 		</update>
 	</info>
 	<files>
-		<file name="2024-spells.xml" url="https://github.com/Wond3rjay/dnd/blob/main/2024-spells/2024-spells.xml"/>
+		<file name="2024-spells.xml" url="https://github.com/Wond3rjay/dnd/blob/main/2024-spells/2024-spells.xml" />
 	</files>
 </index>
