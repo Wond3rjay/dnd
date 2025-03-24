@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Jay's Homebrew and Additions</name>
+		<author>Jay & Various Sources</author>
+		<description>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games</description>
+		<source>Jay & Various Sources</source>
+		<update version="1.0.0">
+			<file name="jay-homebrew.index" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jay-addition.index" />
+		</update>
+	</info>
+	<files> 
+	<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml" />
+	</files>
+</index>
