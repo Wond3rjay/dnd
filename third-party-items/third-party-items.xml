@@ -22,6 +22,9 @@
 			<set name="damage" type="piercing">1d8</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW</set>
 		</setters>
+		<rules>
+			<stat name="longbow:damage" value="1+strength:modifier" />
+		</rules>
 	</element>
 	
 	<element name="Composite Shortbow" type="Weapon" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_COMPOSITE_SHORTBOW">
@@ -35,9 +38,13 @@
 			<set name="range">100/400</set>
 			<set name="strength">13</set>
 			<set name="damage" type="piercing">1d6</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW</set>
 		</setters>
+		<rules>
+			<stat name="shortbow:damage" value="1+strength:modifier" />
+		</rules>
 	</element>
+	
 	
 	<!-- Weapon properties -->
 	<element name="Armor Piercing" type="Weapon Property" source="Grim Hollow - The Players Guide" id="ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING">
