@@ -19,11 +19,11 @@
 			<set name="slot">twohand</set>
 			<set name="range">200/600</set>
 			<set name="strength">13</set>
-			<set name="damage" type="piercing">1d8</set>
+			<set name="damage" type="piercing">1d8+1</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW</set>
 		</setters>
 		<rules>
-			<stat name="longbow:damage" value="1+strength:modifier" />
+			<stat name="longbow:damage" value="strength:modifier" />
 		</rules>
 	</element>
 	

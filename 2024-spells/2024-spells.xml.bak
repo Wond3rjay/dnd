@@ -5,7 +5,7 @@
 		<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml"/>
     </update>
   </info>
-  <element name="Arcane Vigor" type="Spell" source="Additions by Jay" id="ID_2024_SPELL_ARCANE_VIGOR">
+  <element name="Arcane Vigor" type="Spell" source="PHB24" id="ID_2024_SPELL_ARCANE_VIGOR">
     <supports>Sorcerer, Wizard</supports>
     <description>
       <p>You tap into your life force to heal yourself. Roll one or two of your unexpended Hit Point Dice, and regain a number of Hit Points equal to the roll's total plus your spellcasting ability modifier. Those dice are then expended.</p>
@@ -25,7 +25,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Befuddlement" type="Spell" source="Additions by Jay" id="ID_2024_SPELL_BEFUDDLEMENT">
+  <element name="Befuddlement" type="Spell" source="PHB24" id="ID_2024_SPELL_BEFUDDLEMENT">
     <supports>Bard, Druid, Warlock, Wizard, Spell Saving Throw</supports>
     <description>
       <p>You blast the mind of a creature that you can see within range. The target makes an Intelligence saving throw.</p>
@@ -46,7 +46,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Drawmij's Instant Summons" type="Spell" source="Additions by Jay" id="ID_2024_SPELL_INSTANT_SUMMON">
+  <element name="Drawmij's Instant Summons" type="Spell" source="PHB24" id="ID_2024_SPELL_INSTANT_SUMMON">
     <supports>Wizard</supports>
     <description>
       <p>You touch the sapphire used in the casting and an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an Invisible mark on that object and invisibly inscribes the object's name on the sapphire. Each time you cast this spell, you must use a different sapphire.</p>
@@ -67,7 +67,7 @@
       <set name="isRitual">true</set>
     </setters>
   </element>
-  <element name="Elementalism" type="Spell" source="Additions by Jay" id="ID_2024_SPELL_ELEMENTALISM">
+  <element name="Elementalism" type="Spell" source="PHB24" id="ID_2024_SPELL_ELEMENTALISM">
    <supports>Druid, Sorcerer, Wizard</supports>
    <description>
    <p>You exert control over the elements, creating one of the following effects within range.</p>
@@ -91,7 +91,7 @@
       <set name="isRitual">false</set>
    </setters>
   </element>
-  <element name="Fount of Moonlight" type="Spell" source="Additions by Jay" id="ID_2024_SPELL_FOUNT_OF_MOONLIGHT">
+  <element name="Fount of Moonlight" type="Spell" source="PHB24" id="ID_2024_SPELL_FOUNT_OF_MOONLIGHT">
     <supports>Bard, Druid, Spell Saving Throw</supports>
     <description>
       <p>A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet.</p>
@@ -112,7 +112,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Jallarzi's Storm of Radiance" type="Spell" source="Additions by Jay" id="ID_2024_SPELL_STORM_OF_RADIANCE">
+  <element name="Jallarzi's Storm of Radiance" type="Spell" source="PHB24" id="ID_2024_SPELL_STORM_OF_RADIANCE">
     <supports>Warlock, Wizard, Spell Saving Throw</supports>
     <description>
       <p>You unleash a storm of flashing light and raging thunder in a 10-foot-radius, 40-foot-high Cylinder centered on a point you can see within range. While in this area, creatures have the Blinded and Deafened conditions, and they can't cast spells with a Verbal component.</p>
@@ -133,7 +133,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Power Word Fortify" type="Spell" source="Additions by Jay" id="ID_2024_SPELL_POWER_WORD_FORTIFY">
+  <element name="Power Word Fortify" type="Spell" source="PHB24" id="ID_2024_SPELL_POWER_WORD_FORTIFY">
     <supports>Bard, Cleric</supports>
     <description>
       <p>You fortify up to six creatures you can see within range. The spell bestows 120 Temporary Hit Points, which you divide among the spell's recipients.</p>
@@ -152,7 +152,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Shining Smite" type="Spell" source="Additions by Jay" id="ID_2024_SPELL_SHINING_SMITE">
+  <element name="Shining Smite" type="Spell" source="PHB24" id="ID_2024_SPELL_SHINING_SMITE">
     <supports>Paladin</supports>
     <description>
       <p>The target hit by the strike takes an extra 2d6 Radiant damage from the attack. Until the spell ends, the target sheds Bright Light in a 5-foot radius, attack rolls against it have Advantage, and it can't benefit from the Invisible condition.</p>
@@ -172,7 +172,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Sorcerous Burst" type="Spell" source="Additions by Jay" id="ID_2024_SPELL_SORCEROUS_BURST">
+  <element name="Sorcerous Burst" type="Spell" source="PHB24" id="ID_2024_SPELL_SORCEROUS_BURST">
     <supports>Sorcerer</supports>
     <description>
       <p>You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.</p>
@@ -193,7 +193,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Starry Wisp" type="Spell" source="Additions by Jay" id="ID_2024_SPELL_STARRY_WISP">
+  <element name="Starry Wisp" type="Spell" source="PHB24" id="ID_2024_SPELL_STARRY_WISP">
     <supports>Bard, Druid</supports>
     <description>
       <p>You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can't benefit from the Invisible condition.</p>
@@ -213,7 +213,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Tasha's Bubbling Cauldron" type="Spell" source="Additions by Jay" id="ID_2024_BUBBLING_CAULDRON">
+  <element name="Tasha's Bubbling Cauldron" type="Spell" source="PHB24" id="ID_2024_BUBBLING_CAULDRON">
     <supports>Warlock, Wizard</supports>
     <description>
       <p>You conjure a claw-footed cauldron filled with bubbling liquid. The cauldron appears in an unoccupied space on the ground within 5 feet of you and lasts for the duration. The cauldron can't be moved and disappears when the spell ends, along with the bubbling liquid inside it.</p>
@@ -234,7 +234,7 @@
       <set name="isRitual">false</set>
     </setters>
   </element>
-  <element name="Yolande's Regal Presence" type="Spell" source="Additions by Jay" id="ID_2024_REGAL_PRESENCE">
+  <element name="Yolande's Regal Presence" type="Spell" source="PHB24" id="ID_2024_REGAL_PRESENCE">
     <supports>Bard, Wizard</supports>
     <description>
       <p>You surround yourself with unearthly majesty in a 10-foot Emanation. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. On a failed save, the target takes 4d6 Psychic damage and has the Prone condition, and you can push it up to 10 feet away. On a successful save, the target takes half as much damage only. A creature makes this save only once per turn.</p>
