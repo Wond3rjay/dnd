@@ -2,9 +2,9 @@
 <index>
 	<info>
 		<name>Jay's Homebrew and Additions</name>
-		<author>Jay and Various Sources</author>
+		<author>Jay & Various Sources</author>
 		<description>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games</description>
-		<source>Jay and Various Sources</source>
+		<source>Jay & Various Sources</source>
 		<update version="1.0.0">
 			<file name="jay-homebrew.index" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jay-addition.index" />
 		</update>
