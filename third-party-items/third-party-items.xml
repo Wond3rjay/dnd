@@ -68,6 +68,20 @@
 		</setters>
 	</element>
 	
+	<element name="Amethyst Die" type="Magic Item" source="Additions by Jay" id="ID_JAY_ADDITIONS_MAGIC_ITEM_AMETHYST_DIE">		
+		<description>
+			<p>This gaming die is carved from a fragment of powerful psionic crystal and resonates with a remnant of its power. This die has 3 charges and regains all expended charges daily at dawn. When you make an ability check, attack roll, or saving throw, you can expend 1 charge to roll a d6 and add the number rolled to the d20 roll. Immediately after the ability check, attack roll, or saving throw is resolved, you take psychic damage equal to twice the number you rolled on the d6.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">2000</set>
+			<set name="weight" lb="0.1">0.1 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">false</set>
+		</setters>
+	</element>
+	
 	<!-- Weapon properties -->
 	<element name="Armor Piercing" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING">
 		<description><p>An armor-piercing weapon is a melee weapon designed to punch through armor and thick hide alike. When you make an attack roll using an armor-piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has natural armor.</p></description>
