@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="1.0.3">
+			<file name="source.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/source.xml" />
+		</update>
+	</info>
+	<element name="Jay Homebrew and Additions" type="Source" source="Core" id="ID_JAY_ADDITIONS">
+		<description>
+			<![CDATA[<p><strong>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games</0p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">JAY</set>
+			<set name="url"></set>
+			<set name="image"></set>
+			<set name="author" abbreviation="JAY" url="">Jay</set>
+			<set name="third-party">true</set>
+			<set name="release">2025</set>
+		</setters>
+	</element>
+</elements>
