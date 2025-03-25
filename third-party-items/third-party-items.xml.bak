@@ -55,9 +55,7 @@
 	
 	<!-- Weapon properties -->
 	<element name="Armor Piercing" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING">
-		<description>
-			<p>An armor-piercing weapon is a melee weapon designed to punch through armor and thick hide alike. When you make an attack roll using an armor-piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has natural armor.<br>
-		</description>
+		<description><p>An armor-piercing weapon is a melee weapon designed to punch through armor and thick hide alike. When you make an attack roll using an armor-piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has natural armor.</p></description>
 		<sheet display="false" />
 	</element>
 	<element name="Blackpowder" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER">
