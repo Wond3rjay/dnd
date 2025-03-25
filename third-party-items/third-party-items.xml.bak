@@ -39,6 +39,19 @@
 		</setters>
 	</element>
 	
+	<!-- Potions -->
+	<element name="Potion of Restoration" type="Magic Item" source="Additions by Jay" id="ID_JAY_ADDITIONS_MAGIC_ITEM_POTION_OF_RESTORATION">		
+		<description>
+			<p>When you drink this potion, you gain all the benefits you gain as if at the completion of a long rest. The potion appears to be stark red fluid in color that creates bright swirling tendrils on shaking the bottle that dissipate momentarily.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Legendary</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 	
 	<!-- Weapon properties -->
 	<element name="Armor Piercing" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING">
