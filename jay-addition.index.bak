@@ -11,5 +11,6 @@
 	</info>
 	<files> 
 	<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml" />
+	<file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
 	</files>
 </index>

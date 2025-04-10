@@ -39,6 +39,207 @@
 		</setters>
 	</element>
 	
+	<!-- Ammunitions -->
+	
+	<element name="Dark Iron Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_DARK_IRON_ARROW">
+		<description>
+			<p><em>Dark iron arrow</em> is particularly dense and hard imbued with cosmic energy from the meteorite it was extracted. A dark iron arrow has the metallic armor piercing property (-1 AC), but deal half damage against creature that have natural, or non-metal armor.</p>
+			<p class="indent">Once a <em>dark iron arrow</em> pierces a metallic armor, it becomes unusable.</p>
+			<p class="indent">To craft Dark Iron arrow, <em>Smith's Tools</em> and <em>Woodcarver's tools</em> proficiency is required along with access to a smelter, 20 lb. of dark iron and sufficient wood. DC 18</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">30</set>
+		</setters>
+	</element>
+	
+	<element name="Flight Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_FLIGHT_ARROW">
+		<description>
+			<p><em>Flight arrows</em> have thin shafts and light fletching. When fired from a bow, the normal and long range is increase by 40 ft.; however, attack rolls for targets within 30 ft. are made with disadvantage.</p>
+			<p class="indent">To craft flight arrows, <em>Woodcarver's tools</em> and <em>Carpenter's Tools</em> proficiency is required along with sufficient Cedar or similar wood. DC 12</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="0.4">0.4 lb.</set>
+			<set name="cost" currency="gp">15</set>
+		</setters>
+	</element>
+	
+	<element name="Hummerhead Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_HUMMERHEAD_ARROW">
+		<description>
+			<p><em>The hummerhead arrows arrow</em> are specially designed to deal non-lethal bludgeoning damage to its target. These arrows do 1 die less damage (eg. 1d6 drops to 1d4) but on a critical hit these arrows apply the stunned condition effect to the target until the start of the your next turn. Also, if a creature falls to 0Hp from one of these arrows it does not roll for death saving throws and is instead unconcious.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">1</set>
+		</setters>
+	</element>
+	
+	<element name="Snaring Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_SNARING_ARROW">
+		<description>
+			<p><em>The snaring arrows arrow</em> are specially designed to restrain its target. The arrow heads is a tiny spring mechanism that contains a concisely packed trap that springs out right before the arrow hits the target. Instead of contesting against target's AC, the target gets to roll acrobatics check against the attack roll to determine if it gets restrained or not. on a critical hit, the target is restrained automatically. As the snaring arrows are heavier than usual, the normal and long range is reduced by two third of the original range (rounded down).</p>
+			<p class="indent">The <em>snaring arrow</em> is recoverable but requires a new net for every use.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">1</set>
+		</setters>
+	</element>
+	
+	<element name="Injection Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_INJECTION_ARROW">
+		<description>
+			<p>These arrow's heads are hollow and have storage equal to that of a vial. It contains a tiny mechanism similar to a syringe. Liquids held within never dry out, and are injected directly ino a creature struck, there the vial's effects are saved against with disadvantage. DC 14</p>
+			<p class="indent">An <em>injection arrow</em> is destroyed after use.</p>
+			<p class="indent">To craft Injection arrow, <em>Glassblower's Tools</em> and <em>Woodcarver's tools</em> proficiency is required along with access to a source of heat, a source of glass material, and sufficient wood. DC 16</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">40</set>
+		</setters>
+	</element>
+
+	<element name="Blinding Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_BLINDING_ARROW">
+		<description>
+			<p><em>Blinding Arrows</em> have a small clay pot with an opening inside, containing a reactive chemical. On hit, the chemical releases a bright flash, blinding the target if it fails a CON (DC 13) until the start of your next turn.</p>
+			<p class="indent">A <em>blinding arrow</em> is destroyed upon use.</p>
+			<p class="indent">To craft blinding arrow, <em>Alchemist Supplies</em>, <em>Potters' Tools</em> and <em>Woodcarver's tools</em> proficiency is required along with access to an Alchemy lab, an explosive chemical and sufficient wood. DC 14</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">6</set>
+		</setters>
+	</element>
+	
+	<element name="Corkscrew Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_CORKSCREW_ARROW">
+		<description>
+			<p>Travels through water effectively than a normal arrow. It ignores the "ranged weapon attacks underwater combat rules" on page 198 of the PHB.</p>
+			<p class="indent">To craft Corkscrew arrow, <em>Woodcarver's tools</em> proficiency is required along with sufficient wood. DC 20</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">30</set>
+		</setters>
+	</element>
+	
+	<element name="Acid Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_ACID_ARROW">
+		<description>
+			<p>The arrow turns into a streak of acid mid-path. On a hit, the target takes 1d8 acid damage and the creature must make a successful DC14 CON save or take another 1d8 acid damage on subsequent turn. on a miss the target only takes half of initial damage and no damage on the following turn.</p>
+			<p class="indent">An <em>acid arrow</em> is destroyed after use.</p>
+			<p class="indent">Only an artificer can craft an acid arrow. <em>Alchemist Supplies</em> and <em>Woodcarver's tools</em> proficiency is required along with access to sufficient vials of acid (half the number of arrows crafted) and wood. The artificer must also spend one spell slot for every three arrows to infuse them with transmutation energy.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">50</set>
+		</setters>
+	</element>
+	
+	<element name="Explosive Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_EXPLOSIVE_ARROW">
+		<description>
+			<p>On a hit, the <em>explosive arrow</em> bursts into a small pocket of explosion. The target takes additional 1d6 force damage and must make a successful DC14 DEX save or take another 1d6 fire damage</p>
+			<p class="indent">An <em>explosive arrow</em> is destroyed after use.</p>
+			<p class="indent">Only an artificer can craft an explosive arrow. <em>Alchemist Supplies</em> and <em> Woodcarver's tools </em> proficiency is required along with access to sufficient sulfur, bat guamo and wood. The artificer must also spend one spell slot for every three arrows to infuse them with evocation energy.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">30</set>
+		</setters>
+	</element>
+
+	<element name="Ice Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_ICE_ARROW">
+		<description>
+			<p>The arrow turns into an ice shard mid-path. On a hit, the target takes 1d10 piercing damage and its speed reduces by 10 feet.</p>
+			<p class="indent">An <em>ice arrow</em> is destroyed after use.</p>
+			<p class="indent">Only an artificer can craft an ice arrow. <em>Alchemist Supplies</em> and <em>Woodcarver's tools</em> proficiency is required along with access to sufficient water or ice and wood. The artificer must also spend one spell slot for every three arrows to infuse them with evocation energy.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">30</set>
+		</setters>
+	</element>
+	
+	<element name="Necrotic Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_NECROTIC_ARROW">
+		<description>
+			<p>The <em>necrotic arrow</em> has a skull fuming with necrotic energy for arrow head. On a hit, the arrow deals 1d4 bludgeoning damage and 1d10 necrotic damage. The target must succeed DC14 CON save or its Hit Points Maximum reduce by equivalent to the necrotic damage dealt.</p>
+			<p class="indent">A <em>necrotic arrow</em> is destroyed after use.</p>
+			<p class="indent">Only an artificer can craft a necrotic arrow. <em>Woodcarver's tools</em> proficiency is required along with access to a small skull replica worth 5 gp, two square feet of dead remains, and wood. The artificer must also spend one spell slot for every three arrows to infuse them with necrotic energy.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">30</set>
+		</setters>
+	</element>
+	
+	<element name="Tormenting Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_TORMENTING_ARROW">
+		<description>
+			<p>On a hit, the <em>tormenting arrow</em> transforms in a crown of lightning arouund target's head and deals additional 1d6 Psychic Damage. Additionally, the target must succeed DC14 WIS save or suffers from tormenting thoughts and visions that makes it hard for him to concentrate. The target has disadvantage on following saving throws and concentration checks till the end of the archer's next turn.</p>
+			<p class="indent">A <em>tormenting arrow</em> is destroyed after use.</p>
+			<p class="indent">Only an artificer can craft a tormenting arrow. <em>Woodcarver's tools</em> proficiency is required along with access to a tiny humanoid replica poked by 5 pins and wood. The artificer must also spend one spell slot for every three arrows to infuse them with psychic energy.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="cost" currency="gp">30</set>
+		</setters>
+	</element>
+	
 	<!-- Potions -->
 	<element name="Potion of Restoration" type="Magic Item" source="Additions by Jay" id="ID_JAY_ADDITIONS_MAGIC_ITEM_POTION_OF_RESTORATION">		
 		<description>
@@ -226,5 +427,5 @@
 			<p>A tripping weapon allows users to knock targets prone. When you hit with a tripping weapon, you can use a bonus action to force your target to attempt a Strength saving throw, provided the target is no more than one size larger than you. The DC for the saving throw equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). If the target fails, it falls prone.</p>
 		</description>
 		<sheet display="false" />
-	</element>
+	</element>	
 </elements>	
