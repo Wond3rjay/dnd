@@ -5,7 +5,7 @@
 		<author>Jay and Various Sources</author>
 		<description>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games</description>
 		<source>Jay and Various Sources</source>
-		<update version="1.0.0">
+		<update version="1.0.9"> Fletcher update test</update>
 			<file name="jay-homebrew.index" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jay-addition.index" />
 		</update>
 	</info>
