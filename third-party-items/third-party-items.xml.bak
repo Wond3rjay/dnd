@@ -219,7 +219,7 @@
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">30</set>
+			<set name="cost" currency="gp">35</set>
 		</setters>
 	</element>
 	
@@ -236,7 +236,7 @@
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">30</set>
+			<set name="cost" currency="gp">50</set>
 		</setters>
 	</element>
 	
