@@ -51,7 +51,6 @@
 			<set name="weapon">Sickle</set>
 			<set name="attunement" addition="by a champion of Kaalraatri">true</set>
 			<set name="enhancement">2</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE</set>
 		</setters>
 		<rules>
 			<stat name="spellcasting:attack" value="2" bonus="blood drinker" />
