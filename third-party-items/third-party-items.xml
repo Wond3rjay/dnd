@@ -9,20 +9,6 @@
 	</info>
 	
 	<!-- Advanced Weapons -->
-	<element name="Composite Longbow" type="Weapon" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_COMPOSITE_LONGBOW">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
-		<description><p><strong>Range.</strong> A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.</p><p><strong>Ammunition.</strong> You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. Loading a one-handed weapon requires a free hand. At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</p><p>If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon. A sling must be loaded to deal any damage when used in this way.</p><p><strong>Heavy.</strong> Creatures that are Small or Tiny have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small or Tiny creature to use effectively.</p><p><strong>Strong-Draw.</strong> An advanced ranged weapon with the strong-draw quality requires great strength to use. You must have a Strength of 13 or higher to use such a weapon, or you make attack rolls using the weapon with disadvantage. You add not only your Dexterity modifier to damage with a strong-draw weapon, but you also add 1 + half your Strength Modifier (rounded down) to the damage.</p><p><strong>Two-Handed.</strong> This weapon requires two hands to use. This property is relevant only when you attack with the weapon, not when you simply hold it.</p></description>
-		<setters>
-			<set name="category">Advanced Ranged Weapons</set>
-			<set name="cost" currency="gp">750</set>
-			<set name="weight" lb="2">2 lb.</set>
-			<set name="slot">twohand</set>
-			<set name="range">200/600</set>
-			<set name="strength">13</set>
-			<set name="damage" type="piercing">1d8</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW</set>
-		</setters>
-	</element>
 	
 	<element name="Composite Shortbow" type="Weapon" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_COMPOSITE_SHORTBOW">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>

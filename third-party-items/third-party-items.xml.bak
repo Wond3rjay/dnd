@@ -41,8 +41,7 @@
 	
 	<element name="Blood Drinker" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_BLOOD_DRINKER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
-		<description><p><strong>Champion's Weapon. </strong>The Blood Drinker is material manifestation of the divine sickle wielded by Goddess Kaalraatri, The Mother Death. The Blood Drinker, therefore, can be attuned by the anointed champion of Goddess Kaalraatri. Attuning to Blood Drinker also manifest proficiency with a sickle as well. The sickle can also be used as a spell focus and provides +2 bonus to spell attack rolls and the saving throw DCs of all of your spells. On DM's discretion, Blood Drinker may achieve Exalted Status, transforming it into <strong>Exalted Blood Drinker</strong> weapon.</p>
-		<p> Additionally, when you score a critical hit with this dagger, the target must succeed on a Wisdom saving throw against your Spellcasting DC. On failure, the target can not heal until the end of your next turn. On a success, the target is immune to this effect for 24 hours.</p></description>
+		<description><p><strong>Champion's Weapon. </strong>The Blood Drinker is material manifestation of the divine sickle wielded by Goddess Kaalraatri, The Mother Death. The Blood Drinker, therefore, can be attuned by the anointed champion of Goddess Kaalraatri. Attuning to Blood Drinker also manifest proficiency with a sickle as well. The sickle can also be used as a spell focus and provides +2 bonus to spell attack rolls and the saving throw DCs of all of your spells. On DM's discretion, Blood Drinker may achieve Exalted Status, transforming it into <strong>Exalted Blood Drinker</strong> weapon.</p><p>Additionally, when you score a critical hit with this dagger, the target must succeed on a Wisdom saving throw against your Spellcasting DC. On failure, the target can not heal until the end of your next turn. On a success, the target is immune to this effect for 24 hours.</p></description>
 		<setters>
             <set name="keywords">sickle, kaalraatri, vestige, champion, spellcasting focus</set>
 			<set name="category">Magic Weapons</set>
@@ -53,7 +52,7 @@
 			<set name="enhancement">2</set>
 		</setters>
 		<rules>
-			<stat name="spellcasting:attack" value="2" bonus="blood drinker" />
+			<stat name="spellcasting:attack" value="2" bonus="blood drinker"/>
 			<stat name="spellcasting:dc" value="2" bonus="blood drinker" />
 		</rules>
 	</element>
