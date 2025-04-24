@@ -54,6 +54,7 @@
 			<set name="enhancement">2</set>
 		</setters>
 		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
 			<stat name="spellcasting:attack" value="2" bonus="blood drinker"/>
 			<stat name="spellcasting:dc" value="2" bonus="blood drinker" />
 		</rules>
