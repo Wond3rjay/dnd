@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.0.3">
+		<update version="1.1.10">
 			<file name="source.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/source.xml" />
 		</update>
 	</info>
 	<element name="Jay Homebrew and Additions" type="Source" source="Core" id="ID_JAY_ADDITIONS">
 		<description>
-			<![CDATA[<p><strong>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games</0p>]]>
+			<p><strong>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games</p>
 		</description>
 		<setters>
 			<set name="abbreviation">JAY</set>
