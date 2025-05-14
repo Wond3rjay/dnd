@@ -3,7 +3,7 @@
 	<info>
 		<name>Third Party Items</name>
 		<description>This is a collection of third party items from several Non-WOTC sources that we have incorporated in Maa games</description>
-		<update version="0.1.0">
+		<update version="1.03">
 			<file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
 		</update>
 	</info>
@@ -42,7 +42,7 @@
 	<element name="Blood Drinker" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_BLOOD_DRINKER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
-			<p><strong>Champion's Weapon. </strong>The Blood Drinker is material manifestation of the divine sickle wielded by Goddess Kaalraatri, The Mother Death. The Blood Drinker, therefore, can be attuned by the anointed champion of Goddess Kaalraatri. Attuning to Blood Drinker also manifest proficiency with a sickle as well. The sickle can also be used as a spell focus and provides +2 bonus to spell attack rolls and the saving throw DCs of all of your spells.Melee attacks made by Blood Drinker does extra 2d6 Radiant or 2d6 Necrotic Damage, whichever the wielder may choose. If the target is a demon, the additional damage is doubled.</p><p>On DM's discretion, Blood Drinker may achieve Exalted Status, transforming into <strong>Exalted Blood Drinker</strong> weapon.</p><p>Additionally, when you score a critical hit with this dagger, the target must succeed on a Wisdom saving throw against your Spellcasting DC. On failure, the target can not heal until the end of your next turn. On a success, the target is immune to this effect for 24 hours.</p>
+			<p><strong>Champion's Weapon. </strong>The Blood Drinker is material manifestation of the divine sickle wielded by Goddess Kaalraatri, The Mother Death. The Blood Drinker, therefore, can be attuned by the anointed champion of Goddess Kaalraatri. Attuning to Blood Drinker also manifest proficiency with a sickle as well. The weapon enhances attack rolls and damage rolls with +2 and melee attacks made by Blood Drinker does extra 2d6 Radiant or 2d6 Necrotic Damage, whichever the wielder may choose. If the target is a demon, the additional damage is doubled.</p><p>The sickle can also be used as a spell focus and provides +2 bonus to spell attack rolls and the saving throw DCs of all of your spells. Moreover, if the spell casted using the sickle as focus does radian or necrotic damage, the spell deals additional 2d6 damage of the same kind.</p><p>On DM's discretion, Blood Drinker may achieve Exalted Status, transforming into <strong>Exalted Blood Drinker</strong> weapon.</p><p>Additionally, when you score a critical hit with this dagger, the target must succeed on a Wisdom saving throw against your Spellcasting DC. On failure, the target can not heal until the end of your next turn. On a success, the target is immune to this effect for 24 hours.</p>
 		</description>
 		<setters>
             <set name="keywords">sickle, kaalraatri, vestige, champion, spellcasting focus</set>
