@@ -9,7 +9,7 @@
 	</info>
 	
 	<!-- Advanced Weapons -->
-	<element name="Composite Longbow" type="Weapon" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_COMPOSITE_LONGBOW">
+	<element name="Composite Longbow" type="Weapon" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_COMPOSITE_LONGBOW">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<description><p><strong>Range.</strong> A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.</p><p><strong>Ammunition.</strong> You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. Loading a one-handed weapon requires a free hand. At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</p><p>If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon. A sling must be loaded to deal any damage when used in this way.</p><p><strong>Heavy.</strong> Creatures that are Small or Tiny have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small or Tiny creature to use effectively.</p><p><strong>Strong-Draw.</strong> An advanced ranged weapon with the strong-draw quality requires great strength to use. You must have a Strength of 13 or higher to use such a weapon, or you make attack rolls using the weapon with disadvantage. You add not only your Dexterity modifier to damage with a strong-draw weapon, but you also add 1 + half your Strength Modifier (rounded down) to the damage.</p><p><strong>Two-Handed.</strong> This weapon requires two hands to use. This property is relevant only when you attack with the weapon, not when you simply hold it.</p></description>
 		<setters>
@@ -24,7 +24,7 @@
 		</setters>
 	</element>
 	
-	<element name="Composite Shortbow" type="Weapon" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_COMPOSITE_SHORTBOW">
+	<element name="Composite Shortbow" type="Weapon" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_COMPOSITE_SHORTBOW">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED,ID_INTERNAL_WEAPON_GROUP_ADVANCED_RANGED_WEAPONS, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
 		<description><p><strong>Range.</strong> A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's maximum range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.</p><p><strong>Ammunition.</strong> You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. Loading a one-handed weapon requires a free hand. At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.</p><p>If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon. A sling must be loaded to deal any damage when used in this way.</p><p><strong>Strong-Draw.</strong> An advanced ranged weapon with the strong-draw quality requires great strength to use. You must have a Strength of 13 or higher to use such a weapon, or you make attack rolls using the weapon with disadvantage. You add not only your Dexterity modifier to damage with a strong-draw weapon, but you also add 1 + half your Strength Modifier (rounded down) to the damage.</p><p><strong>Two-Handed.</strong> This weapon requires two hands to use. This property is relevant only when you attack with the weapon, not when you simply hold it.</p></description>
 		<setters>
@@ -39,7 +39,7 @@
 		</setters>
 	</element>
 	
-	<element name="Blood Drinker" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_BLOOD_DRINKER">
+	<element name="Blood Drinker" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_BLOOD_DRINKER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		<description>
 			<p><strong>Champion's Weapon. </strong>The Blood Drinker is material manifestation of the divine sickle wielded by Goddess Kaalraatri, The Mother Death. The Blood Drinker, therefore, can be attuned by the anointed champion of Goddess Kaalraatri. Attuning to Blood Drinker also manifest proficiency with a sickle as well. The sickle can also be used as a spell focus and provides +2 bonus to spell attack rolls and the saving throw DCs of all of your spells.Melee attacks made by Blood Drinker does extra 2d6 Radiant or 2d6 Necrotic Damage, whichever the wielder may choose. If the target is a demon, the additional damage is doubled.</p><p>On DM's discretion, Blood Drinker may achieve Exalted Status, transforming into <strong>Exalted Blood Drinker</strong> weapon.</p><p>Additionally, when you score a critical hit with this dagger, the target must succeed on a Wisdom saving throw against your Spellcasting DC. On failure, the target can not heal until the end of your next turn. On a success, the target is immune to this effect for 24 hours.</p>
@@ -61,7 +61,7 @@
 	</element>
 	
 	<!-- Ammunitions -->
-	<element name="Dark Iron Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_DARK_IRON_ARROW">
+	<element name="Dark Iron Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_DARK_IRON_ARROW">
 		<description>
 			<p><em>Dark iron arrow</em> is particularly dense and hard imbued with cosmic energy from the meteorite it was extracted. A dark iron arrow has the metallic armor piercing property (-1 AC), but deal half damage against creature that have natural, or non-metal armor.</p>
 			<p class="indent">Once a <em>dark iron arrow</em> pierces a metallic armor, it becomes unusable.</p>
@@ -78,7 +78,7 @@
 		</setters>
 	</element>
 	
-	<element name="Flight Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_FLIGHT_ARROW">
+	<element name="Flight Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_FLIGHT_ARROW">
 		<description>
 			<p><em>Flight arrows</em> have thin shafts and light fletching. When fired from a bow, the normal and long range is increase by 40 ft.; however, attack rolls for targets within 30 ft. are made with disadvantage.</p>
 			<p class="indent">To craft flight arrows, <em>Woodcarver's tools</em> and <em>Carpenter's Tools</em> proficiency is required along with sufficient Cedar or similar wood. DC 12</p>
@@ -94,7 +94,7 @@
 		</setters>
 	</element>
 	
-	<element name="Hummerhead Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_HUMMERHEAD_ARROW">
+	<element name="Hummerhead Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_HUMMERHEAD_ARROW">
 		<description>
 			<p><em>The hummerhead arrows arrow</em> are specially designed to deal non-lethal bludgeoning damage to its target. These arrows do 1 die less damage (eg. 1d6 drops to 1d4) but on a critical hit these arrows apply the stunned condition effect to the target until the start of the your next turn. Also, if a creature falls to 0Hp from one of these arrows it does not roll for death saving throws and is instead unconcious.</p>
 		</description>
@@ -109,7 +109,7 @@
 		</setters>
 	</element>
 	
-	<element name="Snaring Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_SNARING_ARROW">
+	<element name="Snaring Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_SNARING_ARROW">
 		<description>
 			<p><em>The snaring arrows arrow</em> are specially designed to restrain its target. The arrow heads is a tiny spring mechanism that contains a concisely packed trap that springs out right before the arrow hits the target. Instead of contesting against target's AC, the target gets to roll acrobatics check against the attack roll to determine if it gets restrained or not. on a critical hit, the target is restrained automatically. As the snaring arrows are heavier than usual, the normal and long range is reduced by two third of the original range (rounded down).</p>
 			<p class="indent">The <em>snaring arrow</em> is recoverable but requires a new net for every use.</p>
@@ -125,7 +125,7 @@
 		</setters>
 	</element>
 	
-	<element name="Injection Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_INJECTION_ARROW">
+	<element name="Injection Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_INJECTION_ARROW">
 		<description>
 			<p>These arrow's heads are hollow and have storage equal to that of a vial. It contains a tiny mechanism similar to a syringe. Liquids held within never dry out, and are injected directly ino a creature struck, there the vial's effects are saved against with disadvantage. DC 14</p>
 			<p class="indent">An <em>injection arrow</em> is destroyed after use.</p>
@@ -142,7 +142,7 @@
 		</setters>
 	</element>
 
-	<element name="Blinding Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_BLINDING_ARROW">
+	<element name="Blinding Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_BLINDING_ARROW">
 		<description>
 			<p><em>Blinding Arrows</em> have a small clay pot with an opening inside, containing a reactive chemical. On hit, the chemical releases a bright flash, blinding the target if it fails a CON (DC 13) until the start of your next turn.</p>
 			<p class="indent">A <em>blinding arrow</em> is destroyed upon use.</p>
@@ -159,7 +159,7 @@
 		</setters>
 	</element>
 	
-	<element name="Corkscrew Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_CORKSCREW_ARROW">
+	<element name="Corkscrew Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_CORKSCREW_ARROW">
 		<description>
 			<p>Travels through water effectively than a normal arrow. It ignores the "ranged weapon attacks underwater combat rules" on page 198 of the PHB.</p>
 			<p class="indent">To craft Corkscrew arrow, <em>Woodcarver's tools</em> proficiency is required along with sufficient wood. DC 20</p>
@@ -175,7 +175,7 @@
 		</setters>
 	</element>
 	
-	<element name="Acid Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_ACID_ARROW">
+	<element name="Acid Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_ACID_ARROW">
 		<description>
 			<p>The arrow turns into a streak of acid mid-path. On a hit, the target takes 1d8 acid damage and the creature must make a successful DC14 CON save or take another 1d8 acid damage on subsequent turn. on a miss the target only takes half of initial damage and no damage on the following turn.</p>
 			<p class="indent">An <em>acid arrow</em> is destroyed after use.</p>
@@ -192,7 +192,7 @@
 		</setters>
 	</element>
 	
-	<element name="Explosive Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_EXPLOSIVE_ARROW">
+	<element name="Explosive Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_EXPLOSIVE_ARROW">
 		<description>
 			<p>On a hit, the <em>explosive arrow</em> bursts into a small pocket of explosion. The target takes additional 1d6 force damage and must make a successful DC14 DEX save or take another 1d6 fire damage</p>
 			<p class="indent">An <em>explosive arrow</em> is destroyed after use.</p>
@@ -209,7 +209,7 @@
 		</setters>
 	</element>
 
-	<element name="Ice Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_ICE_ARROW">
+	<element name="Ice Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_ICE_ARROW">
 		<description>
 			<p>The arrow turns into an ice shard mid-path. On a hit, the target takes 1d10 piercing damage and its speed reduces by 10 feet.</p>
 			<p class="indent">An <em>ice arrow</em> is destroyed after use.</p>
@@ -226,7 +226,7 @@
 		</setters>
 	</element>
 	
-	<element name="Necrotic Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_NECROTIC_ARROW">
+	<element name="Necrotic Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_NECROTIC_ARROW">
 		<description>
 			<p>The <em>necrotic arrow</em> has a skull fuming with necrotic energy for arrow head. On a hit, the arrow deals 1d4 bludgeoning damage and 1d10 necrotic damage. The target must succeed DC14 CON save or its Hit Points Maximum reduce by equivalent to the necrotic damage dealt.</p>
 			<p class="indent">A <em>necrotic arrow</em> is destroyed after use.</p>
@@ -243,7 +243,7 @@
 		</setters>
 	</element>
 	
-	<element name="Tormenting Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_TORMENTING_ARROW">
+	<element name="Tormenting Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_TORMENTING_ARROW">
 		<description>
 			<p>On a hit, the <em>tormenting arrow</em> transforms in a crown of lightning around target's head and deals additional 1d6 Psychic Damage. Additionally, the target must succeed DC14 WIS save or suffers from tormenting thoughts and visions that makes it hard for him to concentrate. The target has disadvantage on following saving throws and concentration checks till the end of the archer's next turn.</p>
 			<p class="indent">A <em>tormenting arrow</em> is destroyed after use.</p>
@@ -260,7 +260,7 @@
 		</setters>
 	</element>
 	
-	<element name="Radiant Arrow" type="Magic Item" source="Additions by Jay" id="ID_JAY_MAGIC_ITEM_RADIANT_ARROW">
+	<element name="Radiant Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_RADIANT_ARROW">
 		<description>
 			<p>On a hit, the <em>radiant arrow</em> explodes in a burst of radiant energy and the target must succeed DC14 WIS save or takes 2d6 Radiant Damage. On a successful save the target only takes half radiant damage. An undead has disadvantage on the saving throw.</p>
 			<p class="indent">A <em>radiant arrow</em> is destroyed after use.</p>
@@ -279,7 +279,7 @@
 	</element>
 	
 	<!-- Potions -->
-	<element name="Potion of Restoration" type="Magic Item" source="Additions by Jay" id="ID_JAY_ADDITIONS_MAGIC_ITEM_POTION_OF_RESTORATION">		
+	<element name="Potion of Restoration" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_ADDITIONS_MAGIC_ITEM_POTION_OF_RESTORATION">		
 		<description>
 			<p>When you drink this potion, you gain all the benefits you gain as if at the completion of a long rest. The potion appears to be stark red fluid in color that creates bright swirling tendrils on shaking the bottle that dissipate momentarily.</p>
 		</description>
@@ -293,7 +293,7 @@
 	</element>
 	
 	<!-- Wondrous Items -->
-	<element name="Eyes of the Owl" type="Magic Item" source="Additions by Jay" id="ID_JAY_ADDITIONS_MAGIC_ITEM_EYES_OF_THE_OWL">		
+	<element name="Eyes of the Owl" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_ADDITIONS_MAGIC_ITEM_EYES_OF_THE_OWL">		
 		<description>
 			<p>These Crystal lenses fit over the eyes. While wearing them, you can see much better than normal out to a range of 1 foot. You have advantage on Investigation checks that rely on sight while searching an area or studying an object within that range.</p>
 		</description>
@@ -308,7 +308,7 @@
 		</setters>
 	</element>
 	
-	<element name="Amethyst Die" type="Magic Item" source="Additions by Jay" id="ID_JAY_ADDITIONS_MAGIC_ITEM_AMETHYST_DIE">		
+	<element name="Amethyst Die" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_ADDITIONS_MAGIC_ITEM_AMETHYST_DIE">		
 		<description>
 			<p>This gaming die is carved from a fragment of powerful psionic crystal and resonates with a remnant of its power. This die has 3 charges and regains all expended charges daily at dawn. When you make an ability check, attack roll, or saving throw, you can expend 1 charge to roll a d6 and add the number rolled to the d20 roll. Immediately after the ability check, attack roll, or saving throw is resolved, you take psychic damage equal to twice the number you rolled on the d6.</p>
 		</description>
@@ -325,142 +325,142 @@
 	</element>
 	
 	<!-- Weapon properties -->
-	<element name="Armor Piercing" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING">
+	<element name="Armor Piercing" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING">
 		<description><p>An armor-piercing weapon is a melee weapon designed to punch through armor and thick hide alike. When you make an attack roll using an armor-piercing weapon, you gain a +1 bonus to the attack roll if your target is wearing armor or has natural armor.</p></description>
 		<sheet display="false" />
 	</element>
-	<element name="Blackpowder" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER">
+	<element name="Blackpowder" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_BLACKPOWDER">
 		<description><p>Blackpowder weapons fire projectiles with ear-splitting noise, shredding armor with deadly force. When fired, blackpowder weapons emit a deafening crack audible 300 feet away. A blackpowder weapon exposed to heavy rain, or submerged or similarly drenched in water, can’t fire until dried for 1 hour.</p>
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Brutal" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL">
+	<element name="Brutal" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_BRUTAL">
 		<description>
 			<p>A brutal weapon is designed for maximum damage. When you score a critical hit with a brutal weapon against a creature, you can roll an additional die of the weapon’s damage dice, adding it to the damage total.</p>
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Cumbersome" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_CUMBERSOME">
+	<element name="Cumbersome" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_CUMBERSOME">
 		<description>
 			<p>Cumbersome weapons are difficult to wield but are effective ranged tools for those strong enough to wield them. When making an attack with a cumbersome weapon, you must use your Strength modifier for the attack and damage rolls.</p>
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Damage" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_DAMAGE">
+	<element name="Damage" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_DAMAGE">
 		<description>
 			<p>An advanced weapon that has the damage property can deal an alternative form of damage. You can choose the type when you attack or when you hit with an attack from any of the damage types mentioned.</p>
 		</description>
 		<sheet display="false" />
 	</element>	
-	<element name="Defending" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING">
+	<element name="Defending" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_DEFENDING">
 		<description>
 			<p>A defending weapon is either made for parrying, has advanced techniques for use in parrying, or both. When you use a defending weapon, you can use your reaction to defend against a melee weapon attack that hits you. If you do, increase your AC by 1d4 against that attack.</p>
 		</description>
 		<sheet display="false" />
 	</element>	
-	<element name="Disarming" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING">
+	<element name="Disarming" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_DISARMING">
 		<description>
 			<p>A disarming weapon can catch a foe’s weapon, allowing you to remove it from their grasp. When an opponent misses you with a melee weapon attack, you can use your reaction to attempt to disarm them. Both you and the attacker must make contested attack rolls. If you roll higher, and the weapon is something the target can drop, the weapon falls from the target’s grasp, landing within 5 feet of the target in a space you choose. If you score a critical hit, and the attacker did not, you can send the weapon flying up to 15 feet away from the target into a space you choose instead. If you have a free hand when you score a critical hit this way, you can disarm the target so that you end up with the dropped weapon in your hand. If the attacker tied or rolled higher, then nothing happens.</p>
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Double" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE">
+	<element name="Double" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_DOUBLE">
 		<description>
 			<p>A two-handed, double weapon functions as two light weapons, one in each hand, for two-weapon fighting purposes. If a double weapon has the reach property, you can use only one of these properties during the same turn.</p>
 		</description>
 		<sheet display="false" />
 	</element>	
-	<element name="Entangling" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING">
+	<element name="Entangling" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_ENTANGLING">
 		<description>
 			<p>An entangling weapon can tie a target up. When you hit with an entangling weapon attack against a target no more than one size larger than you, you can use your bonus action to attempt to grapple the target. (This bonus-action use applies when you throw an entangling weapon because you’re throwing with special preparation.) You don’t need a free hand—the weapon fulfills that requirement. If you succeed, the target is grappled by you or the weapon if you’re no longer holding it.</p>
             <p>Until the grapple ends, you can’t use the entangling weapon to attack a different target. If you aren’t holding the entangling weapon, such as when you throw a gladiator net, the grapple continues, and the target needs to succeed at a DC 10 Dexterity (Acrobatics) or Strength (Athletics) check to escape the weapon.</p>
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Guard" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_GUARD">
+	<element name="Guard" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_GUARD">
 		<description>
 			<p>Guard weapons allow you to fight defensively, using the weapon’s long haft or flat surface for parrying. While you wield a guard weapon, whenever a hostile creature moves within your reach when you didn’t move on your last turn, you can use your reaction to make a weapon attack with the guard weapon against that creature. If the attack hits, then it deals no damage, but the target immediately stops moving, and its speed becomes 0 until the end of its turn.</p>
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Hafted" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED">
+	<element name="Hafted" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_HAFTED">
 		<description>
 			<p>A hafted weapon’s haft can function well as an off-hand attack. When you attack with only the hafted weapon, you can use a bonus action to make a melee weapon attack with the haft. The haft deals 1d4 bludgeoning damage, and you add your ability modifier to damage as you would for other sorts of two-weapon fighting. If you have feats that mimic this ability, the damage dice becomes 1d8 instead.</p>
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Magazine" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE">
+	<element name="Magazine" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_MAGAZINE">
 		<description>
 			<p>A weapon with the magazine property also has a number and an ammunition type. The weapon holds that amount and type of ammo, which you can expend before needing to reload the weapon. Removing or loading a magazine counts as your interaction with an object, so doing both in one turn takes an action. A magazine weapon comes with one empty magazine included in the weapon’s cost and weight. Loading an empty magazine with ammunition takes 1 minute.</p>
 		</description>
 		<sheet display="false" />
 	</element>	
-	<element name="Momentum" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM">
+	<element name="Momentum" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_MOMENTUM">
 		<description>
 			<p>Momentum weapons allow you to deliver devastating attacks as part of rapid movement. When you hit a creature with a momentum weapon after you moved 20 feet or more in a straight line during the same turn, upgrade the damage dice to the weapon’s momentum dice value.</p>
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Monk" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_MONK">
+	<element name="Monk" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_MONK">
 		<description>
 			<p>A monk gains proficiency with advanced monk weapons at 5th level.</p>
 		</description>
 		<sheet display="false" />
 	</element>	
-	<element name="Precise" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_PRECISE">
+	<element name="Precise" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_PRECISE">
 		<description>
 			<p>When you attack with a precise weapon, you can score a critical hit on a roll of 19 or 20. If a feature or item you have increases the numbers you can roll for a critical hit, a precise weapon increases that range by one. A fighter with Superior Critical, for instance, scores a critical hit on a roll of 17 to 20 with a precise weapon. Any roll lower than 20 must still hit to be a critical hit—it’s not an automatic hit as if the roll was a 20.</p>
 		</description>
 		<sheet display="false" />
 	</element>	
-	<element name="Reach" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_REACH">
+	<element name="Reach" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_REACH">
 		<description>
 			    <p>Besides the normal rules for this property, if a reach weapon has the double property, you can use only one of these properties during the same turn.</p>
 		</description>
 		<sheet display="false" />
 	</element>	
-	<element name="Repeater" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER">
+	<element name="Repeater" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_REPEATER">
 		<description>
 			   <p>Repeater weapons can fire ammo in quick succession, using multiple barrels or quick-reloading mechanisms. When you take the attack action with a repeater weapon, you can use a bonus action to attack again with the same weapon. You add your ability modifier to the damage the bonus-action shot only if that modifier is negative.</p>
 		</description>
 		<sheet display="false" />
 	</element>		
-	<element name="Restraining" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_RESTRAINING">
+	<element name="Restraining" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_RESTRAINING">
 		<description>
 			<p>Only entangling weapons can be restraining weapons. If you have a target grappled with a restraining weapon, and you succeed on another attempt to grapple the target with the same weapon, the target becomes restrained instead of grappled. The target then remains restrained until the grapple ends. If you stop holding the restraining weapon, the target can escape as if from an unheld entangling weapon.</p>
 		</description>
 		<sheet display="false" />
 	</element>		
-	<element name="Returning" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_RETURNING">
+	<element name="Returning" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_RETURNING">
 		<description>
 			<p>A returning weapon allows you to hurl the weapon in such a way that it returns to you. When you attack with a returning weapon, if you roll an even number on the d20, the weapon returns to you by the end of your turn. You can catch the weapon if you have a hand free to do so. If not, the weapon lands at a random point within 5 feet of you. If you roll an odd number on the d20 for the attack roll, the weapon fails to return to you.</p>
 		</description>
 		<sheet display="false" />
 	</element>		
-	<element name="Scatter" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER">
+	<element name="Scatter" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_SCATTER">
 		<description>
 			<p>Scatter weapons can devastate multiple enemies at once. When you take the Attack action and hit a creature with a scatter weapon, measure the weapon’s scatter range from the square the target you hit occupies to a point farther from you. Creatures other than the original target that fall within the weapon’s scatter range must attempt a Dexterity saving throw (DC of 8 + your proficiency bonus + the ability score modifier you use to determine damage for the scatter weapon). Creatures that fail take damage equal to the ability score modifier you use to determine damage with the weapon (minimum 1). This damage is of the same type you dealt to the original target.</p>
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Set" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_SET">
+	<element name="Set" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_SET">
 		<description>
 			<p>You can use a bonus action on your turn to prepare, or “set,” a set weapon against a foe moving toward you. A weapon becomes unset if you move or take any action after setting it. If a target enters your reach while you have the weapon set, you can use your reaction to make a melee attack with the set weapon against that target. If you hit, and your target moved 20 feet or more toward you before the attack, you can roll one of the weapon’s damage dice one additional time and add it to the damage total.</p>
 		</description>
 		<sheet display="false" />
 	</element>	
-	<element name="Strong-Draw" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW">
+	<element name="Strong-Draw" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_STRONG_DRAW">
 		<description>
 			<p>An advanced ranged weapon with the strong-draw quality requires great strength to use. You must have a Strength of 13 or higher to use such a weapon, or you make attack rolls using the weapon with disadvantage. You add not only your Dexterity modifier to damage with a strong-draw weapon, but you also add 1 + half your Strength Modifier (rounded down) to the damage.</p>
 		</description>
 		<sheet display="false" />
-	</element>		<element name="Swift" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT">
+	</element>		<element name="Swift" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_SWIFT">
 		<description>
 			<p>Swift weapons help you recover quickly from misses. When you miss with a swift weapon, you gain advantage on the first attack roll you make with the weapon against the same target before the end of your next turn.</p>
 		</description>
 		<sheet display="false" />
 	</element>		
-	<element name="Tripping" type="Weapon Property" source="Additions by Jay" id="ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING">
+	<element name="Tripping" type="Weapon Property" source="Jay Homebrew and Additions" id="ID_GFG_GHPG_WEAPON_PROPERTY_TRIPPING">
 		<description>
 			<p>A tripping weapon allows users to knock targets prone. When you hit with a tripping weapon, you can use a bonus action to force your target to attempt a Strength saving throw, provided the target is no more than one size larger than you. The DC for the saving throw equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). If the target fails, it falls prone.</p>
 		</description>
