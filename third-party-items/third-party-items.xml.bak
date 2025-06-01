@@ -3,7 +3,7 @@
 	<info>
 		<name>Third Party Items</name>
 		<description>This is a collection of third party items from several Non-WOTC sources that we have incorporated in Maa games</description>
-		<update version="1.03">
+		<update version="1.04">
 			<file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
 		</update>
 	</info>
@@ -305,6 +305,21 @@
 			<set name="rarity">Common</set>
 			<set name="stackable">false</set>
 			<set name="slot">head</set>
+		</setters>
+	</element>
+	
+	<element name="Kashaandhra's Amulet of Appearance" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_ADDITIONS_KASH_AMMULET_OF_APPEARANCE">		
+		<description>
+			<p>This amulet enhances and glamourizes your appearence. Even if you have permanent scars, marks, or if you are wounded, you always appear to be at your best appearance. Your armor, weapons, and other equipment always shine as if just polished. Additionally, you're immune to the <i>charmed</i> condition.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">2500</set>
+			<set name="weight" lb="0.1">0.1 lbs.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">false</set>
+			<set name="slot">neck</set>
 		</setters>
 	</element>
 	
