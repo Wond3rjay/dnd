@@ -3,7 +3,7 @@
 	<info>
 		<name>Third Party Items</name>
 		<description>This is a collection of third party items from several Non-WOTC sources that we have incorporated in Maa games</description>
-		<update version="1.05">
+		<update version="1.06">
 			<file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
 		</update>
 	</info>

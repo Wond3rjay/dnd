@@ -74,7 +74,7 @@
 			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">30</set>
+			<set name="cost" currency="gp">3</set>
 		</setters>
 	</element>
 	
@@ -89,8 +89,8 @@
 			<set name="type" addition="arrow">Weapon</set>
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
-			<set name="weight" lb="0.4">0.4 lb.</set>
-			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="0.4">0.3 lb.</set>
+			<set name="cost" currency="gp">0.15</set>
 		</setters>
 	</element>
 	
@@ -105,7 +105,7 @@
 			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">1</set>
+			<set name="cost" currency="gp">0.05</set>
 		</setters>
 	</element>
 	
@@ -120,8 +120,8 @@
 			<set name="type" addition="arrow">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="stackable">true</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="1">0.5 lb</set>
+			<set name="cost" currency="gp">0.4</set>
 		</setters>
 	</element>
 	
@@ -137,8 +137,8 @@
 			<set name="type" addition="arrow">Weapon</set>
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="1">0.4 lb.</set>
+			<set name="cost" currency="gp">1</set>
 		</setters>
 	</element>
 
@@ -170,8 +170,8 @@
 			<set name="type" addition="arrow">Weapon</set>
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="1">0.5 lb.</set>
+			<set name="cost" currency="gp">0.15</set>
 		</setters>
 	</element>
 	
@@ -179,7 +179,7 @@
 		<description>
 			<p>The arrow turns into a streak of acid mid-path. On a hit, the target takes 1d8 acid damage and the creature must make a successful DC14 CON save or take another 1d8 acid damage on subsequent turn. on a miss the target only takes half of initial damage and no damage on the following turn.</p>
 			<p class="indent">An <em>acid arrow</em> is destroyed after use.</p>
-			<p class="indent">Only an artificer can craft an acid arrow. <em>Alchemist Supplies</em> and <em>Woodcarver's tools</em> proficiency is required along with access to sufficient vials of acid (half the number of arrows crafted) and wood. The artificer must also spend one spell slot for every three arrows to infuse them with transmutation energy.</p>
+			<p class="indent">Only an artificer can craft an acid arrow. The artificer must spend one spell slot for every three arrows to infuse them with transmutation energy, DC 14. <em>Components Required:</em> powdered rhubarb leaf and an adder's stomach.</p>
 		</description>
 		<setters>
 			<set name="keywords">arrow</set>
@@ -187,8 +187,7 @@
 			<set name="type" addition="arrow">Weapon</set>
 			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="1">0.5 lb.</set>
 		</setters>
 	</element>
 	
@@ -196,16 +195,15 @@
 		<description>
 			<p>On a hit, the <em>explosive arrow</em> bursts into a small pocket of explosion. The target takes additional 1d6 force damage and must make a successful DC14 DEX save or take another 1d6 fire damage</p>
 			<p class="indent">An <em>explosive arrow</em> is destroyed after use.</p>
-			<p class="indent">Only an artificer can craft an explosive arrow. <em>Alchemist Supplies</em> and <em> Woodcarver's tools </em> proficiency is required along with access to sufficient sulfur, bat guamo and wood. The artificer must also spend one spell slot for every three arrows to infuse them with evocation energy.</p>
+			<p class="indent">Only an artificer can craft an explosive arrow. The artificer must spend one spell slot for every three arrows to infuse them with evocation energy, Arcana Check DC 14. <em>Components Required:</em> sufficient sulfur and bat guamo.</p>
 		</description>
 		<setters>
 			<set name="keywords">arrow</set>
 			<set name="category">Ammunition</set>
 			<set name="type" addition="arrow">Weapon</set>
-			<set name="rarity">Uncommon</set>
+			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="1">0.5 lb.</set>
 		</setters>
 	</element>
 
@@ -213,7 +211,7 @@
 		<description>
 			<p>The arrow turns into an ice shard mid-path. On a hit, the target takes 1d10 piercing damage and its speed reduces by 10 feet.</p>
 			<p class="indent">An <em>ice arrow</em> is destroyed after use.</p>
-			<p class="indent">Only an artificer can craft an ice arrow. <em>Alchemist Supplies</em> and <em>Woodcarver's tools</em> proficiency is required along with access to sufficient water or ice and wood. The artificer must also spend one spell slot for every three arrows to infuse them with evocation energy.</p>
+			<p class="indent">Only an artificer can craft an ice arrow. The artificer must spend one spell slot for every three arrows to infuse them with evocation energy, Arcana Check DC 14. <em>Components Required:</em> access to sufficient water or ice. </p>
 		</description>
 		<setters>
 			<set name="keywords">arrow</set>
@@ -221,8 +219,7 @@
 			<set name="type" addition="arrow">Weapon</set>
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">30</set>
+			<set name="weight" lb="1">0.5 lb.</set>
 		</setters>
 	</element>
 	
@@ -230,16 +227,15 @@
 		<description>
 			<p>The <em>necrotic arrow</em> has a skull fuming with necrotic energy for arrow head. On a hit, the arrow deals 1d4 bludgeoning damage and 1d10 necrotic damage. The target must succeed DC14 CON save or its Hit Points Maximum reduce by equivalent to the necrotic damage dealt.</p>
 			<p class="indent">A <em>necrotic arrow</em> is destroyed after use.</p>
-			<p class="indent">Only an artificer can craft a necrotic arrow. <em>Woodcarver's tools</em> proficiency is required along with access to a small skull replica worth 5 gp, two square feet of dead remains, and wood. The artificer must also spend one spell slot for every three arrows to infuse them with necrotic energy.</p>
+			<p class="indent">Only an artificer can craft a necrotic arrow. The artificer must spend one spell slot for every three arrows to infuse them with necrotic energy, Arcana Check DC 14. <em>Components Required:</em> Access to a small skull worth 5 gp, two square feet of dead remains. </p>
 		</description>
 		<setters>
 			<set name="keywords">arrow</set>
 			<set name="category">Ammunition</set>
 			<set name="type" addition="arrow">Weapon</set>
-			<set name="rarity">Uncommon</set>
+			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">35</set>
+			<set name="weight" lb="1">0.5 lb.</set>
 		</setters>
 	</element>
 	
@@ -247,16 +243,15 @@
 		<description>
 			<p>On a hit, the <em>tormenting arrow</em> transforms in a crown of lightning around target's head and deals additional 1d6 Psychic Damage. Additionally, the target must succeed DC14 WIS save or suffers from tormenting thoughts and visions that makes it hard for him to concentrate. The target has disadvantage on following saving throws and concentration checks till the end of the archer's next turn.</p>
 			<p class="indent">A <em>tormenting arrow</em> is destroyed after use.</p>
-			<p class="indent">Only an artificer can craft a tormenting arrow. <em>Woodcarver's tools</em> proficiency is required along with access to a tiny humanoid replica poked by 5 pins and wood. The artificer must also spend one spell slot for every three arrows to infuse them with psychic energy.</p>
+			<p class="indent">Only an artificer can craft a tormenting arrow. The artificer must also spend one spell slot for every three arrows to infuse them with psychic energy, Arcana Check DC 14. <em>Components Required:</em> A tiny humanoid replica poked by 5 pins and wood.</p>
 		</description>
 		<setters>
 			<set name="keywords">arrow</set>
 			<set name="category">Ammunition</set>
 			<set name="type" addition="arrow">Weapon</set>
-			<set name="rarity">Uncommon</set>
+			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="1">0.5 lb.</set>
 		</setters>
 	</element>
 	
@@ -264,17 +259,50 @@
 		<description>
 			<p>On a hit, the <em>radiant arrow</em> explodes in a burst of radiant energy and the target must succeed DC14 WIS save or takes 2d6 Radiant Damage. On a successful save the target only takes half radiant damage. An undead has disadvantage on the saving throw.</p>
 			<p class="indent">A <em>radiant arrow</em> is destroyed after use.</p>
-			<p class="indent">Only an artificer can craft a radiant arrow. <em>Woodcarver's tools</em> proficiency is required along with access to a 
-			holy symbol or a religious tome, or the arrow head must be carved in proximity of a shrine, temple, or a god's image. The artificer must also spend one spell slot for every three arrows to infuse them with radiant energy.</p>
+			<p class="indent">Only an artificer can craft a radiant arrow. The artificer must spend one spell slot for every three arrows to infuse them with radiant energy, Arcana Check DC 14. <em>Components Required:</em> A 
+			holy symbol and holy water blessed by a cleric or a paladin in the name of their deity.</p>
 		</description>
 		<setters>
 			<set name="keywords">arrow</set>
 			<set name="category">Ammunition</set>
 			<set name="type" addition="arrow">Weapon</set>
-			<set name="rarity">Uncommon</set>
+			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">40</set>
+			<set name="weight" lb="1">0.5 lb.</set>
+		</setters>
+	</element>
+	
+	<element name="Lightning Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_LIGHTNING_ARROW">
+		<description>
+			<p>The arrow turns into a streak of lightning mid-path. On a hit, the target takes 1d10 Lightning Damageand anyone behind the target in the trajectory of the arrow within another 15 feet also takes the same amount of damage if the attack roll would hit them.</p>
+			<p class="indent">A <em>lightning arrow</em> is destroyed after use.</p>
+			<p class="indent">Only an artificer can craft a lightning arrow. The artificer must spend one spell slot for every three arrows to infuse them with radiant energy, Arcana Check DC 14. <em>Components Required:</em> A 
+			bit of fur and a rod of amber, crystal, or glass.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">0.5 lb.</set>
+		</setters>
+	</element>
+
+	<element name="Thunder Arrow" type="Magic Item" source="Jay Homebrew and Additions" id="ID_JAY_MAGIC_ITEM_THUNDER_ARROW">
+		<description>
+			<p>Choose a point on the ground or an object in your bow's range, the <em>thunder arrow</em> when shot pointed upwards turn into a rumble of thundering sound and cascade at the chosen point. Each creature within 10 feet radius of the point must make a DC 14 CON Save. They take 2d8 thunder damage on a failed save or half damage if they succeed.</p>
+			<p class="indent">A <em>thunder arrow</em> is destroyed after use.</p>
+			<p class="indent">Only an artificer can craft a lightning arrow. The artificer must spend one spell slot for every three arrows to infuse them with radiant energy, Arcana Check DC 14. <em>Components Required:</em> A 
+			bit of fur and a rod of amber, crystal, or glass.</p>
+		</description>
+		<setters>
+			<set name="keywords">arrow</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="arrow">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+			<set name="weight" lb="1">0.5 lb.</set>
 		</setters>
 	</element>
 	
