@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Monk (By Jay)</name>
-		<description>The Better Monk class by Jay.</description>
-		<author abbreviation="JAY" url="">Jay</author>
-		<update version="1.1.12">
+		<update version="1.1.13">
 			<file name="class-monk-revised.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/classes/class-monk-revised.xml" />
 		</update>
 	</info>

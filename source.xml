@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.1.12">
+		<update version="1.1.13">
 			<file name="source.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/source.xml" />
 		</update>
 	</info>
@@ -13,7 +13,7 @@
 			<set name="abbreviation">JAY</set>
 			<set name="url"></set>
 			<set name="image"></set>
-			<set name="author" abbreviation="JAY" url="">Jay</set>
+			<set name="author" abbreviation="JAY" url="">Jay and Various Sources</set>
 			<set name="third-party">true</set>
 			<set name="release">2025</set>
 		</setters>
