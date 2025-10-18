@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.1.13">
-			<file name="class-monk-revised.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/classes/class-monk-revised.xml" />
+		<update version="1.1.14">
+			<file name="class-monk-revised.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/class-monk-revised.xml" />
 		</update>
 	</info>
 
