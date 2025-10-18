@@ -5,7 +5,7 @@
 		<author url="">Jay and Various Sources</author>
 		<description>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games. The new Fantastic Fletcher update is Live! Sidenote, Fixed Goddess Kaalraatri's vestige-champion weapon's additional damage.</description>
 		<source>Jay and Various Sources</source>
-		<update version="1.05">
+		<update version="1.06">
 			<file name="jay-addition.index" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jay-addition.index" />
 		</update>
 	</info>

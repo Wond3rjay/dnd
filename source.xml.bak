@@ -7,7 +7,7 @@
 	</info>
 	<element name="Jay Homebrew and Additions" type="Source" source="Core" id="ID_JAY_ADDITIONS">
 		<description>
-			<p><strong>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games</p>
+			<p>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games</p>
 		</description>
 		<setters>
 			<set name="abbreviation">JAY</set>
