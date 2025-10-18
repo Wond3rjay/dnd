@@ -4,7 +4,7 @@
 		<name>Monk by Jay</name>
 		<description>Rework of the Monk Class by Jay.</description>
 		<author url="">Jay and Various Sources</author>
-		<update version="1.1.15">
+		<update version="1.7">
 			<file name="class-monk-revised.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/class-monk-revised.xml" />
 		</update>
 	</info>

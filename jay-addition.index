@@ -5,12 +5,13 @@
 		<author url="">Jay and Various Sources</author>
 		<description>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games. The new Fantastic Fletcher update is Live! Sidenote, Fixed Goddess Kaalraatri's vestige-champion weapon's additional damage. Now with Reworked Monk Class.</description>
 		<source>Jay and Various Sources</source>
-		<update version="1.1.14">
+		<update version="1.7">
 			<file name="jay-addition.index" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jay-addition.index" />
 		</update>
 	</info>
 	<files>
-     <file name="source.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/source.xml" />	
+     <file name="source.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/source.xml" />
+	 <file name="class-monk-revised.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/class-monk-revised.xml" />
 	 <file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml" />
 	 <file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
 	</files>
