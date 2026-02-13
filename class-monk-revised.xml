@@ -5,7 +5,7 @@
 		<description>Revised Monk by Jay.</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide to Maa</source>
-		<update version="2.0.2">
+		<update version="2.0.3">
 			<file name="class-monk-revised.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/class-monk-revised.xml" />
 		</update>
 	</info>
@@ -320,9 +320,9 @@
 		<rules>
 			<select type="Class Feature" name="Improvement Option (Monk 4)" supports="Improvement Option,Monk,4" level="4" />
 			<select type="Class Feature" name="Improvement Option (Monk 8)" supports="Improvement Option,Monk,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Monk 8)" supports="Improvement Option,Monk,10" level="10" />
+			<select type="Class Feature" name="Improvement Option (Monk 10)" supports="Improvement Option,Monk,10" level="10" />
 			<select type="Class Feature" name="Improvement Option (Monk 12)" supports="Improvement Option,Monk,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (Monk 8)" supports="Improvement Option,Monk,14" level="14" />
+			<select type="Class Feature" name="Improvement Option (Monk 14)" supports="Improvement Option,Monk,14" level="14" />
 			<select type="Class Feature" name="Improvement Option (Monk 16)" supports="Improvement Option,Monk,16" level="16" />
 			<select type="Class Feature" name="Improvement Option (Monk 19)" supports="Improvement Option,Monk,19" level="19" />
 		</rules>
