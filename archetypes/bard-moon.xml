@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>College of Moon</name>
+		<description>College of Moon subclass for Bards from Jay's Guide to Maa</description>
+		<author>Jay Ahuja</author>
+		<source>Jay's Guide to Maa</source>
+		<update version="2.0">
+			<file name="bard-moon.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-moon.xml" />
+		</update>
+	</info>
+	<element name="College of Moon" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_COLLEGE_OF_Moon">
+		<supports>Bard College</supports>
+		<description>
+			<p><em>Inspire Allies with Primal Tales</em></p>
+			<p>The College of the Moon traces its origins to the ancient druidic circles of night, who entrusted the first Bards of this tradition with chronicling the stories of moon worshippers and their connection to feywild. Bards of this college draw from the fey magic and the primal power of the moonwells to bolster their allies, protect the natural world, and inspire their bardic works.</p>
+			<div element="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_PRIMAL_LORE" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_BLESSING_MOONLIGHT" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR" />
+		</description>
+		<sheet display="false">
+			<description>Bards of Moon college draw from the fey magic and the primal power of the moonwells to bolster their allies, protect the natural world, and inspire their bardic works.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_PRIMAL_LORE" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_BLESSING_MOONLIGHT" level="6" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR" level="14" />
+		</rules>
+	</element>
+	
+	<element name="Moon's Inspiration" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_MOONS_INSPIRATION</requirements>
+		<description>
+			<p><em>3rd-level College of Moon feature</em></p>
+			<p>The primal and ever-changing power of the moon flows through you, granting you the following benefits.</p>
+			<p class="indent"><strong> Inspired Eclipse.</strong> When you take a Bonus Action to give a creature a Bardic Inspiration die, you can have the Invisible condition and teleport up to 30 feet to an unoccupied space you can see as part of that Bonus Action. This invisibility lasts until the start of your next turn and ends early immediately after you make an attack roll, deal damage, or cast a spell.</p>
+			<p class="indent"><strong>Lunar Vitality.</strong> Once per turn when you restore Hit Points to a creature with a spell, you can expend a Bardic Inspiration die and increase the amount of Hit Points restored by a number equal to a roll of the Bardic Inspiration die. The creature's Speed also increases by 10 feet until the end of its next turn.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION_ECLIPSE"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION_LUNAR_VITALITY"/>
+		</rules>
+	</element>
+	
+	<element name="Inspired Eclipse" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION_ECLIPSE">
+		<compendium display="false" />
+		<supports>Moon's Inspiration</supports>
+		<sheet>
+			<description>When you take a Bonus Action to give a creature a Bardic Inspiration die, you can have the Invisible condition and teleport up to 30 feet to an unoccupied space you can see as part of that Bonus Action. This invisibility lasts until the start of your next turn and ends early immediately after you make an attack roll, deal damage, or cast a spell.</description>
+		</sheet>
+	</element>
+	
+	<element name="Lunar Vitality" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION_LUNAR_VITALITY">
+		<compendium display="false" />
+		<supports>Moon's Inspiration</supports>
+		<sheet usage="1/Turn">
+			<description>Once per turn when you restore Hit Points to a creature with a spell, you can expend a Bardic Inspiration die and increase the amount of Hit Points restored by a number equal to a roll of the Bardic Inspiration die. The creature's Speed also increases by 10 feet until the end of its next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Primal Lore" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_PRIMAL_LORE">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_PRIMAL_LORE</requirements>
+		<description>
+			<p><em>3rd-level College of Moon feature</em></p>
+			<p>You learn Druidic and one cantrip from the Druid spell list. It counts as a Bard spell for you but doesn't count against the number of cantrips you know. Whenever you gain a Bard level, you can replace this cantrip with another cantrip of your choice from the Druid spell list.</p>
+			<p>Additionally, choose one of the following skills: Animal Handling, Insight, Medicine, Nature, Perception, or Survival. You have proficiency in that skill.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_DRUIDIC"/>
+			<select type="Spell" name="Cantrip (Primal Lore)" supports="Druid,0" number="1"/>
+			<select type="Proficiency" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION"/>
+		</rules>
+	</element>
+	
+	<element name="Blessing of Moonlight" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_BLESSING_MOONLIGHT">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_BLESSING_MOONLIGHT</requirements>
+		<description>
+			<p><em>6th-level College of Moon feature</em></p>
+			<p>You always have the Moonbeam spell prepared.</p>
+			<p>When you cast Moonbeam, you can modify the spell so that you glow faintly while the spell is active. While glowing, you shed Dim Light out to 5 feet, and whenever a creature fails its saving throw against the effects of this Moonbeam, another creature of your choice that you can see within 60 feet of yourself regains 2d4 Hit Points.</p>
+			<p>Once you use this feature to modify a casting of Moonbeam, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet usage="1/long Rest">
+			<description>While casting Moonbeam, once per long rest you can modify the spell to make yourself shed Dim Light out to 5 feet while the spell is active. Whenever a creature fails its saving throw against the effects of this Moonbeam, another creature of your choice that you can see within 60 feet of yourself regains 2d4 Hit Points.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM"/>
+		</rules>
+	</element>
+	
+	<element name="Eventide's Splendor" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_EVENTIDES_SPLENDOR</requirements>
+		<description>
+			<p><em>14th-level College of Moon feature</em></p>
+			<p>You become suffused with the might of the moon, improving your Moon's Inspiration in the following ways.</p>
+			<p><strong>Shadow of the New Moon.</strong> When you use Inspired Eclipse, the creature who received the Bardic Inspiration die can also have the Invisible condition and immediately take a Reaction to teleport up to 30 feet to an unoccupied space it can see. The creature remains Invisible until the start of its next turn.</p>
+			<p><strong>Vibrance of the Full Moon.</strong> When you use Lunar Vitality, you can roll 1d6 and use the number rolled in place of expending a Bardic Inspiration die.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR_SHADOW"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR_VIBRANCE"/>
+		</rules>
+	</element>
+	
+	<element name="Shadow of the New Moon" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR_SHADOW">
+		<compendium display="false" />
+		<supports>Eventide's Splendor</supports>
+		<sheet>
+			<description>When you use Inspired Eclipse, the creature who received the Bardic Inspiration die can also have the Invisible condition and immediately take a Reaction to teleport up to 30 feet to an unoccupied space it can see. The creature remains Invisible until the start of its next turn</description>
+		</sheet>
+	</element>
+	
+	<element name="Vibrance of the Full Moon" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR_VIBRANCE">
+		<compendium display="false" />
+		<supports>Eventide's Splendor</supports>
+		<sheet>
+			<description>When you use Lunar Vitality, you can roll 1d6 and use the number rolled in place of expending a Bardic Inspiration die.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Moon's Inspiration Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_MOONS_INSPIRATION" />
+	<element name="Primal Lore Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_PRIMAL_LORE" />
+	<element name="Blessing of Moonlight Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_BLESSING_MOONLIGHT" />
+	<element name="Eventide's Splendor Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_EVENTIDES_SPLENDOR" />
+
+</elements>

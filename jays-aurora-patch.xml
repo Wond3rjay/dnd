@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Jay's Aurora Patch</name>
+		<description>This file improves base coding to provide more functionality to Aurora and Flare</description>
+		<author>Jay Ahuja</author>
+		<source>Jay's Guide to Maa</source>
+		<update version="2.0">
+			<file name="jays-aurora-patch.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jays-aurora-patch.xml" />
+		</update>
+	</info>
+	
+	<element name="Font of Magic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_FONT_OF_MAGIC</requirements>
+		<description>
+			<p>At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.</p>
+			<h5>SORCERY POINTS</h5>
+			<p>You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.</p>
+			<h5>FLEXIBLE CASTING</h5>
+			<p>You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.</p>
+			<p class="indent"><strong><em>Creating Spell Slots.</em></strong> You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</p>
+			<p class="indent">Any spell slot you create with this feature vanishes when you finish a long rest.</p>
+			<h5 class="caption">CREATING SPELLSLOTS</h5>
+			<table>
+				<thead>
+					<tr><td class="col-20">Spell Slot Level</td><td>Sorcery Point Cost</td></tr>
+				</thead>
+				<tr><td>1st</td><td>2</td></tr>
+				<tr><td>2nd</td><td>3</td></tr>
+				<tr><td>3rd</td><td>5</td></tr>
+				<tr><td>4th</td><td>6</td></tr>
+				<tr><td>5th</td><td>7</td></tr>
+			</table>
+			<p class="indent"><strong><em>Converting a Spell Slot to Sorcery Points.</em></strong> As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot’s level.</p>
+		</description>
+		<sheet alt="Sorcery Points" action="Bonus Action" usage="{{sorcery-points}}/Long Rest">
+			<description>You have {{sorcery-points}} Sorcery Points. You can transform unexpended sorcery points into one spell slot (2 > 1st, 3 > 2nd, 5 > 3rd, 6 > 4th, 7 > 5th) on your turn or you can expend one spell slot and gain a number of sorcery points equal to the slot’s level.</description>
+		</sheet>
+		<rules>
+			<stat name="sorcery-points" value="level:sorcerer" />
+		</rules>
+	</element>
+	
+	<element name="Metamagic Adept" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_FEAT_METAMAGIC_ADEPT">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<description>
+			<p><em>Prerequisite: Spellcasting or Pact Magic feature</em></p>
+			<p>You’ve learned how to exert your will on your spells to alter how they function:</p>
+			<ul>
+				<li>You learn two Metamagic options of your choice from the sorcerer’s class. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. Whenever you reach a level that grants the Ability Score Improvement feature, you can replace one of these Metamagic options with another one from the sorcerer class.</li>
+				<li>You gain 2 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet alt="Sorcery Points" usage="{{sorcery-points}}/Long Rest">
+			<description>You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. You gain 2 sorcery points to spend on Metamagic. You regain all spent sorcery points when you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Metamagic, Metamagic Adept" supports="Metamagic" number="2" />
+			<stat name="sorcery-points" value="2" />
+		</rules>
+	</element>
+	
+	<element name="Ki" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI</requirements>
+		<description>
+			<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.</p>
+			<p class="indent">You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.</p>
+			<p class="indent">When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p>
+			<p class="indent">Some of your ki features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:</p>
+			<center>
+				<p><strong>Ki save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h6>FLURRY OF BLOWS</h6>
+			<p>Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.</p>
+			<h6>PATIENT DEFENSE</h6>
+			<p>You can spend 1 ki point to take the Dodge action as a bonus action on your turn.</p>
+			<h6>STEP OF THE WIND</h6>
+			<p>You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</p>
+		</description>
+		<sheet usage="{{ki:points}}/Short Rest">
+			<description>You have {{ki:points}} Ki Points and your Ki DC is {{ki:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="ki:points" value="level:monk" />
+			<stat name="ki:dc" value="8" />
+			<stat name="ki:dc" value="proficiency" />
+			<stat name="ki:dc" value="wisdom:modifier" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_FLURRY_OF_BLOWS" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_PATIENT_DEFENSE" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_STEP_OF_THE_WIND" />
+		</rules>
+	</element>
+	
+</elements>

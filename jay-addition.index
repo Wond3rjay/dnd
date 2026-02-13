@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<name>Jay Homebrew and Additions</name>
-		<author url="">Jay and Various Sources</author>
-		<description>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games. The new Fantastic Fletcher update is Live! Sidenote, Fixed Goddess Kaalraatri's vestige-champion weapon's additional damage. Now with Reworked Monk Class.</description>
-		<source>Jay and Various Sources</source>
-		<update version="1.7">
+		<name>Jay's Guide to Maa</name>
+		<author>Jay Ahuja</author>
+		<description>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games. The new Fantastic Fletcher update is Live! Sidenote, Fixed Goddess Kaalraatri's vestige-champion weapon's additional damage. Now with Reworked Monk Class, Maarut Lineage.</description>
+		<source>Jay's Guide to Maa</source>
+		<update version="2.0">
 			<file name="jay-addition.index" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jay-addition.index" />
 		</update>
 	</info>
 	<files>
-     <file name="source.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/source.xml" />
-	 <file name="class-monk-revised.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/class-monk-revised.xml" />
-	 <file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml" />
-	 <file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
+		<file name="source.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/source.xml" />
+		<file name="class-monk-revised.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/class-monk-revised.xml" />
+		<file name="maarut.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/races/maarut.xml" />
+		<file name="naga.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/races/naga.xml" />
+		<file name="ranger-improved-hunter.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/ranger-improved-hunter.xml" />
+		<file name="rogue-improved-mastermind.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/rogue-improved-mastermind.xml" />
+		<file name="bard-improved-whispers.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-improved-whispers.xml" />
+		<file name="bard-dance.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-dance.xml" />
+		<file name="bard-moon.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-moon.xml" />
+		<file name="ranger-sleuth.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/ranger-sleuth.xml" />
+		<file name="ranger-winter-walker.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/ranger-winter-walker.xml" />
+		<file name="sorcerer-spellfire.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/sorcerer-spellfire.xml" />
+		<file name="artificer-cartographer.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/artificer-cartographer.xml" />
+		<file name="paladin-genie-splender.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/paladin-genie-splender.xml" />
+		<file name="barbarian-worldtree.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/barbarian-worldtree.xml" />
+		<file name="jays-aurora-patch.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jays-aurora-patch.xml" />
+		<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml" />
+		<file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
 	</files>
 </index>

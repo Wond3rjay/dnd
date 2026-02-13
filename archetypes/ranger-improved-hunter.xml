@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Jay's Improved Hunter</name>
+		<description>The Hunter from Jay's Guide to Maa, A Ranger Archetype Rework</description>
+		<author>Jay Ahuja</author>
+		<source>Jay's Guide to Maa</source>
+		<update version="2.0">
+			<file name="ranger-improved-hunter.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/ranger-improved-hunter.xml" />
+		</update>
+	</info>
+
+	<element name="Jay's Improved Hunter" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_RANGER_HUNTER">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter’s path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.</p>
+			<div element="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_LORE" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_MARK" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE" />
+		</description>
+		<sheet display="false">
+			<description>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS" level="7" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_LORE" level="7" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK" level="11" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_MARK" level="11" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE" level="15" />
+		</rules>
+	</element>
+	
+	<element name="Hunter’s Prey" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_HUNTERS_PREY</requirements>
+		<description>
+			<p>At 3rd level, you gain two of the following features of your choice. You may only use one Hunter's Prey feature each round.</p>
+			<p class="indent"><strong><em>Colossus Slayer.</em></strong> Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</p>
+			<p class="indent"><strong><em>Giant Killer.</em></strong> When a Large or larger creature within 5 feet of you attacks you, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.</p>
+			<p class="indent"><strong><em>Horde Breaker.</em></strong> Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
+		</description>
+		<sheet usage="1/Round"><description>You may only use one Hunter's Prey feature each round.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" number="2" name="Hunter’s Prey" supports="Hunters Prey" />
+		</rules>
+	</element>
+	
+	<element name="Hunter’s Lore" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_HUNTERS_LORE</requirements>
+		<description>
+			<p>3rd-level Hunter feature.</p>
+			<p>You have trained extensively for months and years to track, chase, and hunt the wild beasts that roam in the forests, soar in the sky, dwell into deep waters, and burrow within the rock and dirt. The years of experience has not only heightened your senses but also turned you into a font of knowledge regarding the bhaviour and nature of wild beasts. Any Wisdom (Survival) Checks or Intelligence (Nature) checks made to track a beast are to be rolled with advantage.</p>
+		</description>
+		<sheet><description>You have advantage on any Wisdom (Survival) Checks or Intelligence (Nature) checks that you make to track, hunt, or chase a Beast.</description></sheet>
+	</element>
+	
+	<element name="Superior Hunter’s Lore" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_LORE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_SUPERIOR_HUNTERS_LORE</requirements>
+		<description>
+			<p><em>7th-level Hunter feature</em></p>
+			<p>You can call on the forces of nature to reveal certain strengths and weaknesses of your prey. While a creature is marked by your Hunter's Mark, you know whether that creature has any damage or condition immunities, damage resistances, or damage vulnerabilities, and if the creature has any, you know what they are.</p>
+		</description>
+		<sheet>
+			<description>While a creature is marked by your Hunter's Mark, you learn that creature's damage or condition immunities, damage resistances, or damage vulnerabilities.</description>
+		</sheet>
+	</element>
+	
+	<element name="Defensive Tactics" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_DEFENSIVE_TACTICS</requirements>
+		<description>
+			<p>At 7th level, you gain one of the following features of your choice.</p>
+			<p class="indent"><strong><em>Escape the Horde.</em></strong> When you are in two or more enemies' melee range, opportunity attacks against you are made with disadvantage.</p>
+			<p class="indent"><strong><em>Multiattack Defense.</em></strong> When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.</p>
+			<p class="indent"><strong><em>Steel Will.</em></strong> You have advantage on saving throws against being frightened.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Defensive Tactics" supports="Tactical Defense" />
+		</rules>
+	</element>
+	
+	<element name="Superior Hunter’s Mark" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_MARK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_SUPERIOR_HUNTERS_MARK</requirements>
+		<description>
+			<p><em>11th-level Hunter feature</em></p>
+			<p>Once per turn, when you have Hunter's Mark on a creature and you deal damage to them, you can also deal the spell's extra damage to a different creature within 30 feet of the first creature.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>When you have Hunter's Mark on a creature and you deal damage to them, you can also deal the spell's extra damage to a different creature within 30 feet of the first creature.</description>
+		</sheet>
+	</element>
+	
+	<element name="Multiattack" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_MULTIATTACK</requirements>
+		<description>
+			<p>At 11th level, you gain one of the following features of your choice.</p>
+			<p class="indent"><strong><em>Volley.</em></strong> You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</p>
+			<p class="indent"><strong><em>Whirlwind Attack.</em></strong> You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Multiattack" supports="Hunters Multiattack" />
+		</rules>
+	</element>
+	
+	<element name="Superior Hunter’s Defense" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_SUPERIOR_HUNTERS_DEFENSE</requirements>
+		<description>
+			<p>At 15th level, you gain two of the following features of your choice.</p>
+			<p class="indent"><strong><em>Evasion.</em></strong> You can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+			<p class="indent"><strong><em>Stand Against the Tide.</em></strong> When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself), within its melee range, of your choice.</p>
+			<p class="indent"><strong><em>Uncanny Dodge.</em></strong> When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</p>		
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" number="2" name="Superior Hunter’s Defense" supports="Superior Hunters Defence" />
+		</rules>
+	</element>
+
+	<element name="Colossus Slayer" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
+		<compendium display="false" />
+		<supports>Hunters Prey</supports>
+		<description>
+			<p>Your tenacity can wear down the most potent foes. When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hit point maximum. You can deal this extra damage only once per turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description>(Hunter's Prey) When you hit a creature with a weapon attack, the creature takes an extra 1d8 damage if it’s below its hp maximum.</description>
+		</sheet>
+	</element>
+	
+	<element name="Giant Killer" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_GIANT_KILLER">
+		<compendium display="false" />
+		<supports>Hunters Prey</supports>
+		<description>
+			<p>When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>(Hunter's Prey) When a Large or larger creature within 5 feet of you hits or misses you with an attack, you can use your reaction to attack that creature immediately after its attack, provided that you can see the creature.</description>
+		</sheet>
+	</element>
+	
+	<element name="Horde Breaker" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
+		<compendium display="false" />
+		<supports>Hunters Prey</supports>
+		<description>
+			<p>Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</p>
+		</description>
+		<sheet>
+			<description>(Hunter's Prey) Once on each of your turns when you make a weapon attack, you can make another attack with the same weapon against a different creature that is within 5 feet of the original target and within range of your weapon.</description>
+		</sheet>
+	</element>
+	
+	<element name="Escape the Horde" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_ESCAPE_THE_HORDE">
+		<compendium display="false" />
+		<supports>Tactical Defense</supports>
+		<description>
+			<p>When you are in two or more enemies' melee range, opportunity attacks against you are made with disadvantage.</p>
+		</description>
+		<sheet>
+			<description>Opportunity attacks against you are made with disadvantage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Multiattack Defense" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_MULTIATTACK_DEFENSE">
+		<compendium display="false" />
+		<supports>Tactical Defense</supports>
+		<description>
+			<p>When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.</p>
+		</description>
+		<sheet>
+			<description>When a creature hits you with an attack, you gain a +4 bonus to AC against all subsequent attacks made by that creature for the rest of the turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Steel Will" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_STEEL_WILL">
+		<compendium display="false" />
+		<supports>Tactical Defense</supports>
+		<description>
+			<p>You have advantage on saving throws against being frightened.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being frightened.</description>
+		</sheet>
+	</element>
+	
+	<element name="Volley" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK_VOLLEY">
+		<compendium display="false" />
+		<supports>Hunters Multiattack</supports>
+		<description>
+			<p>You can use your action to make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can make a ranged attack against any number of creatures within 10 feet of a point you can see within your weapon’s range. You must have ammunition for each target, as normal, and you make a separate attack roll for each target.</description>
+		</sheet>
+	</element>
+	
+	<element name="Whirlwind Attack" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK_WHIRLWIND_ATTACK">
+		<compendium display="false" />
+		<supports>Hunters Multiattack</supports>
+		<description>
+			<p>You can use your action to make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</p>
+		</description>
+		<sheet action="Action">
+			<description>You can make a melee attack against any number of creatures within 5 feet of you, with a separate attack roll for each target.</description>
+		</sheet>
+	</element>
+
+	<element name="Evasion" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_EVASION">
+		<compendium display="false" />
+		<supports>Superior Hunters Defence</supports>
+		<description>
+			<p>You can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or a lightning bolt spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+	
+	<element name="Stand Against the Tide" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_STAND_AGAINST_THE_TIDE">
+		<compendium display="false" />
+		<supports>Superior Hunters Defence</supports>
+		<description>
+			<p>When a hostile creature misses you with a melee attack, you can use your reaction to force that creature to repeat the same attack against another creature (other than itself) of your choice.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a hostile creature misses you with a melee attack, you can force that creature to repeat the same attack against another creature of your choice.</description>
+		</sheet>
+	</element>
+	
+	<element name="Uncanny Dodge" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_UNCANNY_DODGE">
+		<compendium display="false" />
+		<supports>Superior Hunters Defence</supports>
+		<description>
+			<p>When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When an attacker that you can see hits you with an attack, you can halve the attack’s damage against you.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Hunter’s Prey Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_HUNTERS_PREY" />
+	<element name="Hunter’s Lore Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_HUNTERS_LORE" />
+	<element name="Defensive Tactics Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_DEFENSIVE_TACTICS" />
+	<element name="Superior Hunter’s Lore Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_SUPERIOR_HUNTERS_LORE" />
+	<element name="Multiattack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_MULTIATTACK" />
+	<element name="Superior Hunter’s Mark Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_SUPERIOR_HUNTERS_MARK" />
+	<element name="Superior Hunter’s Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_SUPERIOR_HUNTERS_DEFENSE" />
+</elements>

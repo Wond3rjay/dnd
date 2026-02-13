@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>WINTER WALKER</name>
+		<description>The Winter Walker, subclass for Rangers, from Jay's Guide to Maa</description>
+		<author>Jay Ahuja</author>
+		<source>Jay's Guide to Maa</source>
+		<update version="2.0">
+			<file name="ranger-winter-walker.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/ranger-winter-walker.xml" />
+		</update>
+	</info>
+
+	<element name="Winter Walker" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_RANGER_WW">
+		<supports>Ranger Archetype</supports>
+		<description>
+			<p>Winter Walkers hone their craft in the bleak and frozen wilds of places. These ruthless, rimed Rangers hunt monsters that haunt arctic wastelands, eventually becoming frigid terrors themselves. Winter Walkers are well versed in the phenomena of tundra and ice capped mountains, including the latent magic of fallen ancient cities, endemic monsters like yetis and crag cats, and the rising threat of Underdark invaders. Due to their cold pragmatism, terrifying magic, and mastery of the region, Winter Walkers are regarded with equal parts respect and fear. Some people say that Winter Walkers' frequent exposure to malignant entities gives them their fearsome powers. Many nomads, on the other hand, believe that nature spirits bestow on Winter Walkers a unique curse.</p>
+			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_HUNTERS_RIME" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_WW_MAGIC" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FORTIFYING_SOUL" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_CHILLING_RETRIBUTION" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_HUNTERS_RIME" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_WW_MAGIC" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FORTIFYING_SOUL" level="7" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_CHILLING_RETRIBUTION" level="11" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT" level="15" />
+		</rules>
+	</element>
+	
+	<element name="Winter Walker Magic" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_WW_MAGIC">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_WW_SPELLS</requirements>
+		<description>
+			<p>When you reach a Ranger level specified in the Winter Walker Spells table, you thereafter always have the listed spells prepared.</p>       
+			<h5>WINTER WALKER SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Ranger Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>ice knife</em></td></tr>
+				<tr><td>5rd</td><td><em>hold person</em></td></tr>
+				<tr><td>9th</td><td><em>remove curse</em></td></tr>
+				<tr><td>13th</td><td><em>ice storm</em></td></tr>
+				<tr><td>17th</td><td><em>cone of cold</em></td></tr>
+			</table>
+		</description>
+		<sheet display="False"/>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_ICE_KNIFE" level="3" spellcasting="Ranger"/>
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" level="5" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_REMOVE_CURSE" level="9" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="13" spellcasting="Ranger" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="17" spellcasting="Ranger" />
+		</rules>
+	</element>
+
+	<element name="Frigid Explorer" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_FRIGID_EXPLORER</requirements>
+		<description>
+			<p>You gain the following benefits.</p>
+			<p><em>Biting Cold.</em> Damage from your weapon attacks, Ranger spells, and Ranger features ignores Resistance to Cold damage.</p>
+			<p><em>Frost Resistance.</em> You have Resistance to Cold damage.</p>
+			<p><em>Polar Strikes.</em> When you hit a creature with an attack roll using a weapon, you can deal an extra 1d4 Cold damage to the target, which can take this extra damage only once per turn. When you reach Ranger level 11, this extra damage increases to 1d6.</p>
+		</description>
+		<sheet display="False"/>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER_BITING_COLD"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER_POLAR_STRIKES"/>
+		</rules>
+	</element>
+
+	<element name="Hunter's Rime" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_HUNTERS_RIME">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_HUNTERS_RIME</requirements>
+		<description>
+			<p>Ice rimes you and your prey, protecting you and slowing them. When you cast Hunter's Mark, you gain Temporary Hit Points equal to 1d10 plus your Ranger level.</p>
+			<p>Additionally, while a creature is marked by your Hunter's Mark, it can't take the Disengage action.</p>
+		</description>
+		<sheet>
+			<description>When you cast Hunter's Mark, you gain Temporary Hit Points equal to 1d10+{{level:ranger}}. While a creature is marked by your Hunter's Mark, it can't take the Disengage action</description>
+		</sheet>
+	</element>
+	
+	<element name="Fortifying Soul" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FORTIFYING_SOUL">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_HUNTERS_RIME</requirements>
+		<description>
+			<p>Your experience surviving harrowing environments allows you to bolster your allies in addition to yourself. As an action, choose a number of creatures you can see equal to your Wisdom modifier (minimum of one). Each chosen creature regains Hit Points equal to 1d10 plus your Ranger level and has Advantage on saving throws to avoid or end the Frightened condition for 1 hour.</p>
+			<p>Once you use this feature, you can't use it again until you finish a Long Rest.</p>
+		</description>
+		<sheet action="Action">
+		<description>Choose {{wisdom:modifier}} creatures(minimum of one) you can see. Each chosen creature regains Hit Points equal to 1d10+{{level:ranger}} and has Advantage on saving throws to avoid or end the Frightened condition for 1 hour.</description>
+		</sheet>
+	</element>
+	
+	<element name="Chilling Retribution" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_CHILLING_RETRIBUTION">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_CHILLING_RETRIBUTION</requirements>
+		<description>
+			<p>When a creature hits you with an attack roll, you can take a Reaction to force the creature to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Stunned condition until the end of your next turn. While the target is Stunned, its Speed is reduced to 0 feet.</p>
+			<p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet action="Reaction" usage="{{wisdom:modifier}}/LONG REST">
+			<description>When a creature hits you with an attack roll, you can take a Reaction to force the creature to make a Wisdom saving throw (DC {{spellcasting:dc}}). On a failed save, the target has the Stunned condition and their speed is reduced to 0 until the end of your next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Frozen Haunt" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_HUNTERS_RIME</requirements>
+		<description>
+			<p>When you cast Hunter's Mark, you can adopt a ghostly, snowy form. This form lasts until the spell ends, and while you are in this form, you gain the following benefits. Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a level 4+ spell slot (no action required).</p>
+			<p><em>Frozen Soul.</em> You have Immunity to Cold damage. When you first adopt this form and at the start of each of your subsequent turns, each creature of your choice in a 15-foot Emanation originating from you takes 2d4 Cold damage.</p>
+			<p><em> Partially Incorporeal.</em> You have Immunity to the Grappled, Prone, and Restrained conditions. You can move through creatures and objects as if they were Difficult Terrain, but you take 1d10 Force damage if you end your turn inside a creature or an object. If the form ends while you are inside a creature or an object, you are shunted to the nearest unoccupied space.</p>
+		</description>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT_FROZEN_SOUL"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT_PARTIALLY_INCORPOREAL"/>
+		</rules>
+		<sheet>
+			<description>While concentrating on Hunter's Mark you gain <em>Frozen Soul</em> and <em>Partially Incorporeal</em>. Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a level 4+ spell slot (no action required).
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Biting Cold" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER_BITING_COLD">
+		<supports>Frigid Explorer</supports>
+		<compendium display="false" />
+		<sheet>
+			<description name="Biting Cold."> Damage from your weapon attacks, Ranger spells, and Ranger features ignores Resistance to Cold damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Polar Strikes" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER_POLAR_STRIKES">
+		<supports>Frigid Explorer</supports>
+		<compendium display="false" />
+		<sheet>
+			<description level="3" name="Polar Strikes."> When you hit a creature with an attack roll using a weapon, you can deal an extra 1d4 Cold damage to the target, which can take this extra damage only once per turn.</description>
+			<description level="11" name="Polar Strikes."> When you hit a creature with an attack roll using a weapon, you can deal an extra 1d6 Cold damage to the target, which can take this extra damage only once per turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Frozen Soul" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT_FROZEN_SOUL">
+		<compendium display="false" />
+		<supports>Frozen Haunt</supports>
+		<sheet>
+			<description>You have Immunity to Cold damage. When you first adopt this form and at the start of each of your subsequent turns, each creature of your choice in a 15-foot Emanation originating from you takes 2d4 Cold damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Partially Incorporeal" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT_PARTIALLY_INCORPOREAL">
+		<compendium display="false" />
+		<supports>Frozen Haunt</supports>
+		<sheet>
+			<description>You have Immunity to the Grappled, Prone, and Restrained conditions. You can move through creatures and objects as if they were Difficult Terrain, but you take 1d10 Force damage if you end your turn inside a creature or an object. If the form ends while you are inside a creature or an object, you are shunted to the nearest unoccupied space.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Frigid Explorer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_FRIGID_EXPLORER" />
+	<element name="Hunter's Rime Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_HUNTERS_RIME" />
+	<element name="Winter Walker Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_WW_SPELLS" />
+	<element name="Fortifying Soul Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_FORTIFYING_SOUL" />
+	<element name="Chilling Retribution Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_CHILLING_RETRIBUTION" />
+	<element name="Frozen Haunt Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_FROZEN_HAUNT" />
+	
+</elements>

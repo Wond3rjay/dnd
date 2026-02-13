@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Jay's Improved Mastermind</name>
+		<description>The Mastermind from Jay's Guide to Maa, A Rogue Archetype Rework</description>
+		<author>Jay Ahuja</author>
+		<source>Jay's Guide to Maa</source>
+		<update version="2.0">
+			<file name="rogue-improved-mastermind.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/rogue-improved-mastermind.xml" />
+		</update>
+	</info>
+	
+	<element name="Jay's Improved Mastermind" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_MASTERMIND">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p>Your focus is on people and on the influence and secrets they have. Many spies, courtiers, and schemers follow this archetype, leading lives of intrigue. Words are your weapons as often as knives or poison, and secrets and favors are some of your favorite treasures.</p>
+			<div element="ID_JAY_ARCHETYPEFEATURE_MASTER_OF_INTRIGUE" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_MASTEROFTACTICS" />
+			<div element ="ID_JAY_ARCHETYPEFEATURE_MASTEROFTACTICS_TACTICAL_ASSISTANCE" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_KEEN_OBSERVATION" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_INSIGHTFUL_MANIPULATOR" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_MINDPALACE" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_SOUL_OF_DECEIT" />
+			<div element="ID_JAY_ARCHETYPEFEATURE_MINDFORTRESS" />
+		</description>
+		<sheet display="false">
+			<description>Your focus is on people and on the influence and secrets they have.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_MASTER_OF_INTRIGUE" level="1"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_MASTEROFTACTICS" level="3"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_KEEN_OBSERVATION" level="3"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_INSIGHTFUL_MANIPULATOR" level="9"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_MINDPALACE" level="13"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_SOUL_OF_DECEIT" level="17"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_MINDFORTRESS" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Master of Intrigue" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_MASTER_OF_INTRIGUE">
+		<description>
+			<p>When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.</p>
+			<p>Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language.</p>
+		</description>
+		<sheet>
+			<description>You can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+			<select type="Proficiency" name="Gaming Set (Master of Intrigue)" supports="Gaming Set" />
+			<select type="Language" name="Language (Master of Intrigue)" supports="Standard||Exotic||Secret" number="2" />
+		</rules>
+	</element>
+
+	<element name="Master of Tactics and Deceit" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_MASTEROFTACTICS">
+		<description>
+			<p>Starting at 3rd level, you can use the Help action as a bonus action. When you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than 5 feet of you, if the target can see or hear you.</p>
+			<p>Additionally, you gain proficiency in Persuasion and Intimidation, if you don't have it already.</p>
+		</description>
+		<sheet>
+			<description><p>You can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than 5 feet of you, if the target can see or hear you.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPEFEATURE_MASTEROFTACTICS_TACTICAL_ASSISTANCE"/>
+		</rules>
+	</element>
+	
+	<element name="Tactical Assistance" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_MASTEROFTACTICS_TACTICAL_ASSISTANCE">
+		<supports>Master of Tactics</supports>
+		<description>
+			<p>When you use the Help action to aid an ally in attacking a creature, you may choose to give them tactical assistance. On their next hit before your next turn, they can add extra damage to their attack equal to your sneak attack. You can use this feature only once that you regain on finishing a long rest.</p>
+			<p>On reaching 9th level, you can use this trait twice and regain all expended uses on finishing a long rest.</p>
+			<p>On reaching 15th level, you can use this trait thrice and regain all expended uses on finishing a long rest.</p>
+			<p>On reaching 19th level, you can use this trait four times and regain all expended uses on finishing a long rest.</p>
+		</description>
+		<sheet usage="{{masteroftactics}}/Long Rest">
+			<description>If you choose this feature while using the Help action to aid an ally in attacking a creature, they can add {{sneak-attack:count}}d6 extra damage on their next hit before your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="masteroftactics" value="1" level="3"/>
+			<stat name="masteroftactics" value="1" level="9"/>
+			<stat name="masteroftactics" value="1" level="15"/>
+			<stat name="masteroftactics" value="1" level="19"/>
+		</rules>
+	</element>
+
+	<element name="Keen Observation" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_KEEN_OBSERVATION">
+		<description>
+			<p>Starting at 3rd level, you gain the ability to study a creature quickly during combat and discern how best to hurt it. As a bonus action, target one creature you can see within 60 feet of you.</p>
+			<p> The creature makes a Charisma Saving Throw (DC=8 + your Intelligence Modifier + your Proficiency Bonus). If the creature fails, you learn either damage immunities, resistances, or vulnerabilities that creature may have and what they are. You must choose the trait you want to learn before the creature rolls the saving throw. If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities.</p>
+			<p> You can use this feature a number of times equal to half of your Sneak Attack die, rounded up. You regain all expended uses of it when you finish a long rest.</p>
+			<p> On reaching 13th level, you can learn two traits at once. On reaching 17th level, you can learn all traits at once.</p>
+		</description>
+		<sheet action="bonus action" usage="{{keenobservation}}/Long Rest">
+			<description level="3">Target one creature within 60 feet of you and choose one trait of the following: damage immunities, resistances, or vulnerabilities. Unless the target is hidden from divination magic, it makes a Charisma Saving Throw (DC {{keenobservation:dc}}). On fail, you learn the chosen trait of the target, if they have any. </description>
+			<description level="9">Target one creature within 60 feet of you and choose two traits of the following: damage immunities, resistances, or vulnerabilities. Unless the target is hidden from divination magic, it makes a Charisma Saving Throw (DC {{keenobservation:dc}}). If it fails, you learn the chosen traits of the target, if they have any. </description>
+			<description level="17">Target one creature within 60 feet of you. Unless the target is hidden from divination magic, it makes a Charisma Saving Throw (DC {{keenobservation:dc}}). On fail, you learn if the target has any damage immunities, resistances, or vulnerabilities. </description>
+		</sheet>
+		<rules>
+			<stat name="keenobservation" value="1" level="3"/>
+			<stat name="keenobservation" value="1" level="5"/>
+			<stat name="keenobservation" value="1" level="9"/>
+			<stat name="keenobservation" value="1" level="13"/>
+			<stat name="keenobservation" value="1" level="17"/>
+			<stat name="keenobservation:dc" value="8" />
+			<stat name="keenobservation:dc" value="intelligence:modifier" />
+			<stat name="keenobservation:dc" value="proficiency" />
+		</rules>
+	</element>
+
+	<element name="Insightful Manipulator" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_INSIGHTFUL_MANIPULATOR">
+		<description>
+			<p>Starting at 9th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:</p>
+			<ul>
+				<li>Intelligence score</li>
+				<li>Wisdom score</li>
+				<li>Charisma score</li>
+				<li>Class levels (if any)</li>
+			</ul>
+			<p>At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any. Additionally, you gain advantage for Persuasion and Intimidation checks made against that creature if it can understand you.</p>
+		</description>    
+		<sheet>
+			<description>If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn following information about it: Intelligence, Wisdom, Charisma scores, and Class levels (if any). Additionally, you gain advantage for Persuasion and Intimidation checks made against that creature if it can understand you.</description>
+		</sheet>
+	</element>
+
+	<element name="Mind Palace" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_MINDPALACE">
+		<description>
+			<p>Beginning at 13th level, no matter how dire a situation can be, you can focus your mind to quickly assess, analyze, and ascertain the best course of action utilizing the abilities of your allies. As an action, you may consult your mind palace (Dungeon Master) to review any detail that you and your allies might missed to notice, any important detail that you may not recalling or remembering, or any tactic that you haven't considered drploying.</p>
+			<p> The Dungeon Master may ask you to make a number of skill check rolls to determine what suggestions to offer you.</p>
+			<p>You can use this feature a number equal to your intelligence modifier, minimum of one. You regain all expended uses on finishing a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{mindpalace}}/Long Rest">
+			<description>Consult the Dungeon Master for best strategy for current situation for you and your allies. The DM may ask you to make a number of skill checks to determine the best advice.</description>
+		</sheet>
+		<rules>
+			<stat name="mindpalace" value="1" bonus="base" />
+			<stat name="mindpalace" value="intelligence:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Soul of Deceit" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_SOUL_OF_DECEIT">
+		<description>
+			<p>Starting at 17th level, you have perfected the craft of wrapping your lies within a complex web of logic and reason, insight checks against you are made with disadvantage. Additionally, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.</p>
+			<p class="indent">Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic.</p>
+		</description>
+		<sheet>
+			<description>Insight checks against you are made with disadvantage. Additionally, Your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Deception check contested by the mind reader's Insight check. Additionally, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic.</description>
+		</sheet>
+	</element>
+	
+	<element name="Mind Fortress" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_MINDFORTRESS">
+		<description>
+			<p>Starting at 17th level, you have made your mind a fortress against magical and psychic manipulation. You roll Any Wisdom or Intelligence Saving Throw forced by a magic spell or a similar effect is rolled with advantage.</p>
+		</description>
+		<sheet>
+			<description>You have advantage while rolling Wisdom and Intelligence saving throws.</description>
+		</sheet>
+	</element>
+
+</elements>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>SPLENDOR</name>
+		<description>The SPLENDOR subclass from Jay's Guide to Maa.</description>
+		<author>Jay Ahuja</author>
+		<source>Jay's Guide to Maa</source>
+		<update version="2.0">
+			<file name="paladin-genie-splender.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/paladin-genie-splender.xml" />
+		</update>
+	</info>
+
+	<element name="Oath of Genie's Splendor" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_PALADIN_SPLENDOR">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p class="flavor">Brandish the Elemental Splendor of Genies</p>
+			<p>Swore an oath of fealty to a noble djinn, the aristocrats of the Elemental Planes. Through taking this oath, Paladins draw power from one of the four different types of genies — Dao, masters of earth; Djinni, masters of air; Efreeti, masters of fire; and Marid, masters of water. On Maa, many Paladins who swear this oath hail from either Hasea or Mithras, two regions to have most recognized presence of genies.</p>
+			<p>Paladins who swear this oath often undertake quests that take them all over the Realms and across the multiverse—including the Elemental Planes. These paladins share the following tenets:</p>
+			<ul>
+				<li>Sow the seeds of creation amid the ashes of destruction.</li>
+				<li>Lead with splendor and grace.</li>
+				<li>Respect the elements, and fear their wrath.</li>
+			</ul>
+			<div element="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_GUARD" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_FEALTY" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_SMITE" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_SPELLS" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_REBUKE" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_GUARD" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_FEALTY" level="3" />
+		</rules>
+	</element>
+	
+	<element name="Elemental Guard" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_GUARD">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_ELEMENTAL_GUARD</requirements>
+		<description>
+			<p><em>Level 3 Feature</em></p>
+			<p>When you aren't wearing any armor, your base Armor Class equals 10 plus your Dexterity and Charisma modifiers. You can use a Shield and still gain this benefit.</p>
+			<p>You also gain proficiency in one of the following skills of your choice: Acrobatics, Intimidation, Performance, or Persuasion.</p>
+		</description>
+		<sheet>
+			<description>While not wearing armor, your base AC is {{ac:elemental guard paladin}}. You can use a Shield and still gain this benefit.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:elemental guard paladin" value="10" />
+			<stat name="ac:elemental guard paladin" value="dexterity:modifier" />
+			<stat name="ac:elemental guard paladin" value="charisma:modifier" />
+			<stat name="ac:calculation" value="ac:elemental guard paladin" bonus="calculation" equipped="[armor:none]" alt="Elemental Guard" />
+			<select name="Elemental Guard (Proficiency)" type="Proficiency" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+	
+	<element name="Noble Fealty" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_FEALTY">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_NOBLE_FEALTY</requirements>
+		<description>
+			<p><em>Level 3 Feature</em></p>
+			<p>Paladins who take The Oath of Genies' Splendor swear fealty to a Noble Genie. Choose a noble — Dao, Djinni, Efreeti, or Marid.</p>
+			<ul>
+				<li>Dao are known for their material vanity and hoarding tendencies, Paladins that swore an allegiance to them are treasure hunters. Gemstones and precious metals determine their morality.</li>
+				<li>Djinni are known for their beauty and kindness, Paladins that swore an allegiance to them believe in servitude for greater good. Generosity and helping each other guides their morality.</li>
+				<li>Efreeti are known for their extremely short temper and drive for vengeance, Paladins that swore an allegiance to them believe in righteousness at any cost. Desire for revenge and wrath guides their morality.</li>
+				<li>Marid are known for their love for creativity and deceptive web of lies, Paladins that swore an allegiance to them believe in living larger than lives. The ambition to become a legend and to have stories to tell guides their morality.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Noble Fealty" supports="Noble Fealty" />
+		</rules>
+	</element>
+	
+	<element name="Elemental Smite" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_SMITE">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_ELEMENTAL_SMITE</requirements>
+		<description>
+			<p><em>Level 3 Feature</em></p>
+			<p>Immediately after you cast Divine Smite, based on your Noble Fealty choice, you can expend one use of your Channel Divinity and invoke one of the following effects.</p>
+			<ul>
+				<li><strong>Dao's Crush.</strong> Earth rises up around the target of your Divine Smite. The target has the Grappled condition (escape DC equal to your spell save DC). While Grappled, the target has the Restrained condition.</li>
+				<li><strong>Djinni's Escape.</strong> You teleport to an unoccupied space you can see within 30 feet of yourself and take on a semi-incorporeal form, which lasts until the end of your next turn. While in this form, you have Resistance to Bludgeoning, Piercing, and Slashing damage, and you have Immunity to the Grappled, Prone, and Restrained conditions.</li>
+				<li><strong>Efreeti's Fury.</strong> The target of your Divine Smite takes an extra 2d4 Fire damage, and fire jumps from the target to another creature you can see within 30 feet of yourself. The second creature also takes 2d4 Fire damage.</li>
+				<li><strong>Marid's Surge.</strong> A strong wave eminates from you forcing the target of your divine strike and each creature of your choice within 10-foot radius to make a Strength saving throw against your paladin spell save DC. On a failed save, a creature is pushed 15 feet straight away from you and has the Prone condition.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+		</sheet>
+	</element>
+	
+	<element name="Genie Spells" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_SPELLS">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_SPELLS</requirements>
+		<description>
+			<p>Based on your noble fealty choice, when you reach a Paladin level specified in the Genie Spells table, you thereafter always have the listed spells prepared.</p>
+			<h5 class="caption">SPLENDOR SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td class="col-15" style="text-align:center">Paladin Level</td><td>Dao Spells</td><td>Djinn Spells</td><td>Efreeti Spells</td><td>Marid Spells</td></tr>
+				</thead>
+				<tr><td style="text-align:center">3</td><td><i>Elementalism, Earth Tremor, Absorb Elements</i></td><td><i>Elementalism, Witch Bolt, Thunderwave</i></td><td><i>Elementalism, Burning Hands, Absorb Elements</i></td><td><i>Elementalism, Frost Fingers, Create or Destroy Water</i></td></tr>
+				<tr><td style="text-align:center">5</td><td><i>Earthbind, Maximilian's Earthen Grasp</i></td><td><i>Gust of Wind, Shatter</i></td><td><i>Continual Flame, Aganazzar's Scorcher</i></td><td><i>Vortex Warp, Rime's Binding Ice</i></td></tr>
+				<tr><td style="text-align:center">9</td><td><i>Meld into Earth, Wall of Sand</i></td><td><i>Fly, Gaseous Form</i></td><td><i>Daylight, Magic Circle</i></td><td><i>Water Walk, Sleet Storm</i></td></tr>
+				<tr><td style="text-align:center">13</td><td><i>Summon Elemental, Stoneskin</i></td><td><i>Summon Elemental, Galder's Speedy Courier</i></td><td><i>Summon Elemental, Fire Shield</i></td><td><i>Summon Elemental, Watery Sphere</i></td></tr>
+				<tr><td style="text-align:center">17</td><td><i>Banishing Smite, Contact Other Plane</i></td><td><i>Banishing Smite, Contact Other Plane</i></td><td><i>Banishing Smite, Contact Other Plane</i></td><td><i>Banishing Smite, Contact Other Plane</i></td></tr>
+			</table>
+		</description>
+		<sheet display="false" />
+	</element>
+	
+	<element name="Elemental Endurance" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE</requirements>
+		<description>
+			<p><em>Level 7 Feature</em></p>
+			<p>As a bonus action, choose one of the following damage types based on your Noble Fealty:</p>
+			<ul>
+				<li><strong>Dao.</strong> Poison, Thunder</li>
+				<li><strong>Djinni.</strong> Lightning, Thunder</li>
+				<li><strong>Efreeti.</strong> Fire, Cold</li>
+				<li><strong>Marid.</strong> Acid, Cold, Lightning</li>
+			</ul>
+			<p>You and your allies, while they are with in your aura of protection, have resistance to your chosen damage type until you use a bonus action to change it.</p>
+		</description>
+		<sheet display="false">
+		</sheet>
+	</element>
+	
+	<element name="Elemental Rebuke" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_REBUKE">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_ELEMENTAL_REBUKE</requirements>
+		<description>
+			<p><em>Level 15 Feature</em></p>
+			<p>When you are hit by an attack roll, you can take a Reaction to halve the attack's damage against yourself (round down) and force the attacker to make a Dexterity saving throw against your Paladin spell save DC. On a failed save, the attacker takes damage equal to 2d10 plus your Charisma modifier of one of the following types (based on your Noble Fealty): Force(Dao), Lightning(Djinni), Fire(Efreeti), Cold(Marid). On a successful save, the attacker takes half as much damage.</p>
+			<p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+		</description>
+		<sheet display="false">
+		</sheet>
+	</element>
+	
+	<element name="Noble Fealty Dao" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_FEALTY_DAO">
+		<compendium display="false" />
+		<supports>Noble Fealty</supports>
+		<sheet alt="Noble Fealty">
+			<description>You swore allegiance to a Noble Dao.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_SMITE_DAO" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_SPELLS_DAO" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE_DAO" level="7" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_REBUKE_DAO" level="15" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION" level="20" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_DAO" level="20" />
+			<grant type="Archetype Feature" name="Minor Wish" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_MINOR_WISH" level="20" />
+		</rules>
+	</element>
+
+	<element name="Dao's Crush.(Elemental Smite)" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_SMITE_DAO">
+		<compendium display="false" />
+		<sheet usage="{{channel divinity:count}} Channel Divinity/Short Rest">
+			<description>The target of your divine smite is grappled (escape DC{{paladin:spellcasting:dc}}) as earth rises around them. While Grappled, the target has the Restrained condition.</description>
+		</sheet>
+	</element>
+
+	<element name="Dao Spells" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_SPELLS_DAO">
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_JAY_2024_SPELL_ELEMENTALISM" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTH_TREMOR" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_EARTHBIND" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_MAXIMILIANS_EARTHEN_GRASP" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MELD_INTO_STONE" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WALL_OF_SAND" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_STONESKIN" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHING_SMITE" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>	
+	</element>
+	
+	<element name="Elemental Endurance - Dao" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE_DAO">
+		<compendium display="false" />
+		<sheet action="Bonus Action">
+			<description>Choose a damage type: Poison, Thunder. You and your allies, while they are with in your aura of protection, have resistance to your chosen damage type until you use a bonus action to change it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Elemental Rebuke Dao" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_REBUKE_DAO">
+		<compendium display="false" />
+		<sheet action="Reaction" usage="{{charisma:modifier}}/Long Rest">
+			<description>When you are hit by an attack, you can halve the attack's damage(round down) and force the attacker to make a Dexterity saving throw (DC {{paladin:spellcasting:dc}}). On a failed save, the attacker takes 2d10+{{charisma:modifier}} Force Damage. On a successful save, the attacker takes half as much damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Noble Fealty Djinni" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_FEALTY_DJINN">
+		<compendium display="false" />
+		<supports>Noble Fealty</supports>
+		<sheet alt="Noble Fealty">
+			<description>You swore allegiance to a Noble Djinni.</description>			
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_SMITE_DJINN" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_SPELLS_DJINN" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE_DJINN" level="7" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_REBUKE_DJINN" level="15" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION" level="20" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_DJINN" level="20" />
+			<grant type="Archetype Feature" name="Minor Wish" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_MINOR_WISH" level="20" />
+		</rules>
+	</element>
+	
+	<element name="Djinni's Escape.(Elemental Smite)" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_SMITE_DJINN">
+		<compendium display="false" />
+		<sheet usage="{{channel divinity:count}} Channel Divinity/Short Rest">
+			<description>You teleport to an unoccupied space you can see within 30 feet of yourself and take on a semi-incorporeal form, which lasts until the end of your next turn. While in this form, you have Resistance to Bludgeoning, Piercing, and Slashing damage, and you have Immunity to the Grappled, Prone, and Restrained conditions.</description>
+		</sheet>
+	</element>
+	
+	<element name="Djinni Spells" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_SPELLS_DJINN">
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_JAY_2024_SPELL_ELEMENTALISM" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WITCH_BOLT" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SHATTER" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLY" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_LLOK_SPELL_GALDERS_SPEEDY_COURIER" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHING_SMITE" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>	
+	</element>
+
+	<element name="Elemental Endurance - Djinni" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE_DJINN">
+		<compendium display="false" />		
+		<sheet action="Bonus Action">
+			<description>Choose a damage type: Lightning, Thunder. You and your allies, while they are with in your aura of protection, have resistance to your chosen damage type until you use a bonus action to change it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Elemental Rebuke Djinni" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_REBUKE_DJINN">
+		<compendium display="false" />
+		<sheet action="Reaction" usage="{{charisma:modifier}}/Long Rest">
+			<description>When you are hit by an attack, you can halve the attack's damage(round down) and force the attacker to make a Dexterity saving throw (DC {{paladin:spellcasting:dc}}). On a failed save, the attacker takes 2d10+{{charisma:modifier}} Lightning Damage. On a successful save, the attacker takes half as much damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Noble Fealty Efreeti" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_FEALTY_EFREETI">
+		<compendium display="false" />
+		<supports>Noble Fealty</supports>
+		<sheet alt="Noble Fealty">
+			<description>You swore allegiance to a Noble Efreeti, you benefit from following features:</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_SMITE_EFREETI" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_SPELLS_EFREETI" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE_EFREETI" level="7" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_REBUKE_EFREETI" level="15" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION" level="20" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_EFREETI" level="20" />
+			<grant type="Archetype Feature" name="Minor Wish" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_MINOR_WISH" level="20" />
+		</rules>
+	</element>
+	
+	<element name="Efreeti's Fury.(Elemental Smite)" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_SMITE_EFREETI">
+		<compendium display="false" />
+		<sheet usage="{{channel divinity:count}} Channel Divinity/Short Rest">
+			<description>The target of your Divine Smite takes an extra 2d4 Fire damage, and fire jumps from the target to another creature you can see within 30 feet of yourself. The second creature also takes 2d4 Fire damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Efreeti Spells" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_SPELLS_EFREETI">
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_JAY_2024_SPELL_ELEMENTALISM" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTINUAL_FLAME" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_AGANAZZARS_SCORCHER" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DAYLIGHT" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_CIRCLE" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHING_SMITE" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>	
+	</element>
+	
+	<element name="Elemental Endurance - Efreeti" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE_EFREETI">
+		<compendium display="false" />
+		<sheet action="Bonus Action">
+			<description>Choose a damage type: Fire, Cold. You and your allies, while they are with in your aura of protection, have resistance to your chosen damage type until you use a bonus action to change it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Elemental Rebuke Efreeti" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_REBUKE_EFREETI">
+		<compendium display="false" />
+		<sheet action="Reaction" usage="{{charisma:modifier}}/Long Rest">
+			<description>When you are hit by an attack, you can halve the attack's damage(round down) and force the attacker to make a Dexterity saving throw (DC {{paladin:spellcasting:dc}}). On a failed save, the attacker takes 2d10+{{charisma:modifier}} Fire Damage. On a successful save, the attacker takes half as much damage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Noble Fealty Marid" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_FEALTY_MARID">
+		<compendium display="false" />
+		<supports>Noble Fealty</supports>
+		<sheet alt="Noble Fealty">
+			<description>You swore allegiance to a Noble Djinn, you benefit from following features:</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_SMITE_MARID" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_SPELLS_MARID" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE_MARID" level="7" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_REBUKE_MARID" level="15" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION" level="20" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_MARID" level="20" />
+			<grant type="Archetype Feature" name="Minor Wish" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_MINOR_WISH" level="20" />
+		</rules>		
+	</element>
+
+	<element name="Marid's Surge.(Elemental Smite)" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_SMITE_MARID">
+		<compendium display="false" />
+		<sheet usage="{{channel divinity:count}} Channel Divinity/Short Rest">
+			<description>A strong wave eminates from you forcing the target of your divine strike and each creature of your choice within 10-foot radius to make a Strength saving throw against your paladin spell save DC. On a failed save, a creature is pushed 15 feet straight away from you and has the Prone condition.</description>
+		</sheet>
+	</element>
+	
+	<element name="Marid Spells" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_SPELLS_MARID">
+		<compendium display="false" />
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_JAY_2024_SPELL_ELEMENTALISM" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_IDROTF_SPELL_FROST_FINGERS" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" spellcasting="Paladin" level="3" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_SCOC_SPELL_VORTEX_WARP" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_FTOD_SPELL_RIMES_BINDING_ICE" spellcasting="Paladin" level="5" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_WATER_WALK" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SLEET_STORM" spellcasting="Paladin" level="9" prepared="true" />
+			<grant type="Spell" id="ID_WOTC_TCOE_SPELL_SUMMON_ELEMENTAL" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_XGTE_SPELL_WATERY_SPHERE" spellcasting="Paladin" level="13" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHING_SMITE" spellcasting="Paladin" level="17" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONTACT_OTHER_PLANE" spellcasting="Paladin" level="17" prepared="true" />
+		</rules>
+	</element>
+	
+	<element name="Elemental Endurance - Marid" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE_MARID">
+		<compendium display="false" />
+		<sheet action="Bonus Action">
+			<description>Choose a damage type: Acid, Cold, Lightning. You and your allies, while they are with in your aura of protection, have resistance to your chosen damage type until you use a bonus action to change it.</description>
+		</sheet>
+	</element>
+	
+	<element name="Elemental Rebuke Marid" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_ELEMENTAL_REBUKE_MARID">
+		<compendium display="false" />
+		<sheet action="Reaction" usage="{{charisma:modifier}}/Long Rest">
+			<description>When you are hit by an attack, you can halve the attack's damage(round down) and force the attacker to make a Dexterity saving throw (DC {{paladin:spellcasting:dc}}). On a failed save, the attacker takes 2d10+{{charisma:modifier}} Cold Damage. On a successful save, the attacker takes half as much damage.</description>
+		</sheet>
+	</element>
+
+	<element name="Noble Scion" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION">
+		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_NOBLE_SCION</requirements>
+		<description>
+			<p><em>Level 20 Feature</em></p>
+			<p>As a Bonus Action, you gain the following benefits, based on your Noble Fealty, for 10 minutes or until you end them as a free action. Once you use this feature, you can't use it again until you finish a Long Rest or by expending a level 5 spell slot.</p>
+			<p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>
+			<p><strong>Dao.</strong></p>
+			<ul>
+				<li><strong>Flight.</strong> You have a Fly Speed of 30 feet and can hover.</li>
+				<li><strong>Burrow.</strong> You have a Burrow Speed of 20 feet through nonmagical, unworked earth and stone.</li>
+				<li><strong>Minor Wish.</strong> When you or an ally in your Aura of Protection fails an ability skill, attack, or saving throw, you can take a Reaction to make that roll a success instead.</li>
+			</ul>
+			<p><strong>Djinni.</strong></p>
+			<ul>
+				<li><strong>Flight.</strong> You have a Fly Speed of 60 feet and can hover.</li>
+				<li><strong>Minor Wish.</strong> When you or an ally in your Aura of Protection fails an ability skill, attack, or saving throw, you can take a Reaction to make that roll a success instead.</li>
+			</ul>
+			<p><strong>Efreeti.</strong></p>
+			<ul>
+				<li><strong>Flight.</strong> You have a Fly Speed of 60 feet and can hover.</li>
+				<li><strong>Minor Wish.</strong> When you or an ally in your Aura of Protection fails an ability skill, attack, or saving throw, you can take a Reaction to make that roll a success instead.</li>
+			</ul>
+			<p><strong>Marid.</strong></p>
+			<ul>
+				<li><strong>Flight.</strong> You have a Fly Speed of 30 feet and can hover.</li>
+				<li><strong>Swim.</strong> You have a Swim Speed of 30 feet and can walk on water.</li>
+				<li><strong>Minor Wish.</strong> When you or an ally in your Aura of Protection fails an ability skill, attack, or saving throw, you can take a Reaction to make that roll a success instead.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest, for 10 mins.">
+			<description>Based on Your Noble Fealty, while Noble Scion is active you gain <strong>Elemental Mobility</strong> and <strong>Minor Wish.</strong></description>
+		</sheet>
+	</element>
+
+	<element name="Noble Scion Dao" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_DAO">
+		<compendium display="false" />
+		<sheet alt="Elemental Mobility">
+			<description>You have a Fly Speed of 30 feet and can hover. You also have a Burrow Speed of 20 feet through nonmagical, unworked earth and stone.</description>
+		</sheet>
+	</element>
+		
+	<element name="Noble Scion - Djinni" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_DJINN">
+		<compendium display="false" />
+		<sheet alt="Elemental Mobility">
+			<description>You have a Fly Speed of 60 feet and can hover.</description>
+		</sheet>
+	</element>
+	
+	<element name="Noble Scion - Efreeti" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_EFREETI">
+		<compendium display="false" />
+		<sheet alt="Elemental Mobility">
+			<description>You have a Fly Speed of 60 feet and can hover.</description>
+		</sheet>
+	</element>	
+	
+	<element name="Noble Scion - Marid" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_MARID">
+		<compendium display="false" />
+		<sheet alt="Elemental Mobility" action="Reaction">
+			<description>You have a Fly Speed of 30 feet and can hover. You have a Swim Speed of 30 feet and can walk on water.</description>
+		</sheet>
+	</element>
+	
+	<element name="Minor Wish" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_PALADIN_SPLENDOR_NOBLE_SCION_MINOR_WISH">
+		<supports>Noble Scion</supports>
+		<compendium display="false" />
+		<sheet action="Reaction">
+			<description>When you or an ally in your Aura of Protection fails an ability skill, attack, or saving throw, you can take a Reaction to make that roll a success instead.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Elemental Guard Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_ELEMENTAL_GUARD" />
+	<element name="Noble Fealty Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_NOBLE_FEALTY" />
+	<element name="Elemental Smite Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_ELEMENTAL_SMITE" />
+	<element name="Genie Spells Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_SPELLS" />
+	<element name="Elemental Endurance Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_ELEMENTAL_ENDURANCE" />
+	<element name="Elemental Rebuke Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_ELEMENTAL_REBUKE" />
+	<element name="Noble Scion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_JAY_FEATURE_REPLACEMENT_PALADIN_SPLENDOR_NOBLE_SCION" />
+			
+</elements>

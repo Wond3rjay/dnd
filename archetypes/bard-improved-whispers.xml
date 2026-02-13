@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Jay's Improved College of Whispers</name>
+		<description>The College of Whispers rework from Jay's Guide to Maa</description>
+		<author>Jay Ahuja</author>
+		<source>Jay's Guide to Maa</source>
+		<update version="2.0">
+			<file name="bard-improved-whispers.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-improved-whispers.xml" />
+		</update>
+	</info>
+
+	<element name="Jay's Improved College of Whispers" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_COLLEGE_OF_WHISPERS">
+		<supports>Bard College</supports>
+		<description>
+			<p>Most folk are happy to welcome a bard into their midst. Bards of the College of Whispers use this to their advantage. They appear to be like other bards, sharing news, singing songs, and telling tales to the audiences they gather. In truth, the College of Whispers teaches its students that they are wolves among sheep. These bards use their knowledge and magic to uncover secrets and turn them against others through extortion and threats.</p>
+			<p class="indent">Many other bards hate the College of Whispers, viewing it as a parasite that uses a bard’s reputation to acquire wealth and power. For this reason, members of this college rarely reveal their true nature. They typically claim to follow some other college, or they keep their actual calling secret in order to infiltrate and exploit royal courts and other settings of power.</p>
+			<div element="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_PSYCHIC_BLADES" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_WORDS_OF_TERROR" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_MANTLE_OF_WHISPERS" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_PSYCHIC_GRASP" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_WORMTONGUE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_PSYCHIC_BLADES" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_WORDS_OF_TERROR" level="3" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_MANTLE_OF_WHISPERS" level="6" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_PSYCHIC_GRASP" level="6" />
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_WORMTONGUE" level="14" />
+		</rules>
+	</element>
+
+	<element name="Psychic Blades" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_PSYCHIC_BLADES">
+		<description>
+			<p>When you join the College of Whispers at 3rd level, you gain the ability to make your weapon attacks magically toxic to a creature’s mind.</p>
+			<p class="indent">When you hit a creature with a weapon attack, you can expend one use of your Bardic Inspiration to deal an extra 2d6 psychic damage to that target. You can do so only once per round on your turn. While using Psychic Blades, You can also give yourself advantage on attack rolls against any creature that hasn't taken a turn in the combat yet.</p>
+			<p class="indent">In addition, on reaching level 14, any hit you score against a creature that is surprised is a critical hit.</p>
+			<p class="indent">The psychic damage increases when you reach certain levels in this class, increasing to 3d6 at 5th level, 5d6 at 10th level, 8d6 at 15th level, and 10d6 at 19th level.</p>
+		</description>
+		<sheet>
+			<description level="3">On a hit with a weapon attack, expend one use of Bardic Inspiration to deal an extra {{psychic-blades:dice}}d6 psychic damage. While using Psychic Blades, you can also give yourself advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</description>
+			<description level="14">On a hit with a weapon attack, expend one use of Bardic Inspiration to deal an extra {{psychic-blades:dice}}d6 psychic damage. While using Psychic Blades, you can also give yourself advantage on attack rolls against any creature that hasn't taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</description>
+		</sheet>
+		<rules>
+			<stat name="psychic-blades:dice" value="2" bonus="psychic blades" />
+			<stat name="psychic-blades:dice" value="3" bonus="psychic blades" level="5" />
+			<stat name="psychic-blades:dice" value="5" bonus="psychic blades" level="10" />
+			<stat name="psychic-blades:dice" value="8" bonus="psychic blades" level="15" />
+			<stat name="psychic-blades:dice" value="10" bonus="psychic blades" level="19" />
+		</rules>
+	</element>
+
+	<element name="Words of Terror" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_WORDS_OF_TERROR">
+		<description>
+			<p>At 3rd level, you learn to infuse innocent-seeming words with an insidious magic that can inspire terror.You gain Proficiency in Intimidation, if you don't have it already.</p>
+			<p class="indent">If you speak to a creature alone for at least 1 minute, that can understand you, you can attempt to seed paranoia in its mind. At the end of the conversation, the target must succeed on a Wisdom saving throw against your spell save DC or be frightened of you or another creature of your choice. The target is frightened in this way for 1 hour, but can make the wisdom save again if it is attacked or damaged or until it witnesses its allies being attacked or damaged.</p>
+			<p class="indent">If the target succeeds on its saving throw, the target has no hint that you tried to frighten it.</p>
+			<p class="indent">Once you use this feature, you can't use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>You force a lone creature that can understand you to make a DC{{spellcasting:dc:cha}} Wisdom saving throw after a 1 minute or longer conversation. On a fail, it is frightened of you or another creature of your choice for 1 hour. The target may repeat the Wisdom saving throw if it is attacked or damaged, or if the target witnesses its allies being attacked or damaged. On success, the target is unaffected and doen't learn that you attempt to frighten it.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
+	</element>
+
+	<element name="Mantle of Whispers" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_MANTLE_OF_WHISPERS">
+		<description>
+			<p>At 6th level, you gain the ability to adopt a humanoid’s persona. When a humanoid dies within 30 feet of you, you can magically capture its shadow using your reaction. You retain this shadow until you use it or target's death is discovered by anyone except your allies</p>
+			<p class="indent">You can use the shadow as an action to gain access to all information that the humanoid would freely share with a casual acquaintance. Such information includes general details on its background and personal life, but doesn’t include secrets. The information is enough that you can pass yourself off as the person by drawing on its memories.</p>
+			<p class="indent">Another creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) check. You gain a +5 bonus to your check.</p>
+			<p class="indent"><strong>Identity Theft.</strong> Also, you learn Disguise Self spell, you can cast this spell once without using a spell slot before finishing a short or long rest.</p>
+			<p class="indent">Once you capture a shadow with this feature, you can’t capture another one until you use the shadow and have finished a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When a humanoid dies within 30 feet of you, you can capture its shadow. You keep it until you use it or target's death is discovered by anyone except your allies. As an action, you can learn all things that person would freely share. If you impersonate as the target, a creature can see through this disguise by succeeding on a Wisdom (Insight) check contested by your Charisma (Deception) + 5 check.</description>
+		</sheet>
+	</element>
+	
+	<element name="Identity Theft" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_MANTLE_OF_WHISPERS_SPELL">
+		<compendium display="false" />
+		<supports>Mantle of Whispers</supports>
+		<sheet usage="1/Short Rest">
+			<description>You learn Disguise Self spell, you can cast this spell once without using a spell slot before finishing a short or long rest.</description>
+		</sheet>
+		<rules>
+			<grant type="SPELL" id="ID_PHB_SPELL_DISGUISE_SELF" />
+		</rules>
+	</element>
+	
+	<element name="Psychic Grasp" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_PSYCHIC_GRASP">
+		<description>
+			<p>Starting at 6th level, your soft words and enchanting gaze can magically enthrall another creature. As an action, expend one bardic die to choose one creature that you can see within 5 feet of you. If the target can see or hear you, it must succeed on a Wisdom saving throw against your bard spell save DC or be frightened and grappled by you until the end of your next turn. The frightened creature is also incapacitated and visibly dazed.</p>
+			<p class="indent">On subsequent turns, you can use your action to maintain this effect, extending its duration until the end of your next turn. However, the effect ends if you move more than 5 feet away from the creature, if the creature can neither see nor hear you, or if the creature takes damage.</p>
+			<p class="indent">On reaching 14th level, you can leverage the safety of your hostage against their allies. As a bonus action, you command a course of activity (limited to a sentence or two) and magically influence up to six creatures of your choice that you can see within range and that can hear and understand you. Creatures that can't be charmed are immune to this effect. The command must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to perform obviously harmful act to themselves or anybody else automatically negates the effect.</p>
+			<p class="indent">Each target of the command must make a Wisdom saving throw. On a failed save, a target pursues the course of action you described to the best of its ability until you have the original target held by psychic grasp.</p>
+			<p class="indent">Once the effect ends, or if the creature succeeds on its initial saving throw against this effect, you can't use this feature on that creature again until you finish a long rest.</p>
+		</description>
+		<sheet action="action" usage="1/Long Rest">
+			<description>As an action, expend one bardic die to choose one creature that you can see within 5 feet of you. If the target can see or hear you, it must succeed on a Wisdom saving throw DC{{bard:spellcasting:dc}} or be frightened and grappled by you until the end of your next turn. The target is also incapacitated and visibly dazed. You can maintain this effect by using your action on subsequent turns.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_PSYCHIC_GRASP_HOSTAGE" />
+		</rules>
+	</element>
+	
+	<element name="Hostage Negotiation" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_PSYCHIC_GRASP_HOSTAGE">
+		<compendium display="false" />
+		<supports>Psychic Grasp</supports>
+		<sheet action="bonus action">
+			<description>While grappling a creature with psychic hold, choose up to six of their allies and command a reasonable course of activity. They make a wisdom saving throw DC {{bard:spellcasting:dc}}. On fail, they pursue your command to best of their abilities until you have the original target held by psychic grasp. Creatures that can't be charmed are immune to this effect. A command asking to hurt someone automatically fails. </description>
+		</sheet>
+	</element>
+
+	<element name="Wormtongue" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_WHISPERS_WORMTONGUE">
+		<description>
+			<p>At 14th level, you gain the ability to exploit the trust others bestow upon you.</p>
+			<p class="indent">As an action, choose a creature within 30 feet of you that isn't hostile towards you. You magically whisper a phrase forcing the target to make a Wisdom saving throw against your spell save DC. It automatically succeeds if it can not hear you or understand you. On a successful saving throw, your whisper sounds like unintelligible mumbling and has no effect.</p>
+			<p class="indent">On a failed saving throw, the target is charmed by you for the next 8 hours or until you or your allies attack it, damage it, or force it to make a saving throw. Paranoia clouds the targets thoughts and they begin to distrust everyone around them without reason except you. They grant you favors and gifts they would offer to a close friend. They will also value your opinions, suggestions, and advise in highest regards and may share its darkest, closely held secrets with you.</p>
+			<p class="indent">The target won't risk their life or status for you or fight for you, unless they were already inclined to do so and can choose to ignore your suggestions if they find them unreasonable despite the paranoia. </p>
+			<p class="indent">You can choose to extend the effect for another 8 hours duration at the end of the effect, forcing the target to roll the saving throw at disadvantage. Unless the target is attacked, taken damage or forced to make a saving throw by you or your allies, or they are aided by another creature to end the effect, the target doesn't remember that they were charmed.</p>
+			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest and you can only charm one person this way at a time.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest — 1 Target at a Time" duration="8 hours">
+			<description>Choose a non-hostile creature within 30 feet of you that can hear and understand you, they make a DC{{spellcasting:dc:cha}} Wisdom saving throw. On a fail, it is charmed by you for 8 hours or until you or your allies attack, damage, or force it to make a saving throw. The target becomes paranoid of everybody else except you and becomes susceptible to your suggestions unless they find them unreasonable despite paranoia. You can choose to extend the effect for another 8 hours duration at the end of the effect, forcing the target to roll the saving throw at disadvantage. If the effect doesn't end abruptly, the target doesn't remember that they were charmed.</description>
+		</sheet>
+	</element>
+
+</elements>
