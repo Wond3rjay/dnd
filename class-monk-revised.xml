@@ -5,7 +5,7 @@
 		<description>Revised Monk by Jay.</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide to Maa</source>
-		<update version="2.0.1">
+		<update version="2.0.2">
 			<file name="class-monk-revised.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/class-monk-revised.xml" />
 		</update>
 	</info>
@@ -190,10 +190,10 @@
 			<stat name="martial arts:attack" value="dexterity:modifier" bonus="martial arts" />
 			<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
 			<stat name="martial arts:damage" value="dexterity:modifier" bonus="martial arts" />
-			<stat name="martial arts:dice" value="4" bonus="martial arts" />
-			<stat name="martial arts:dice" value="6" bonus="martial arts" level="5" />
-			<stat name="martial arts:dice" value="8" bonus="martial arts" level="11" />
-			<stat name="martial arts:dice" value="10" bonus="martial arts" level="17" />
+			<stat name="martial arts:dice" value="6" bonus="martial arts" />
+			<stat name="martial arts:dice" value="8" bonus="martial arts" level="5" />
+			<stat name="martial arts:dice" value="10" bonus="martial arts" level="11" />
+			<stat name="martial arts:dice" value="12" bonus="martial arts" level="17" />
 		</rules>
 	</element>
 	
@@ -320,7 +320,9 @@
 		<rules>
 			<select type="Class Feature" name="Improvement Option (Monk 4)" supports="Improvement Option,Monk,4" level="4" />
 			<select type="Class Feature" name="Improvement Option (Monk 8)" supports="Improvement Option,Monk,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Monk 8)" supports="Improvement Option,Monk,10" level="10" />
 			<select type="Class Feature" name="Improvement Option (Monk 12)" supports="Improvement Option,Monk,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Monk 8)" supports="Improvement Option,Monk,14" level="14" />
 			<select type="Class Feature" name="Improvement Option (Monk 16)" supports="Improvement Option,Monk,16" level="16" />
 			<select type="Class Feature" name="Improvement Option (Monk 19)" supports="Improvement Option,Monk,19" level="19" />
 		</rules>
