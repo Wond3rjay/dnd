@@ -5,7 +5,7 @@
 		<description>Naga Race from Maa by Jay</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide to Maa</source>
-		<update version="2.0.1">
+		<update version="2.0.2">
 			<file name="naga.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/races/naga.xml" />
 		</update>
 	</info>
@@ -98,7 +98,7 @@
 	</element>
 
 	<!-- Naga Language -->
-	<element name="Naga" type="Language" source="Jay's Guide to Maa" id="JAY_LANGUAGE_NAGA">
+	<element name="Naga" type="Language" source="Jay's Guide to Maa" id="ID_JAY_LANGUAGE_NAGA">
 		<supports>PS Naga Language</supports>
 		<description>
 			<p>Typically spoken by Nagas.</p>
