@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="1.8">
+		<name>Maarut</name>
+		<description>Maarut Race from Maa by Jay</description>
+		<author>Jay Ahuja</author>
+		<source>Jay's Guide to Maa</source>
+		<update version="2.0">
 			<file name="maarut.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/races/maarut.xml" />
 		</update>
 	</info>	
-	<element name="Maarut" type="Race" source="Jay Homebrew and Additions" id="ID_JAY_RACE_MAARUT">
+	<element name="Maarut" type="Race" source="Jay's Guide to Maa" id="ID_JAY_RACE_MAARUT">
 		<description>
 			<p>Wild at heart, wild of nature, the simian cousins of Humans, Maarut are deceptive in appearance. For people oblivious of their existence, they might appear unrestrained agents of chaos. But there is a method to their madness, often backed by a font of intelligence and or wisdom. They are fond of art, music, and revelry but also take pride in performing their responsibilities and duties. Wit, intellectualism, and wisdom draws them into conversation, but they also typically good at hiding their wariness underneath a cloak of amicability.</p>
 			<h4>Nature</h4>
@@ -56,7 +60,9 @@
 			<select type="Language" name="Language, Maarut" supports="Standard||Exotic" number="2" />
 		</rules>
 	</element>
-	<element name="Third Appendage, Grab and Hurl" type="Racial Trait" source="Jay Homebrew and Additions" id="ID_JAY_RACE_MAARUT_THIRD_APPENDAGE_GRAB_HURL">
+	
+	<element name="Third Appendage, Grab and Hurl" type="Racial Trait" source="Jay's Guide to Maa" id="ID_JAY_RACE_MAARUT_THIRD_APPENDAGE_GRAB_HURL">
+		<compendium display="false" />
 		<description>
 			<p>You have a long tail that can be nimble, strong, and sturdy. With your tail, you may:</p>
 		</description>
@@ -64,7 +70,9 @@
 			<description> You may pick up a blunt object (up to 30 pounds) within reach and make a ranged attack with your tail as an attack action at a target (range 15ft/30ft) to deal 1d10 bludgeoning damage on hit. You may use Dexterity modifier for Grab and Throw attack rolls.</description>
 		</sheet>
 	</element>
-	<element name="Third Appendage, Grappling Tail" type="Racial Trait" source="Jay Homebrew and Additions" id="ID_JAY_RACE_MAARUT_THIRD_APPENDAGE_GRAPPLING_TAIL">
+	
+	<element name="Third Appendage, Grappling Tail" type="Racial Trait" source="Jay's Guide to Maa" id="ID_JAY_RACE_MAARUT_THIRD_APPENDAGE_GRAPPLING_TAIL">
+		<compendium display="false" />
 		<description>
 			<p>You have a long tail that can be nimble, strong, and sturdy. With your tail, you may:</p>
 		</description>
@@ -72,7 +80,9 @@
 			<description> As an attack action, you may use your free tail to attempt a grapple a creature, large size or smaller, that is behind you. A creature grappled by your tail stays behind your back, and thus any attack against that creature made by you must be made with disadvantage. The creature may break grapple as an action by contesting an athletics or acrobatics check against your athletics check on their turn. You may grapple another creature within range using a free hand as stated on PHB p195 while having a creature grappled by your tail.</description>
 		</sheet>
 	</element>
-	<element name="Third Appendage, Constrict and Trip" type="Racial Trait" source="Jay Homebrew and Additions" id="ID_JAY_RACE_MAARUT_THIRD_APPENDAGE_CONSTRICT_TRIP">
+	
+	<element name="Third Appendage, Constrict and Trip" type="Racial Trait" source="Jay's Guide to Maa" id="ID_JAY_RACE_MAARUT_THIRD_APPENDAGE_CONSTRICT_TRIP">
+		<compendium display="false" />
 		<description>
 			<p>You have a long tail that can be nimble, strong, and sturdy. With your tail, you may:</p>
 		</description>
@@ -80,7 +90,9 @@
 			<description> As an attack action, make a grapple check with your free tail against a target, large size or smaller, within melee range. If you succeed, the target falls prone and takes bludgeoning damage equals to your strength modifier. If you fail, the next attack against you gains advantage.</description>
 		</sheet>
 	</element>
-	<element name="Third Appendage, Quick Grab and Hurl" type="Racial Trait" source="Jay Homebrew and Additions" id="ID_JAY_RACE_MAARUT_THIRD_APPENDAGE_QGRAB_HURL">
+	
+	<element name="Third Appendage, Quick Grab and Hurl" type="Racial Trait" source="Jay's Guide to Maa" id="ID_JAY_RACE_MAARUT_THIRD_APPENDAGE_QGRAB_HURL">
+		<compendium display="false" />
 		<description>
 			<p>You have a long tail that can be nimble, strong, and sturdy. With your tail, you may:</p>
 		</description>
@@ -88,7 +100,9 @@
 			<description> You may pick up a blunt object (up to 10 pounds) within reach and make a ranged attack with your tail as a bonus action at a target (range 30ft/60ft) to deal 1d6 bludgeoning damage on hit. You may use Dexterity modifier for Grab and Throw attack rolls.</description>
 		</sheet>
 	</element>
-	<element name="Third Appendage, Nimble Yank" type="Racial Trait" source="Jay Homebrew and Additions" id="ID_JAY_RACE_MAARUT_THIRD_APPENDAGE_NIMBLE_YANK">
+	
+	<element name="Third Appendage, Nimble Yank" type="Racial Trait" source="Jay's Guide to Maa" id="ID_JAY_RACE_MAARUT_THIRD_APPENDAGE_NIMBLE_YANK">
+		<compendium display="false" />
 		<description>
 			<p>You have a long tail that can be nimble, strong, and sturdy. With your tail, you may:</p>
 		</description>
@@ -96,7 +110,9 @@
 			<description> When located within 5 feet of a medium or large stationary object that your tail can wrap around, such as a pillar or tree that weighs more than you, you may use the said object to slingshot yourself up to 10 feet past it as a reaction after an attack is made against you.</description>
 		</sheet>
 	</element>
-	<element name="Primal Instincts" type="Racial Trait" source="Jay Homebrew and Additions" id="ID_JAY_RACE_MAARUT_PRIMAL_INSTINCTS">
+	
+	<element name="Primal Instincts" type="Racial Trait" source="Jay's Guide to Maa" id="ID_JAY_RACE_MAARUT_PRIMAL_INSTINCTS">
+		<compendium display="false" />
 		<description>
 			<p>You gain proficiency with two of the following skills of your choice: Athletics, Acrobatics, Stealth, or Sleight of Hand.</p>
 		</description>
@@ -108,7 +124,9 @@
 			<select type="Proficiency" name="Customized Skill Proficiency, Primal Instincts"  number="2" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 		</rules>
 	</element>
-	<element name="Underestimated Talents" type="Racial Trait" source="Jay Homebrew and Additions" id="ID_JAY_RACE_MAARUT_UNDERESTIMATED_TALENTS">
+	
+	<element name="Underestimated Talents" type="Racial Trait" source="Jay's Guide to Maa" id="ID_JAY_RACE_MAARUT_UNDERESTIMATED_TALENTS">
+		<compendium display="false" />
 		<description>
 			<p>You gain proficiency in one Musical Instrument and in one any other tool or Gaming Set.</p>
 		</description>
@@ -119,4 +137,5 @@
 			<select type="Proficiency" name="Mustical Instrument or Gaming Set, Maarut" supports="Musical Instrument||Gaming Set" />
 		</rules>
 	</element>	
+	
 </elements>
