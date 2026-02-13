@@ -5,7 +5,7 @@
 		<description>College of Dance subclass for Bards from Jay's Guide to Maa</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide to Maa</source>
-		<update version="2.0">
+		<update version="2.0.1">
 			<file name="bard-dance.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-dance.xml" />
 		</update>
 	</info>
@@ -42,9 +42,7 @@
 			<p class="indent"><strong>Bardic Damage.</strong> You can use Dexterity instead of Strength for the attack rolls of your Unarmed Strikes, and when you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier instead of the strike's normal damage. This roll doesn't expend the die.</p>
 		</description>
 		<sheet>
-			<description>While unarmored and not wielding a shield your AC is {{ac:dazzling footwork bard}} and
-			You can use Dexterity for your unarmed attacks and they deal 1d{{bardic-inspiration:dice}}+{{dazzling footwork:unarmed:damage}} bludgeoning damage.
-			When expending Bardic Inspiration on an action, Bonus Action, or reaction also make one unarmed attack.</description>
+			<description>While unarmored and not wielding a shield your AC is {{ac:dazzling footwork bard}} and	You can use Dexterity for your unarmed attacks and they deal 1d{{bardic-inspiration:dice}}+{{dazzling footwork:unarmed:damage}} bludgeoning damage. When expending Bardic Inspiration on an action, Bonus Action, or reaction also make one unarmed attack.</description>
 		</sheet>
 		<rules>
 			<stat name="ac:dazzling footwork bard" value="10" />
