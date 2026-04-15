@@ -5,7 +5,7 @@
 		<description>Spells added to 5th edition after 2014 edition was shut down.</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide to Maa</source>
-		<update version="2.0.5">
+		<update version="2.1.1">
 			<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml"/>
 		</update>
 	</info>
@@ -33,7 +33,7 @@
 		</setters>
 	</element>
 	
-	<element name="Arcane Lock" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ARCANE_LOCK">
+	<element name="Arcane Lock" type="Spell" source="Jay's Guide to Maa" id="ID_PHB_SPELL_ARCANE_LOCK">
 		<supports>Wizard, Artificer</supports>
 		<description>
 			<p>You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes.</p>
@@ -77,7 +77,7 @@
 	</element>
 	
 
-	<element name="Armor of Agathys" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS">
+	<element name="Armor of Agathys" type="Spell" source="Jay's Guide to Maa" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS">
 		<supports>Warlock</supports>
 		<description>
 			<p>A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage.</p>
@@ -120,7 +120,7 @@
 		</setters>
 	</element>
 	
-	<element name="Barkskin" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_BARKSKIN">
+	<element name="Barkskin" type="Spell" source="Jay's Guide to Maa" id="ID_PHB_SPELL_BARKSKIN">
 		<supports>Druid, Ranger</supports>
 		<description>
 			<p>You touch a willing creature. Until the spell ends, the target’s skin has a rough, bark-like appearance, and the target’s AC can’t be less than 17, regardless of what kind of armor it is wearing.</p>
@@ -448,7 +448,7 @@
 		</setters>
 	</element>
 	
-	<element name="Moonbeam" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MOONBEAM">
+	<element name="Moonbeam" type="Spell" source="Jay's Guide to Maa" id="ID_PHB_SPELL_MOONBEAM">
 		<supports>Druid, Spell Saving Throw</supports>
 		<description>
 			<p>A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.</p>
@@ -493,7 +493,7 @@
 		</setters>
 	</element>
 	
-	<element name="Shillelagh" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SHILLELAGH">
+	<element name="Shillelagh" type="Spell" source="Jay's Guide to Maa" id="ID_PHB_SPELL_SHILLELAGH">
 		<supports>Druid</supports>
 		<description>
 			<p>The wood of a club or quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8 and the damage type becomes force damage. The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon.</p>
@@ -663,7 +663,7 @@
 		</setters>
 	</element>
 	
-	<element name="Stoneskin" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_STONESKIN">
+	<element name="Stoneskin" type="Spell" source="Jay's Guide to Maa" id="ID_PHB_SPELL_STONESKIN">
 		<supports>Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
 		<description>
 			<p>This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to all bludgeoning, piercing, and slashing damage.</p>
@@ -730,7 +730,7 @@
 		</setters>
 	</element>
 	
-	<element name="True Strike" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_TRUE_STRIKE">
+	<element name="True Strike" type="Spell" source="Jay's Guide to Maa" id="ID_PHB_SPELL_TRUE_STRIKE">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. You learn one damage type or condition to which the target is either immune, resistant or vulnerable.</p>
@@ -751,7 +751,7 @@
 		</setters>
 	</element>
 	
-	<element name="Vicious Mockery" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_VICIOUS_MOCKERY">
+	<element name="Vicious Mockery" type="Spell" source="Jay's Guide to Maa" id="ID_PHB_SPELL_VICIOUS_MOCKERY">
 		<supports>Bard, Spell Saving Throw</supports>
 		<description>
 			<p>You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.</p>
@@ -795,7 +795,7 @@
 		</setters>
 	</element>
 	
-	<element name="Witch Bolt" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WITCH_BOLT">
+	<element name="Witch Bolt" type="Spell" source="Jay's Guide to Maa" id="ID_PHB_SPELL_WITCH_BOLT">
 		<supports>Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
 		<description>
 			<p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your subsequent turns for the duration, you can use your bonus action to deal 1d12 lightning damage to the target automatically. The spell ends if the target is ever outside the spell’s range or if it has total cover from you.</p>
