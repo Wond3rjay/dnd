@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weapon Prowess</name>
+		<description>Introducing New Feature for Martials, Weapon Prowess</description>
+		<author>Jay Ahuja</author>
+		<source>Jay's Guide to Maa</source>
+		<update version="2.0.5">
+			<file name="weapon-prowess.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/weapon-prowess.xml" />
+		</update>
+	</info>
+	
+	<!--Class Feature-->
+	
+	<element name="Barbarian Weapon Prowess" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_CLASS_FEATURE_BARBARIAN_WEAPON_PROWESS">
+		<description>
+			<p>The more you use a weapon, the more techniques you learn. Choose one weapon, you unlock the Prowess properties of that weapon. On hit, once per turn, you may choose to activate Prowess if the conditions meet. When you reach a level, you may change one weapon for Prowess.</p>
+			<h3>Conditions to Activate a Prowess ability</h3>
+			<ul>
+				<li>A Creature can only use Prowess Ability once per turn.</li>
+				<li>The Attacker must be Proficient with the weapon used to make the attack roll.</li>
+				<li>To activate Prowess ability the concerned attack roll must cause weapon's primary damage. If the target is immune to it, Prowess ability cannot activate.</li>
+				<li>Critical Hit doesn't guarantee Prowess Ability activation.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>For Strength based attacks your Prowess DC is {{str prowess}}. For Dexterity based attacks your Prowess DC is {{dex prowess}}. </description>
+		</sheet>
+		<rules>
+			<select name="Weapon Prowess" type="Class Feature" supports="Weapon Prowess" number="1"/>
+			<stat name="str prowess" value="8" />
+			<stat name="str prowess" value="strength:modifier" />
+			<stat name="str prowess" value="proficiency" />
+			<stat name="dex prowess" value="8" />
+			<stat name="dex prowess" value="proficiency" />
+			<stat name="dex prowess" value="dexterity:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Barbarian, LV05: Weapon Prowess" type="Item" source="Jay's Guide To Maa" id="ID_JAY_ITEM_OCF_BARBARIAN_WEAPON_PROWESS">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JAY_CLASS_FEATURE_BARBARIAN_WEAPON_PROWESS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">fifth level, 5th level, Skill Proficiency</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JAY_CLASS_FEATURE_BARBARIAN_WEAPON_PROWESS" requirements="[level:barbarian:5]"/>
+		</rules>
+	</element>
+	
+	<element name="Fighter Weapon Prowess" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_CLASS_FEATURE_FIGHTER_WEAPON_PROWESS">
+		<description>
+			<p>The more you use a weapon, the more techniques you learn. Choose two weapons, you unlock the Prowess properties of those weapons. On hit, once per turn, you may choose to activate Prowess if the conditions meet. When you reach a level, you may change one weapon for Prowess.</p>
+			<h3>Conditions to Activate a Prowess ability</h3>
+			<ul>
+				<li>A Creature can only use Prowess Ability once per turn.</li>
+				<li>The Attacker must be Proficient with the weapon used to make the attack roll.</li>
+				<li>To activate Prowess ability the concerned attack roll must cause weapon's primary damage. If the target is immune to it, Prowess ability cannot activate.</li>
+				<li>Critical Hit doesn't guarantee Prowess Ability activation.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>For Strength based attacks your Prowess DC is {{str prowess}}. For Dexterity based attacks your Prowess DC is {{dex prowess}}. </description>
+		</sheet>
+		<rules>
+			<select name="Weapon Prowess" type="Class Feature" supports="Weapon Prowess" number="2"/>
+			<stat name="str prowess" value="8" />
+			<stat name="str prowess" value="strength:modifier" />
+			<stat name="str prowess" value="proficiency" />
+			<stat name="dex prowess" value="8" />
+			<stat name="dex prowess" value="proficiency" />
+			<stat name="dex prowess" value="dexterity:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Fighter, LV05: Weapon Prowess" type="Item" source="Jay's Guide To Maa" id="ID_JAY_ITEM_OCF_FIGHTER_WEAPON_PROWESS">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JAY_CLASS_FEATURE_FIGHTER_WEAPON_PROWESS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">fifth level, 5th level, Skill Proficiency</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JAY_CLASS_FEATURE_FIGHTER_WEAPON_PROWESS" requirements="[level:fighter:5]"/>
+		</rules>
+	</element>
+
+	<element name="Monk Weapon Prowess" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_CLASS_FEATURE_MONK_WEAPON_PROWESS">
+		<description>
+			<p>The more you use a weapon, the more techniques you learn. Choose one weapon, you unlock the Prowess properties of that weapon. On hit, once per turn, you may choose to activate Prowess if the conditions meet. When you reach a level, you may change one weapon for Prowess.</p>
+			<h3>Conditions to Activate a Prowess ability</h3>
+			<ul>
+				<li>A Creature can only use Prowess Ability once per turn.</li>
+				<li>The Attacker must be Proficient with the weapon used to make the attack roll.</li>
+				<li>To activate Prowess ability the concerned attack roll must cause weapon's primary damage. If the target is immune to it, Prowess ability cannot activate.</li>
+				<li>Critical Hit doesn't guarantee Prowess Ability activation.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>For Strength based attacks your Prowess DC is {{str prowess}}. For Dexterity based attacks your Prowess DC is {{dex prowess}}. </description>
+		</sheet>
+		<rules>
+			<select name="Weapon Prowess" type="Class Feature" supports="Weapon Prowess" number="1"/>
+			<stat name="str prowess" value="8" />
+			<stat name="str prowess" value="strength:modifier" />
+			<stat name="str prowess" value="proficiency" />
+			<stat name="dex prowess" value="8" />
+			<stat name="dex prowess" value="proficiency" />
+			<stat name="dex prowess" value="dexterity:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Monk, LV05: Weapon Prowess" type="Item" source="Jay's Guide To Maa" id="ID_JAY_ITEM_OCF_MONK_WEAPON_PROWESS">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JAY_CLASS_FEATURE_MONK_WEAPON_PROWESS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">fifth level, 5th level, Skill Proficiency</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JAY_CLASS_FEATURE_MONK_WEAPON_PROWESS" requirements="[level:monk:5]"/>
+		</rules>
+	</element>
+	
+	<element name="Paladin Weapon Prowess" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_CLASS_FEATURE_PALADIN_WEAPON_PROWESS">
+		<description>
+			<p>The more you use a weapon, the more techniques you learn. Choose two weapons, you unlock the Prowess properties of those weapons. On hit, once per turn, you may choose to activate Prowess if the conditions meet. When you reach a level, you may change one weapon for Prowess.</p><h3>Conditions to Activate a Prowess ability</h3>
+			<ul>
+				<li>A Creature can only use Prowess Ability once per turn.</li>
+				<li>The Attacker must be Proficient with the weapon used to make the attack roll.</li>
+				<li>To activate Prowess ability the concerned attack roll must cause weapon's primary damage. If the target is immune to it, Prowess ability cannot activate.</li>
+				<li>Critical Hit doesn't guarantee Prowess Ability activation.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>For Strength based attacks your Prowess DC is {{str prowess}}. For Dexterity based attacks your Prowess DC is {{dex prowess}}. </description>
+		</sheet>
+		<rules>
+			<select name="Weapon Prowess" type="Class Feature" supports="Weapon Prowess" number="2"/>
+			<stat name="str prowess" value="8" />
+			<stat name="str prowess" value="strength:modifier" />
+			<stat name="str prowess" value="proficiency" />
+			<stat name="dex prowess" value="8" />
+			<stat name="dex prowess" value="proficiency" />
+			<stat name="dex prowess" value="dexterity:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Paladin, LV05: Weapon Prowess" type="Item" source="Jay's Guide To Maa" id="ID_JAY_ITEM_OCF_PALADIN_WEAPON_PROWESS">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JAY_CLASS_FEATURE_PALADIN_WEAPON_PROWESS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">fifth level, 5th level, Skill Proficiency</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JAY_CLASS_FEATURE_PALADIN_WEAPON_PROWESS" requirements="[level:paladin:5]"/>
+		</rules>
+	</element>
+	
+	<element name="Ranger Weapon Prowess" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_CLASS_FEATURE_RANGER_WEAPON_PROWESS">
+		<description>
+			<p>The more you use a weapon, the more techniques you learn. Choose two weapons, you unlock the Prowess properties of those weapons. On hit, once per turn, you may choose to activate Prowess if the conditions meet. When you reach a level, you may change one weapon for Prowess.</p>
+			<h3>Conditions to Activate a Prowess ability</h3>
+			<ul>
+				<li>A Creature can only use Prowess Ability once per turn.</li>
+				<li>The Attacker must be Proficient with the weapon used to make the attack roll.</li>
+				<li>To activate Prowess ability the concerned attack roll must cause weapon's primary damage. If the target is immune to it, Prowess ability cannot activate.</li>
+				<li>Critical Hit doesn't guarantee Prowess Ability activation.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>For Strength based attacks your Prowess DC is {{str prowess}}. For Dexterity based attacks your Prowess DC is {{dex prowess}}. </description>
+		</sheet>
+		<rules>
+			<select name="Weapon Prowess" type="Class Feature" supports="Weapon Prowess" number="2"/>
+			<stat name="str prowess" value="8" />
+			<stat name="str prowess" value="strength:modifier" />
+			<stat name="str prowess" value="proficiency" />
+			<stat name="dex prowess" value="8" />
+			<stat name="dex prowess" value="proficiency" />
+			<stat name="dex prowess" value="dexterity:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Ranger, LV05: Weapon Prowess" type="Item" source="Jay's Guide To Maa" id="ID_JAY_ITEM_OCF_RANGER_WEAPON_PROWESS">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JAY_CLASS_FEATURE_RANGER_WEAPON_PROWESS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">fifth level, 5th level, Skill Proficiency</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JAY_CLASS_FEATURE_RANGER_WEAPON_PROWESS" requirements="[level:ranger:5]"/>
+		</rules>
+	</element>
+	
+	<element name="Rogue Weapon Prowess" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_CLASS_FEATURE_ROGUE_WEAPON_PROWESS">
+		<description>
+			<p>The more you use a weapon, the more techniques you learn. Choose one weapon, you unlock the Prowess properties of that weapon. On hit, once per turn, you may choose to activate Prowess if the conditions meet. When you reach a level, you may change one weapon for Prowess.</p>
+			<h3>Conditions to Activate a Prowess ability</h3>
+			<ul>
+				<li>A Creature can only use Prowess Ability once per turn.</li>
+				<li>The Attacker must be Proficient with the weapon used to make the attack roll.</li>
+				<li>To activate Prowess ability the concerned attack roll must cause weapon's primary damage. If the target is immune to it, Prowess ability cannot activate.</li>
+				<li>Critical Hit doesn't guarantee Prowess Ability activation.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>For Strength based attacks your Prowess DC is {{str prowess}}. For Dexterity based attacks your Prowess DC is {{dex prowess}}. </description>
+		</sheet>
+		<rules>
+			<select name="Weapon Prowess" type="Class Feature" supports="Weapon Prowess" number="1"/>
+			<stat name="str prowess" value="8" />
+			<stat name="str prowess" value="strength:modifier" />
+			<stat name="str prowess" value="proficiency" />
+			<stat name="dex prowess" value="8" />
+			<stat name="dex prowess" value="proficiency" />
+			<stat name="dex prowess" value="dexterity:modifier" />
+		</rules>
+	</element>
+	
+	<element name="Rogue, LV05: Weapon Prowess" type="Item" source="Jay's Guide To Maa" id="ID_JAY_ITEM_OCF_ROGUE_WEAPON_PROWESS">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_JAY_CLASS_FEATURE_ROGUE_WEAPON_PROWESS" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">fifth level, 5th level, Skill Proficiency</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_JAY_CLASS_FEATURE_ROGUE_WEAPON_PROWESS" requirements="[level:rogue:5]"/>
+		</rules>
+	</element>
+	
+	<!--Weapons-->
+	<element name="Battleaxe (Feint)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_BATTLEAXE">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the target has disadvantage on their next attack roll until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the target has disadvantage on their next attack roll until the end of their next turn. The target must also make a strength saving throw against Attacker’s prowess DC or is disarmed of any weapon, shield, or focus held by one hand only. The concerned object is yanked 5 feet behind the attacker.</p>
+			<p>Starting at level 17, if a hit activates the Feint prowess, the next attack roll is considered critical on a natural 15 or higher until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Battleaxe, has disadvantage on their next attack roll until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Battleaxe, has disadvantage on their next attack roll until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, The target must also make a strength saving throw against Attacker’s prowess DC or is disarmed of any weapon, shield, or focus held by one hand only. The concerned object is yanked 5 feet behind the attacker.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Battleaxe, has disadvantage on their next attack roll until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, The target must also make a strength saving throw against Attacker’s prowess DC or is disarmed of any weapon, shield, or focus held by one hand only. The concerned object is yanked 5 feet behind the attacker. When Feint prowess activates, on a natural roll of 15 or higher, the next attack roll before the end of your next turn is considered a critical hit.</description>
+		</sheet>
+	</element>
+	
+	<element name="Club (Stagger)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_CLUB">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s passive perception is reduced by 5 and they have disadvantage on perception checks until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target has Blinded condition instead until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Club, the Target’s passive perception is reduced by 5 and they have disadvantage on perception checks until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Club, the Target’s passive perception is reduced by 5 and they have disadvantage on perception checks until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target has Blinded condition instead until the end of their next turn.</description>
+		</sheet>
+	</element>
+
+	<element name="Dagger (Lacerate)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_DAGGER">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target has bleeding condition and loses 1d4 hp at the start of their turn, until healed.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target has bleeding condition and loses 1d8 hp at the start of their turn, instead until healed.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Dagger, the Target is bleeding and loses 1d4 hp at the start of their turn until healed.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Dagger, the Target is bleeding and loses 1d4 hp at the start of their turn until healed. If your hit roll exceeds Target’s AC by 10 or more, the Target has bleeding condition and loses 1d8 hp at the start of their turn, instead until healed.</description>
+		</sheet>
+	</element>
+	
+	<element name="Double Bladed Scimitar (Flourish)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_DBSCIMITAR">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_WOTC_ERLW_WEAPON_PROFICIENCY_DOUBLE_BLADED_SCIMITAR</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the attacker gains +2 AC until the start of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the attacker gains +5 AC until the start of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Flourish prowess, any magical attack roll against the attacker that misses is deflected back at the caster and hits if the original attack roll meets or exceeds the caster’s armor class.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Double Bladed Scimitar, you gain +2 AC until the start of your next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Double Bladed Scimitar, you gain +2 AC until the start of your next turn. If your hit roll exceeds Target’s AC by 10 or more, you gain +5 AC until the start of your next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Double Bladed Scimitar, you gain +2 AC until the start of your next turn. If your hit roll exceeds Target’s AC by 10 or more, you gain +5 AC until the start of your next turn. When Flourish prowess activates, any magical attack roll against you that misses is deflected back at the caster and hits if the original attack roll meets or exceeds the caster’s armor class.</description>
+		</sheet>
+	</element>
+	
+	<element name="Flail (Pummel)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_FLAIL">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s speed is reduced by 10 feet until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Pummel prowess, the target must also make a Constitution Saving Throw against Attacker's Prowess DC ( DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is Incapacitated until the end of their next turn. On a success, the next attack against the target can be rolled with advantage.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Flail,the Target’s speed is reduced by 10 feet until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Flail,the Target’s speed is reduced by 10 feet until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Flail,the Target’s speed is reduced by 10 feet until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn. When Pummel prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is Incapacitated until the end of their next turn. On a success, the next attack against the target can be rolled with advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Glaive (Puncture)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_GLAIVE">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. </p>
+			<p>Starting at level 17, if a hit activates the Puncture prowess, the target must also make a Strength Saving Throw (DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Glaive, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Glaive, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Glaive, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence. When Puncture prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</description>
+		</sheet>
+	</element>
+
+	<element name="Greataxe (Feint)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_GREATAXE">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the target has disadvantage on their next attack roll until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the target has disadvantage on their next attack roll until the end of their next turn. The target must also make a strength saving throw against Attacker’s prowess DC or is disarmed of any weapon, shield, or focus held by one hand only. The concerned object is yanked 5 feet behind the attacker.</p>
+			<p>Starting at level 17, if a hit activates the Feint prowess, the next attack roll is considered critical on a natural 15 or higher until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Greataxe, the target has disadvantage on their next attack roll until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Greataxe, the target has disadvantage on their next attack roll until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, The target must also make a strength saving throw against Attacker’s prowess DC or is disarmed of any weapon, shield, or focus held by one hand only. The concerned object is yanked 5 feet behind the attacker.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Greataxe, the target has disadvantage on their next attack roll until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, The target must also make a strength saving throw against Attacker’s prowess DC or is disarmed of any weapon, shield, or focus held by one hand only. The concerned object is yanked 5 feet behind the attacker. When Feint prowess activates, on a natural roll of 15 or higher, the next attack roll before the end of your next turn is considered a critical hit.</description>
+		</sheet>
+	</element>
+	
+	<element name="Greatclub (Pummel)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_GREATCLUB">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s speed is reduced by 10 feet until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Pummel prowess, the target must also make a Constitution Saving Throw against Attacker's Prowess DC ( DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is Incapacitated until the end of their next turn. On a success, the next attack against the target can be rolled with advantage.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Greatclub, the Target’s speed is reduced by 10 feet until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Greatclub, the Target’s speed is reduced by 10 feet until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Greatclub, the Target’s speed is reduced by 10 feet until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn. When Pummel prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is Incapacitated until the end of their next turn. On a success, the next attack against the target can be rolled with advantage.</description>
+		</sheet>
+	</element>
+
+	<element name="Greatsword (Flourish)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_GREATSWORD">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the attacker gains +2 AC until the start of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the attacker gains +5 AC until the start of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Flourish prowess, any magical attack roll against the attacker that misses is deflected back at the caster and hits if the original attack roll meets or exceeds the caster’s armor class.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Greatsword, you gain +2 AC until the start of your next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Greatsword, you gain +2 AC until the start of your next turn. If your hit roll exceeds Target’s AC by 10 or more, you gain +5 AC until the start of your next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Greatsword, you gain +2 AC until the start of your next turn. If your hit roll exceeds Target’s AC by 10 or more, you gain +5 AC until the start of your next turn. When Flourish prowess activates, any magical attack roll against you that misses is deflected back at the caster and hits if the original attack roll meets or exceeds the caster’s armor class.</description>
+		</sheet>
+	</element>
+
+	<element name="Halberd (Puncture)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_HALBERD">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. </p>
+			<p>Starting at level 17, if a hit activates the Puncture prowess, the target must also make a Strength Saving Throw (DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Halberd, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Halberd, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Halberd, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence. When Puncture prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</description>
+		</sheet>
+	</element>
+	
+	<element name="Hand Crossbow (Torpor)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_HANDCROSSBOW">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target must subtract a d4 from their next attack roll before the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Torpor prowess, all attack rolls against the Target have advantage until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Hand Crossbow, the Target must subtract a d4 from their next attack roll before the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Hand Crossbow, the Target must subtract a d4 from their next attack roll before the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of target's next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Hand Crossbow, the Target must subtract a d4 from their next attack roll before the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of their next turn. When Torpor prowess activates, all attack rolls against the Target have advantage until the end of target's next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Handaxe (Torpor)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_HANDAXE">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target must subtract a d4 from their next attack roll before the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Torpor prowess, all attack rolls against the Target have advantage until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Handaxe, the Target must subtract a d4 from their next attack roll before the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Handaxe, the Target must subtract a d4 from their next attack roll before the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of target's next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Handaxe, the Target must subtract a d4 from their next attack roll before the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of their next turn. When Torpor prowess activates, all attack rolls against the Target have advantage until the end of target's next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Heavy Crossbow (Puncture)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_HEAVY_CROSSBOW">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. </p>
+			<p>Starting at level 17, if a hit activates the Puncture prowess, the target must also make a Strength Saving Throw (DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Heavy Crossbow, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Heavy Crossbow, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Heavy Crossbow, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence. When Puncture prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</description>
+		</sheet>
+	</element>
+
+	<element name="Javelin (Breach)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_JAVELIN">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s speed is halved until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s speed is halved until the end of their next turn and they take further 1d6 piercing damage on willingly moving 5 feet until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Javelin, the Target’s speed is halved until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Javelin, the Target’s speed is halved until the end of their next turn.. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is halved until the end of their next turn and they take further 1d6 piercing damage on willingly moving 5 feet until the end of their next turn.</description>
+		</sheet>
+	</element>	
+	
+	<element name="Lance (Bash)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_LANCE">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker's hit roll exceeds Target’s AC by 5 or higher, the Target is pushed 5 feet away from the attacker in any direction of their choice.</p>
+			<p>Starting at level 11, if the attacker's hit roll exceeds Target’s AC by 10 or higher, the Target is either pushed 10 feet away from the attacker in any direction of their choice or falls prone.</p>
+			<p>Starting at level 17, if a hit activates the Bash prowess, the target must also make a Constitution Saving Throw ( DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is Dazed until the end of their next turn. On a success their movement is halved until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Lance, the Target is pushed 5 feet away from you in any direction of your choice.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Lance, the Target is pushed 5 feet away from you in any direction of your choice. If your hit roll exceeds Target’s AC by 10 or more, you choose if the Target is either pushed 10 feet away or if they fall prone.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Lance, the Target is pushed 5 feet away from you in any direction of your choice. If your hit roll exceeds Target’s AC by 10 or more, you choose if the Target is either pushed 10 feet away from you or if they fall prone. Furthermore, the target must also make a Constitution Saving Throw against your Prowess DC. On fail the target is Dazed until the end of their next turn. On a success their movement is halved until the end of their next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Light Crossbow (Torpor)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_LIGHTCROSSBOW">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target must subtract a d4 from their next attack roll before the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Torpor prowess, all attack rolls against the Target have advantage until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Light Crossbow, the Target must subtract a d4 from their next attack roll before the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Light Crossbow, the Target must subtract a d4 from their next attack roll before the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of target's next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Light Crossbow, the Target must subtract a d4 from their next attack roll before the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of their next turn. When Torpor prowess activates, all attack rolls against the Target have advantage until the end of target's next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Light Hammer (Stagger)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_LIGHT_HAMMER">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s passive perception is reduced by 5 and they have disadvantage on perception checks until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target has Blinded condition instead until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Light Hammer, the Target’s passive perception is reduced by 5 and they have disadvantage on perception checks until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Light Hammer, the Target’s passive perception is reduced by 5 and they have disadvantage on perception checks until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target has Blinded condition instead until the end of their next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Longbow (Torpor)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_LONGBOW">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target must subtract a d4 from their next attack roll before the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Torpor prowess, all attack rolls against the Target have advantage until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Longbow, the Target must subtract a d4 from their next attack roll before the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Longbow, the Target must subtract a d4 from their next attack roll before the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of target's next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Longbow, the Target must subtract a d4 from their next attack roll before the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of their next turn. When Torpor prowess activates, all attack rolls against the Target have advantage until the end of target's next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Longsword (Flourish)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_LONGSWORD">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the attacker gains +2 AC until the start of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the attacker gains +5 AC until the start of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Flourish prowess, any magical attack roll against the attacker that misses is deflected back at the caster and hits if the original attack roll meets or exceeds the caster’s armor class.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Longsword, you gain +2 AC until the start of your next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Longsword, you gain +2 AC until the start of your next turn. If your hit roll exceeds Target’s AC by 10 or more, you gain +5 AC until the start of your next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Longsword, you gain +2 AC until the start of your next turn. If your hit roll exceeds Target’s AC by 10 or more, you gain +5 AC until the start of your next turn. When Flourish prowess activates, any magical attack roll against you that misses is deflected back at the caster and hits if the original attack roll meets or exceeds the caster’s armor class.</description>
+		</sheet>
+	</element>
+	
+	<element name="Mace (Pummel)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_MACE">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s speed is reduced by 10 feet until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Pummel prowess, the target must also make a Constitution Saving Throw against Attacker's Prowess DC ( DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is Incapacitated until the end of their next turn. On a success, the next attack against the target can be rolled with advantage.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Mace, the Target’s speed is reduced by 10 feet until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Mace, the Target’s speed is reduced by 10 feet until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Mace, the Target’s speed is reduced by 10 feet until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn. When Pummel prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is Incapacitated until the end of their next turn. On a success, the next attack against the target can be rolled with advantage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Maul (Bash)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_MAUL">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker's hit roll exceeds Target’s AC by 5 or higher, the Target is pushed 5 feet away from the attacker in any direction of their choice.</p>
+			<p>Starting at level 11, if the attacker's hit roll exceeds Target’s AC by 10 or higher, the Target is either pushed 10 feet away from the attacker in any direction of their choice or falls prone.</p>
+			<p>Starting at level 17, if a hit activates the Bash prowess, the target must also make a Constitution Saving Throw ( DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is Dazed until the end of their next turn. On a success their movement is halved until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Mace, the Target is pushed 5 feet away from you in any direction of your choice.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Lance, the Target is pushed 5 feet away from you in any direction of your choice. If it exceeds Target’s AC by 10 or more, you choose if the Target is either pushed 10 feet away or if they fall prone.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Lance, the Target is pushed 5 feet away from you in any direction of your choice. If it exceeds Target’s AC by 10 or more, you choose if the Target is either pushed 10 feet away or if they fall prone. Furthermore, the target must also make a Constitution Saving Throw against your Prowess DC. On fail the target is Dazed until the end of their next turn. On a success their movement is halved until the end of their next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Morningstar (Pummel)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_MORNINGSTAR">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s speed is reduced by 10 feet until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Pummel prowess, the target must also make a Constitution Saving Throw against Attacker's Prowess DC ( DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is Incapacitated until the end of their next turn. On a success, the next attack against the target can be rolled with advantage.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Morningstar, the Target’s speed is reduced by 10 feet until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Morningstar, the Target’s speed is reduced by 10 feet until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Morningstar, the Target’s speed is reduced by 10 feet until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn. When Pummel prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is Incapacitated until the end of their next turn. On a success, the next attack against the target can be rolled with advantage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pike (Puncture)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_PIKE">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. </p>
+			<p>Starting at level 17, if a hit activates the Puncture prowess, the target must also make a Strength Saving Throw (DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Pike, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Pike, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Pike, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence. When Puncture prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</description>
+		</sheet>
+	</element>
+	
+	<element name="Quarterstaff (Tangle)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_QUARTERSTAFF">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target is grappled by the attacker.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target is grappled and falls prone.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Quarterstaff, the Target is grappled by the attacker.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Quarterstaff, the Target is grappled by the attacker. If your hit roll exceeds Target’s AC by 10 or more, the Target is grappled and falls prone.</description>
+		</sheet>
+	</element>
+	
+	<element name="Rapier (Twirl)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_SHORTSWORD">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s next attack roll doesn’t include their attack’s ability modifier until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target is also disarmed of their weapon or spell focus.</p>
+			<p>Starting at level 17, if a hit activates the Twirl prowess, the target must also make an Athletics or Acrobatics Check (DC 8 + Ability Modifier Used to Attack + Proficiency Bonus) as a reaction, on fail the target is grappled and restrained by the attacker.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Rapier, the Target next attack roll doesn’t include their attack’s ability modifier until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Rapier, the Target next attack roll doesn’t include their attack’s ability modifier until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target is also disarmed of their weapon or spell focus.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Rapier, the Target next attack roll doesn’t include their attack’s ability modifier until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target is also disarmed of their weapon or spell focus. When Twirl prowess activates, the target must also make an Athletics or Acrobatics Check against your Prowess DC as a reaction, on fail the target is grappled and restrained by the attacker.</description>
+		</sheet>
+	</element>
+	
+	<element name="Scimitar (Twirl)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_SHORTSWORD">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s next attack roll doesn’t include their attack’s ability modifier until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target is also disarmed of their weapon or spell focus.</p>
+			<p>Starting at level 17, if a hit activates the Twirl prowess, the target must also make an Athletics or Acrobatics Check (DC 8 + Ability Modifier Used to Attack + Proficiency Bonus) as a reaction, on fail the target is grappled and restrained by the attacker.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Scimitar, the Target next attack roll doesn’t include their attack’s ability modifier until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Scimitar, the Target next attack roll doesn’t include their attack’s ability modifier until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target is also disarmed of their weapon or spell focus.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Scimitar, the Target next attack roll doesn’t include their attack’s ability modifier until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target is also disarmed of their weapon or spell focus. When Twirl prowess activates, the target must also make an Athletics or Acrobatics Check against your Prowess DC as a reaction, on fail the target is grappled and restrained by the attacker.</description>
+		</sheet>
+	</element>
+	
+	<element name="Shortbow (Torpor)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_SHORTBOW">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target must subtract a d4 from their next attack roll before the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Torpor prowess, all attack rolls against the Target have advantage until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Shortbow, the Target must subtract a d4 from their next attack roll before the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Shortbow, the Target must subtract a d4 from their next attack roll before the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of target's next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Shortbow, the Target must subtract a d4 from their next attack roll before the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target must subtract a d8 instead from their next attack roll before the end of their next turn. When Torpor prowess activates, all attack rolls against the Target have advantage until the end of target's next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Shortsword (Twirl)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_SHORTSWORD">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s next attack roll doesn’t include their attack’s ability modifier until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target is also disarmed of their weapon or spell focus.</p>
+			<p>Starting at level 17, if a hit activates the Twirl prowess, the target must also make an Athletics or Acrobatics Check (DC 8 + Ability Modifier Used to Attack + Proficiency Bonus) as a reaction, on fail the target is grappled and restrained by the attacker.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Shortsword, the Target next attack roll doesn’t include their attack’s ability modifier until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Shortsword, the Target next attack roll doesn’t include their attack’s ability modifier until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target is also disarmed of their weapon or spell focus.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Shortsword, the Target next attack roll doesn’t include their attack’s ability modifier until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target is also disarmed of their weapon or spell focus. When Twirl prowess activates, the target must also make an Athletics or Acrobatics Check against your Prowess DC as a reaction, on fail the target is grappled and restrained by the attacker.</description>
+		</sheet>
+	</element>
+	
+	<element name="Sickle (Lacerate)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_SICKLE">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target has bleeding condition and loses 1d4 hp at the start of their turn, until healed.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target has bleeding condition and loses 1d8 hp at the start of their turn, instead until healed.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Sickle, the Target is bleeding and loses 1d4 hp at the start of their turn until healed.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Sickle, the Target is bleeding and loses 1d4 hp at the start of their turn until healed. If your hit roll exceeds Target’s AC by 10 or more, the Target has bleeding condition and loses 1d8 hp at the start of their turn, instead until healed.</description>
+		</sheet>
+	</element>
+	
+	<element name="Spear (Breach)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_Spear">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s speed is halved until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s speed is halved until the end of their next turn and they take further 1d6 piercing damage on willingly moving 5 feet until the end of their next turn.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Spear, the Target’s speed is halved until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Spear, the Target’s speed is halved until the end of their next turn.. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is halved until the end of their next turn and they take further 1d6 piercing damage on willingly moving 5 feet until the end of their next turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Staff (Tangle)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_STAFF">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_STAFF</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target is grappled by the attacker.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target is grappled and falls prone.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Staff, the Target is grappled by the attacker.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Staff, the Target is grappled by the attacker. If your hit roll exceeds Target’s AC by 10 or more, the Target is grappled and falls prone.</description>
+		</sheet>
+	</element>
+	
+	<element name="Trident (Puncture)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_Trident">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. </p>
+			<p>Starting at level 17, if a hit activates the Puncture prowess, the target must also make a Strength Saving Throw (DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Trident, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Trident, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Trident, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence. When Puncture prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</description>
+		</sheet>
+	</element>
+	
+	<element name="War Pick (Puncture)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_WAR_PICK">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. </p>
+			<p>Starting at level 17, if a hit activates the Puncture prowess, the target must also make a Strength Saving Throw (DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a War Pick, the Target’s AC is reduced by 1. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a War Pick, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a War Pick, the Target’s AC is reduced by 1. If your hit roll exceeds Target’s AC by 10 or more, the Target’s AC is reduced by 2 instead. The damage can only be restored by mending in case of armor or shield and healing in case of natural armor or unarmored defence. When Puncture prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is bleeding and suffers 2 points of piercing damage at the start of their turn until healed.</description>
+		</sheet>
+	</element>
+
+	<element name="Warhammer (Pummel)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_WARHAMMER">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target’s speed is reduced by 10 feet until the end of their next turn.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn.</p>
+			<p>Starting at level 17, if a hit activates the Pummel prowess, the target must also make a Constitution Saving Throw against Attacker's Prowess DC ( DC 8 + Ability Modifier Used to Attack + Proficiency Bonus), on fail the target is Incapacitated until the end of their next turn. On a success, the next attack against the target can be rolled with advantage.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Warhammer, the Target’s speed is reduced by 10 feet until the end of their next turn.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Warhammer, the Target’s speed is reduced by 10 feet until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn.</description>
+			<description level="17">If your hit roll exceeds Target’s AC by 5 or more with a Warhammer, the Target’s speed is reduced by 10 feet until the end of their next turn. If your hit roll exceeds Target’s AC by 10 or more, the Target’s speed is reduced by 20 feet until the end of their next turn. When Pummel prowess activates, the target must also make a Constitution Saving Throw against your Prowess DC, on fail the target is Incapacitated until the end of their next turn. On a success, the next attack against the target can be rolled with advantage.</description>
+		</sheet>
+	</element>
+	
+	<element name="Whip (Tangle)" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_WEAPON_PROWESS_WHIP">
+		<supports>Weapon Prowess</supports>
+		<requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP</requirements>
+		<description>
+			<p>Starting at level 5, if the attacker’s hit roll exceeds Target’s AC by 5 or more, the Target is grappled by the attacker.</p>
+			<p>Starting at level 11, if the attacker’s hit roll exceeds Target’s AC by 10 or more, the Target is grappled and falls prone.</p>
+		</description>
+		<sheet usage="1/Turn">
+			<description level="5">If your hit roll exceeds Target’s AC by 5 or more with a Whip, the Target is grappled by the attacker.</description>
+			<description level="11">If your hit roll exceeds Target’s AC by 5 or more with a Whip, the Target is grappled by the attacker. If your hit roll exceeds Target’s AC by 10 or more, the Target is grappled and falls prone.</description>
+		</sheet>
+	</element>
+	
+</elements>

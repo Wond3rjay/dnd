@@ -5,7 +5,7 @@
 		<description>Spells added to 5th edition after 2014 edition was shut down.</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide to Maa</source>
-		<update version="2.0">
+		<update version="2.0.5">
 			<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml"/>
 		</update>
 	</info>
@@ -32,6 +32,28 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	
+	<element name="Arcane Lock" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ARCANE_LOCK">
+		<supports>Wizard, Artificer</supports>
+		<description>
+			<p>You touch a closed door, window, gate, chest, or other entryway, and it becomes locked for the duration. You and the creatures you designate when you cast this spell can open the object normally. You can also set a password that, when spoken within 5 feet of the object, suppresses this spell for 1 minute. Otherwise, it is impassable until it is broken or the spell is dispelled or suppressed. Casting knock on the object suppresses arcane lock for 10 minutes.</p>
+			<p class="indent">While affected by this spell, the object is impossible to break or force open by nonmagical means.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Until dispelled</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">gold dust worth at least 25 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
   
 	<element name="Arcane Vigor" type="Spell" source="Jay's Guide to Maa" id="ID_JAY_2024_SPELL_ARCANE_VIGOR">
 		<supports>Sorcerer, Wizard</supports>
@@ -54,6 +76,29 @@
 		</setters>
 	</element>
 	
+
+	<element name="Armor of Agathys" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ARMOR_OF_AGATHYS">
+		<supports>Warlock</supports>
+		<description>
+			<p>A protective magical force surrounds you, manifesting as a spectral frost that covers you and your gear. You gain 5 temporary hit points for the duration. If a creature hits you with a melee attack while you have these hit points, the creature takes 5 cold damage.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the cold damage increase by 5 for each slot above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">cold</set>
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a cup of water</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 	<element name="Backlash" type="Spell" source="Jay's Guide to Maa" id="ID_JAY_2024_BACKLASH">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
@@ -70,6 +115,27 @@
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">false</set>
 			<set name="hasMaterialComponent">false</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Barkskin" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_BARKSKIN">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<p>You touch a willing creature. Until the spell ends, the target’s skin has a rough, bark-like appearance, and the target’s AC can’t be less than 17, regardless of what kind of armor it is wearing.</p>
+		</description>
+		<setters>
+			<set name="keywords">ac</set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of oak bark</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -360,26 +426,6 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-  
-	<element name="Jay's Vicious Mockery" type="Spell" source="Jay's Guide to Maa" id="ID_JAY_2024_JAYS_VICIOUS_MOCKERY">
-		<supports>Bard</supports>
-		<description>
-			<p>You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.</p>
-			<p><b>Cantrip Upgrade.</b>This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>
-		</description>
-		<setters>
-		<set name="level">0</set>
-		<set name="school">Enchantment</set>
-		<set name="time">1 bonus action</set>
-		<set name="duration">Instantaneous</set>
-		<set name="range">60 feet</set>
-		<set name="hasVerbalComponent">true</set>
-		<set name="hasSomaticComponent">false</set>
-		<set name="hasMaterialComponent">false</set>
-		<set name="isConcentration">false</set>
-		<set name="isRitual">false</set>
-		</setters>
-	</element>
 	
 	<element name="Laeral's Silver Lance" type="Spell" source="Jay's Guide to Maa" id="ID_JAY_2024_LAERALS_SILVER_LANCE">
 		<supports>Cleric, Sorcerer, Wizard</supports>
@@ -401,6 +447,31 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	
+	<element name="Moonbeam" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_MOONBEAM">
+		<supports>Druid, Spell Saving Throw</supports>
+		<description>
+			<p>A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.</p>
+			<p class="indent">When a creature enters the spell’s area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a Constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent">A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can’t assume a different form until it leaves the spell’s light.</p>
+			<p class="indent">On each of your turns after you cast this spell, you can use a bonus action to move the beam up to 60 feet in any direction.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">several seeds of any moonseed plant and a piece of opalescent feldspar</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
   
 	<element name="Power Word Fortify" type="Spell" source="Jay's Guide to Maa" id="ID_JAY_2024_SPELL_POWER_WORD_FORTIFY">
 		<supports>Bard, Cleric</supports>
@@ -417,6 +488,28 @@
 			<set name="hasSomaticComponent">false</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent"/>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Shillelagh" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_SHILLELAGH">
+		<supports>Druid</supports>
+		<description>
+			<p>The wood of a club or quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8 and the damage type becomes force damage. The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon.</p>
+			<p class="indent">The spell’s damage die changes when you reach 5th level (1d10), 11th level (1d12), and 17th level (2d8).</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">mistletoe, a shamrock leaf, and a club or quarterstaff</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -570,6 +663,27 @@
 		</setters>
 	</element>
 	
+	<element name="Stoneskin" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_STONESKIN">
+		<supports>Druid, Ranger, Sorcerer, Wizard, Artificer</supports>
+		<description>
+			<p>This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to all bludgeoning, piercing, and slashing damage.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">diamond dust worth 100 gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 	<element name="Syluné's Viper" type="Spell" source="Jay's Guide to Maa" id="ID_JAY_2024_SYLUNES_VIPER">
 		<supports>Druid, Wizard</supports>
 		<description>
@@ -615,6 +729,49 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	
+	<element name="True Strike" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_TRUE_STRIKE">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target’s defenses. You learn one damage type or condition to which the target is either immune, resistant or vulnerable.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Vicious Mockery" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_VICIOUS_MOCKERY">
+		<supports>Bard, Spell Saving Throw</supports>
+		<description>
+			<p>You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.</p>
+			<p class="indent">This spell’s damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4) and 17th level (4d4)</p>
+		</description>
+		<setters>
+			<set name="keywords">psychic</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 
 	<element name="Wardaway" type="Spell" source="Jay's Guide to Maa" id="ID_JAY_2024_WARDAWAY">
 		<supports>Bard, Cleric, Paladin, Wizard</supports>
@@ -634,6 +791,28 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a miniature clay hand</set>
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Witch Bolt" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_WITCH_BOLT">
+		<supports>Sorcerer, Warlock, Wizard, Ranged, Spell Attack</supports>
+		<description>
+			<p>A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your subsequent turns for the duration, you can use your bonus action to deal 1d12 lightning damage to the target automatically. The spell ends if the target is ever outside the spell’s range or if it has total cover from you.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by 1d12 for each slot level above 1st.</p>
+		</description>
+		<setters>
+			<set name="keywords">lightning</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a twig from a tree that has been struck by lightning</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>

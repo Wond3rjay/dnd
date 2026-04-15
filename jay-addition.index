@@ -5,7 +5,7 @@
 		<author>Jay Ahuja</author>
 		<description>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games. The new Fantastic Fletcher update is Live! Sidenote, Fixed Goddess Kaalraatri's vestige-champion weapon's additional damage. Now with Reworked Monk Class, Maarut Lineage.</description>
 		<source>Jay's Guide to Maa</source>
-		<update version="2.0.41">
+		<update version="2.0.5">
 			<file name="jay-addition.index" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jay-addition.index" />
 		</update>
 	</info>
@@ -28,5 +28,6 @@
 		<file name="jays-aurora-patch.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jays-aurora-patch.xml" />
 		<file name="2024-spells.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/2024-spells/2024-spells.xml" />
 		<file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
+		<file name="weapon-prowess.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/weapon-prowess.xml" />
 	</files>
 </index>
