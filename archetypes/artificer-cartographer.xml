@@ -2,15 +2,15 @@
 <elements>
 	<info>
 		<name>Cartographer</name>
-		<description>The Cartographer subclass from Jay's Guide to Maa.</description>
+		<description>The Cartographer subclass from Jay's Guide To Maa.</description>
 		<author>Jay Ahuja</author>
-		<source>Jay's Guide to Maa</source>
-		<update version="2.0">
+		<source>Jay's Guide To Maa</source>
+		<update version="2.3">
 			<file name="artificer-cartographer.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/artificer-cartographer.xml" />
 		</update>
 	</info>
 
-	<element name="Cartographer" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_ARTIFICER_CARTOGRAPHER">
+	<element name="Cartographer" type="Archetype" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_ARTIFICER_CARTOGRAPHER">
 		<supports>Artificer Specialist, TCOE Base</supports>
 		<description>
 			<p class="flavor">Chart Advantageous Courses through Turmoil</p>
@@ -35,7 +35,7 @@
 		</rules>
 	</element>
 
-	<element name="Tools of the Trade" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_TOOLS_OF_THE_TRADE">
+	<element name="Tools of the Trade" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_TOOLS_OF_THE_TRADE">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_ARTIFICER_CARTOGRAPHER_TOOLS_OF_THE_TRADE</requirements>
 		<description>
 			<p><em>3rd Level Feature</em></p>
@@ -52,7 +52,7 @@
 		</rules>
 	</element>
 	
-	<element name="Cartographer Spells" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_CARTOGRAPHER_SPELLS">
+	<element name="Cartographer Spells" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_CARTOGRAPHER_SPELLS">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_ARTIFICER_CARTOGRAPHER_CARTOGRAPHER_SPELLS</requirements>
 		<description>
 			<p><em>3rd Level Feature</em></p>			
@@ -85,7 +85,7 @@
 		</rules>
 	</element>
 	
-	<element name="Adventurer's Atlas" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_ADVENTURERS_ATLAS">
+	<element name="Adventurer's Atlas" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_ADVENTURERS_ATLAS">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_ARTIFICER_CARTOGRAPHER_ADVENTURERS_ATLAS</requirements>
 		<description>
 			<p><em>3rd Level Cartographer Artificer Feature</em></p>
@@ -105,7 +105,7 @@
 		</rules>
 	</element>
 	
-	<element name="Mapping Magic" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_MAPPING_MAGIC">
+	<element name="Mapping Magic" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_MAPPING_MAGIC">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_ARTIFICER_CARTOGRAPHER_MAPPING_MAGIC</requirements>
 		<description>
 			<p><em>3rd Level Feature</em></p>
@@ -121,7 +121,7 @@
 		</rules>
 	</element>
 	
-	<element name="Illuminated Cartography" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_MAPPING_MAGIC_ILLUMINATED_CARTOGRAPHY">
+	<element name="Illuminated Cartography" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_MAPPING_MAGIC_ILLUMINATED_CARTOGRAPHY">
 		<compendium display="false" />
 		<supports>Illuminated Cartography</supports>
 		<description>
@@ -137,7 +137,7 @@
 		</rules>
 	</element>
 
-	<element name="Guided Precision" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_GUIDED_PRECISION">
+	<element name="Guided Precision" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_GUIDED_PRECISION">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_ARTIFICER_CARTOGRAPHER_GUIDED_PRECISION</requirements>
 		<description>
 			<p><em>5th Level Feature</em></p>
@@ -149,7 +149,7 @@
 		</sheet>
 	</element>
 
-	<element name="Ingenious Movement" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_INGENIOUS_MOVEMENT">
+	<element name="Ingenious Movement" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_INGENIOUS_MOVEMENT">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_ARTIFICER_CARTOGRAPHER_INGENIOUS_MOVEMENT</requirements>
 		<description>
 			<p><em>9th Level Feature</em></p>
@@ -160,7 +160,7 @@
 		</sheet>
 	</element>
 
-	<element name="Level 15: Superior Atlas" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_SUPERIOR_ATLAS">
+	<element name="Level 15: Superior Atlas" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_SUPERIOR_ATLAS">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_ARTIFICER_CARTOGRAPHER_SUPERIOR_ATLAS</requirements>
 		<description>
 			<p><em>15th Level Feature</em></p>
@@ -180,7 +180,7 @@
 			<select type="Archetype Feature" name="Unerring Path" supports="Unerring Path" default="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_SUPERIOR_ATLAS_UNERRING_PATH" />
 		</rules>
 	</element>
-	<element name="Unerring Path" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_SUPERIOR_ATLAS_UNERRING_PATH">
+	<element name="Unerring Path" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_ARTIFICER_CARTOGRAPHER_SUPERIOR_ATLAS_UNERRING_PATH">
 		<compendium display="false" />
 		<supports>Unerring Path</supports>
 		<description>

@@ -2,14 +2,14 @@
 <elements>
 	<info>
 		<name>College of Moon</name>
-		<description>College of Moon subclass for Bards from Jay's Guide to Maa</description>
+		<description>College of Moon subclass for Bards from Jay's Guide To Maa</description>
 		<author>Jay Ahuja</author>
-		<source>Jay's Guide to Maa</source>
-		<update version="2.0">
+		<source>Jay's Guide To Maa</source>
+		<update version="2.3">
 			<file name="bard-moon.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-moon.xml" />
 		</update>
 	</info>
-	<element name="College of Moon" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_COLLEGE_OF_Moon">
+	<element name="College of Moon" type="Archetype" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_COLLEGE_OF_Moon">
 		<supports>Bard College</supports>
 		<description>
 			<p><em>Inspire Allies with Primal Tales</em></p>
@@ -30,7 +30,7 @@
 		</rules>
 	</element>
 	
-	<element name="Moon's Inspiration" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION">
+	<element name="Moon's Inspiration" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_MOONS_INSPIRATION</requirements>
 		<description>
 			<p><em>3rd-level College of Moon feature</em></p>
@@ -45,7 +45,7 @@
 		</rules>
 	</element>
 	
-	<element name="Inspired Eclipse" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION_ECLIPSE">
+	<element name="Inspired Eclipse" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION_ECLIPSE">
 		<compendium display="false" />
 		<supports>Moon's Inspiration</supports>
 		<sheet>
@@ -53,7 +53,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Lunar Vitality" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION_LUNAR_VITALITY">
+	<element name="Lunar Vitality" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_MOONS_INSPIRATION_LUNAR_VITALITY">
 		<compendium display="false" />
 		<supports>Moon's Inspiration</supports>
 		<sheet usage="1/Turn">
@@ -61,7 +61,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Primal Lore" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_PRIMAL_LORE">
+	<element name="Primal Lore" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_PRIMAL_LORE">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_PRIMAL_LORE</requirements>
 		<description>
 			<p><em>3rd-level College of Moon feature</em></p>
@@ -76,7 +76,7 @@
 		</rules>
 	</element>
 	
-	<element name="Blessing of Moonlight" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_BLESSING_MOONLIGHT">
+	<element name="Blessing of Moonlight" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_BLESSING_MOONLIGHT">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_BLESSING_MOONLIGHT</requirements>
 		<description>
 			<p><em>6th-level College of Moon feature</em></p>
@@ -92,7 +92,7 @@
 		</rules>
 	</element>
 	
-	<element name="Eventide's Splendor" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR">
+	<element name="Eventide's Splendor" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_MOON_EVENTIDES_SPLENDOR</requirements>
 		<description>
 			<p><em>14th-level College of Moon feature</em></p>
@@ -107,7 +107,7 @@
 		</rules>
 	</element>
 	
-	<element name="Shadow of the New Moon" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR_SHADOW">
+	<element name="Shadow of the New Moon" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR_SHADOW">
 		<compendium display="false" />
 		<supports>Eventide's Splendor</supports>
 		<sheet>
@@ -115,7 +115,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Vibrance of the Full Moon" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR_VIBRANCE">
+	<element name="Vibrance of the Full Moon" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_MOON_EVENTIDES_SPLENDOR_VIBRANCE">
 		<compendium display="false" />
 		<supports>Eventide's Splendor</supports>
 		<sheet>

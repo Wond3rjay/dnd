@@ -5,10 +5,28 @@
 		<description>This is a collection of third party items from several Non-WOTC sources that we have incorporated in Maa games</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide to Maa</source>
-		<update version="2.0">
+		<update version="2.3">
 			<file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
 		</update>
 	</info>
+	
+		<!-- Magical Weapons -->
+	<element name="Fire Kissed" type="Magic Item" source="Jay's Guide to Maa" id="ID_JAY_MAGIC_ITEM_FIRE_KISSED">
+		<description>
+			<p>Forged in flames blessed by an Efreeti, a Flame Kissed sword erupts in flame when it's blade makes an hostile contact with a creature causing an addition 1d6 fire damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">attack, damage, piercing, slashing</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">250</set>
+			<set name="type" addition="Any Sword">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="attunement">false</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_GROUP_SWORDS||ID_WOTC_ERLW_WEAPON_DOUBLE_BLADED_SCIMITAR</set>
+			<set name="name-format">Fire Kissed ({{parent}})</set>
+		</setters>
+	</element>
 	
 	<!-- Advanced Weapons -->
 	<element name="Composite Longbow" type="Weapon" source="Jay's Guide to Maa" id="ID_GFG_GHPG_WEAPON_COMPOSITE_LONGBOW">
@@ -71,7 +89,7 @@
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="0.4">0.3 lb.</set>
-			<set name="cost" currency="gp">0.15</set>
+			<set name="cost" currency="gp">0.2</set>
 		</setters>
 	</element>
 	
@@ -125,7 +143,7 @@
 
 	<element name="Blinding Arrow" type="Magic Item" source="Jay's Guide to Maa" id="ID_JAY_MAGIC_ITEM_BLINDING_ARROW">
 		<description>
-			<p><em>Blinding Arrows</em> have a small clay pot with an opening inside, containing a reactive chemical. On hit, the chemical releases a bright flash, blinding the target if it fails a CON (DC 13) until the start of your next turn.</p>
+			<p><em>Blinding Arrows</em> have a small clay pot with an opening inside, containing a reactive chemical. On hit, the chemical releases a bright flash, blinding the target if it fails a DEX save (DC 13) until the start of your next turn.</p>
 			<p class="indent">A <em>blinding arrow</em> is destroyed upon use.</p>
 			<p class="indent">To craft blinding arrow, <em>Alchemist Supplies</em>, <em>Potters' Tools</em> and <em>Woodcarver's tools</em> proficiency is required along with access to an Alchemy lab, an explosive chemical and sufficient wood. DC 14</p>
 		</description>
@@ -136,7 +154,7 @@
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">1 lb.</set>
-			<set name="cost" currency="gp">6</set>
+			<set name="cost" currency="gp">20</set>
 		</setters>
 	</element>
 	
@@ -158,7 +176,7 @@
 	
 	<element name="Acid Arrow" type="Magic Item" source="Jay's Guide to Maa" id="ID_JAY_MAGIC_ITEM_ACID_ARROW">
 		<description>
-			<p>The arrow turns into a streak of acid mid-path. On a hit, the target takes 1d8 acid damage and the creature must make a successful DC14 CON save or take another 1d8 acid damage on subsequent turn. on a miss the target only takes half of initial damage and no damage on the following turn.</p>
+			<p>The arrow turns into a streak of acid mid-path. On a hit, the target takes 1d8 acid damage and the target must make a successful DC14 CON save or take another 1d8 acid damage on subsequent turn. on a miss the target only takes half of initial damage and no damage on the following turn.</p>
 			<p class="indent">An <em>acid arrow</em> is destroyed after use.</p>
 			<p class="indent">Only an artificer can craft an acid arrow. The artificer must spend one spell slot for every three arrows to infuse them with transmutation energy, DC 14. <em>Components Required:</em> powdered rhubarb leaf and an adder's stomach.</p>
 		</description>
@@ -169,6 +187,7 @@
 			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">0.5 lb.</set>
+			<set name="cost" currency="gp">30</set>
 		</setters>
 	</element>
 	
@@ -185,6 +204,7 @@
 			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">0.5 lb.</set>
+			<set name="cost" currency="gp">25</set>
 		</setters>
 	</element>
 
@@ -201,6 +221,7 @@
 			<set name="rarity">Uncommon</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">0.5 lb.</set>
+			<set name="cost" currency="gp">25</set>
 		</setters>
 	</element>
 	
@@ -208,7 +229,7 @@
 		<description>
 			<p>The <em>necrotic arrow</em> has a skull fuming with necrotic energy for arrow head. On a hit, the arrow deals 1d4 bludgeoning damage and 1d10 necrotic damage. The target must succeed DC14 CON save or its Hit Points Maximum reduce by equivalent to the necrotic damage dealt.</p>
 			<p class="indent">A <em>necrotic arrow</em> is destroyed after use.</p>
-			<p class="indent">Only an artificer can craft a necrotic arrow. The artificer must spend one spell slot for every three arrows to infuse them with necrotic energy, Arcana Check DC 14. <em>Components Required:</em> Access to a small skull worth 5 gp, two square feet of dead remains. </p>
+			<p class="indent">Only an artificer can craft a necrotic arrow. The artificer must spend one spell slot for every three arrows to infuse them with necrotic energy, Arcana Check DC 14. <em>Components Required:</em> Access to three small skulls worth 5 gp, two square feet of dead remains. </p>
 		</description>
 		<setters>
 			<set name="keywords">arrow</set>
@@ -217,6 +238,7 @@
 			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">0.5 lb.</set>
+			<set name="cost" currency="gp">50</set>
 		</setters>
 	</element>
 	
@@ -224,7 +246,7 @@
 		<description>
 			<p>On a hit, the <em>tormenting arrow</em> transforms in a crown of lightning around target's head and deals additional 1d6 Psychic Damage. Additionally, the target must succeed DC14 WIS save or suffers from tormenting thoughts and visions that makes it hard for him to concentrate. The target has disadvantage on following saving throws and concentration checks till the end of the archer's next turn.</p>
 			<p class="indent">A <em>tormenting arrow</em> is destroyed after use.</p>
-			<p class="indent">Only an artificer can craft a tormenting arrow. The artificer must also spend one spell slot for every three arrows to infuse them with psychic energy, Arcana Check DC 14. <em>Components Required:</em> A tiny humanoid replica poked by 5 pins and wood.</p>
+			<p class="indent">Only an artificer can craft a tormenting arrow. The artificer must also spend one spell slot for every three arrows to infuse them with psychic energy, Arcana Check DC 14. <em>Components Required:</em> Three tiny humanoid replica poked by 5 pins and wood.</p>
 		</description>
 		<setters>
 			<set name="keywords">arrow</set>
@@ -233,6 +255,7 @@
 			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">0.5 lb.</set>
+			<set name="cost" currency="gp">40</set>
 		</setters>
 	</element>
 	
@@ -241,7 +264,7 @@
 			<p>On a hit, the <em>radiant arrow</em> explodes in a burst of radiant energy and the target must succeed DC14 WIS save or takes 2d6 Radiant Damage. On a successful save the target only takes half radiant damage. An undead has disadvantage on the saving throw.</p>
 			<p class="indent">A <em>radiant arrow</em> is destroyed after use.</p>
 			<p class="indent">Only an artificer can craft a radiant arrow. The artificer must spend one spell slot for every three arrows to infuse them with radiant energy, Arcana Check DC 14. <em>Components Required:</em> A 
-			holy symbol and holy water blessed by a cleric or a paladin in the name of their deity.</p>
+			holy symbol and holy water blessed by a cleric or a paladin in the name of their deity for each arrow.</p>
 		</description>
 		<setters>
 			<set name="keywords">arrow</set>
@@ -250,6 +273,7 @@
 			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">0.5 lb.</set>
+			<set name="cost" currency="gp">60</set>
 		</setters>
 	</element>
 	
@@ -267,6 +291,7 @@
 			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">0.5 lb.</set>
+			<set name="cost" currency="gp">10</set>
 		</setters>
 	</element>
 
@@ -284,20 +309,7 @@
 			<set name="rarity">Rare</set>
 			<set name="stackable">true</set>
 			<set name="weight" lb="1">0.5 lb.</set>
-		</setters>
-	</element>
-	
-	<!-- Potions -->
-	<element name="Potion of Restoration" type="Magic Item" source="Jay's Guide to Maa" id="ID_JAY_ADDITIONS_MAGIC_ITEM_POTION_OF_RESTORATION">		
-		<description>
-			<p>When you drink this potion, you gain all the benefits you gain as if at the completion of a long rest. The potion appears to be stark red fluid in color that creates bright swirling tendrils on shaking the bottle that dissipate momentarily.</p>
-		</description>
-		<setters>
-			<set name="category">Potions</set>
-			<set name="weight" lb="1">1 lb.</set>
-			<set name="type">Potion</set>
-			<set name="rarity">Legendary</set>
-			<set name="stackable">true</set>
+			<set name="cost" currency="gp">15</set>
 		</setters>
 	</element>
 	
@@ -316,6 +328,21 @@
 			<set name="stackable">false</set>
 			<set name="attunement">true</set>
 			<set name="charges">3</set>
+		</setters>
+	</element>
+	
+	<element name="Alchemical Fire" type="Magic Item" source="Jay's Guide to Maa" id="ID_JAY_ADDITIONS_MAGIC_ITEM_ALCHEMICAL_FIRE">		
+		<description>
+			<p>Highly inflammable material contained inside a vial with a stopper that can be dropped as an action by pulling the string attached to it. The stopper has a charge mechanism attached to it which on dropping creates an alchemical compressed fire that bursts out from the opening in a 15 foot cone. Each creature in that area must make a DC 12 Dexterity saving throw, taking 10 (3d6) fire damage on a failed saving throw, or half as much damage on a successful one. The vial is defected in process.</p>
+			<p class="indent">To craft Alchemical Fire, <em>Alchemist Supplies</em>, <em>Glassblower's Tools</em> and <em>Tinker's Tools</em> proficiency is required along with access to an Alchemy lab, powdered bones, brine, piece of metal, wool, sugar, yeast. DC 16</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="1">0.2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+			<set name="cost" currency="gp">100</set>
 		</setters>
 	</element>
 
@@ -475,6 +502,20 @@
 		</setters>
 	</element>
 	
+	<element name="Potion of Restoration" type="Magic Item" source="Jay's Guide to Maa" id="ID_JAY_ADDITIONS_MAGIC_ITEM_POTION_OF_RESTORATION">		
+		<description>
+			<p>When you drink this potion, you gain all the benefits you gain as if at the completion of a long rest. The potion appears to be stark red fluid in color that creates bright swirling tendrils on shaking the bottle that dissipate momentarily.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Legendary</set>
+			<set name="stackable">true</set>
+			<set name="cost" currency="gp">10000</set>
+		</setters>
+	</element>
+
 	<!-- Weapon properties -->
 	
 	<element name="Armor Piercing" type="Weapon Property" source="Jay's Guide to Maa" id="ID_GFG_GHPG_WEAPON_PROPERTY_ARMOR_PIERCING">

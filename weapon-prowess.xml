@@ -4,8 +4,8 @@
 		<name>Weapon Prowess</name>
 		<description>Introducing New Feature for Martials, Weapon Prowess</description>
 		<author>Jay Ahuja</author>
-		<source>Jay's Guide to Maa</source>
-		<update version="2.0.5">
+		<source>Jay's Guide To Maa</source>
+		<update version="2.01">
 			<file name="weapon-prowess.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/weapon-prowess.xml" />
 		</update>
 	</info>

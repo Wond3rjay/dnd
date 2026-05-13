@@ -2,15 +2,15 @@
 <elements>
 	<info>
 		<name>College of Dance</name>
-		<description>College of Dance subclass for Bards from Jay's Guide to Maa</description>
+		<description>College of Dance subclass for Bards from Jay's Guide To Maa</description>
 		<author>Jay Ahuja</author>
-		<source>Jay's Guide to Maa</source>
-		<update version="2.0.1">
+		<source>Jay's Guide To Maa</source>
+		<update version="2.3">
 			<file name="bard-dance.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-dance.xml" />
 		</update>
 	</info>
 	
-	<element name="College of Dance" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_COLLEGE_OF_DANCE">
+	<element name="College of Dance" type="Archetype" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_COLLEGE_OF_DANCE">
 		<supports>Bard College</supports>
 		<description>
 			<p><em>Move in Harmony with the Cosmos</em></p>
@@ -31,7 +31,7 @@
 		</rules>
 	</element>
 	
-	<element name="Dazzling Footwork" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_DANCE_DAZZLING_FOOTWORK">
+	<element name="Dazzling Footwork" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_DANCE_DAZZLING_FOOTWORK">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_DANCE_DAZZLING_FOOTWORK</requirements>
 		<description>
 			<p><em>3rd-level College of Dance feature</em></p>
@@ -54,7 +54,7 @@
 		</rules>
 	</element>
 	
-	<element name="Inspiring Movement" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_DANCE_INSPIRING_MOVEMENT">
+	<element name="Inspiring Movement" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_DANCE_INSPIRING_MOVEMENT">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_DANCE_INSPIRING_MOVEMENT</requirements>
 		<description>
 			<p><em>6th-level College of Dance feature</em></p>
@@ -65,7 +65,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Tandem Footwork" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_DANCE_TANDEM_FOOTWORK">
+	<element name="Tandem Footwork" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_DANCE_TANDEM_FOOTWORK">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_DANCE_TANDEM_FOOTWORK</requirements>
 		<description>
 			<p><em>6th-level College of Dance feature</em></p>
@@ -80,7 +80,7 @@
 		</rules>
 	</element>
 	
-	<element name="Leading Evasion" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_DANCE_LEADING_EVASION">
+	<element name="Leading Evasion" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_BARD_DANCE_LEADING_EVASION">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_BARD_DANCE_LEADING_EVASION</requirements>
 		<description>
 			<p><em>14th-level College of Dance feature</em></p>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Deities</name>
+		<description>Deities from the Jay's Guide to Maa.</description>
+		<author>Jay Ahuja</author>
+		<source>Jay's Guide To Maa</source>
+		<update version="1.0">
+			<file name="deities.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/deities/deities.xml" />
+		</update>
+	</info>
+	
+	<!-- Borosh Pantheon -->
+	
+	<element name="Shakti" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_SHAKTI">
+		<description>
+			<p class="flavor">The Matron goddess is considered the source of the entire universe. Nature incarnate, Generous, Righteous, blesser of birth, marriages, and crops.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Nature, Life</set>
+			<set name="symbol">Tigress</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>The Matron goddess is considered the source of the entire universe. Nature incarnate, Generous, Righteous, blesser of birth, marriages, and crops.</description>
+		</sheet>
+	</element>
+	
+	<element name="Kaal Raatri" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_KAALRAATRI">
+		<description>
+			<p class="flavor">Death Incarnate, the mother of nightmares and necromancy. She embraces what is deiscarded.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Death, Grave, War</set>
+			<set name="symbol">A garland of skulls</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Death Incarnate, the mother of nightmares and necromancy. She embraces what is deiscarded.</description>
+		</sheet>
+	</element>
+	
+	<element name="Shoonya" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_SHOONYA">
+		<description>
+			<p class="flavor">Benevolent yet fearsome, Shoonya is the executioner God, patron of Dragons and Nagas.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">NG</set>
+			<set name="domains">War, Knowledge, Death</set>
+			<set name="symbol">A garland of skulls</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>Benevolent yet fearsome, Shoonya is the executioner God, patron of Dragons and Nagas.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pratham" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_PRATHAM">
+		<description>
+			<p class="flavor">The God of Preservation and Order even if the order is achieved through chaos.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Order, Trickery, Arcana</set>
+			<set name="symbol">Lotus</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The God of Preservation and Order even if the order is achieved through chaos.</description>
+		</sheet>
+	</element>
+	
+	<element name="Ashm" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_ASHM">
+		<description>
+			<p class="flavor">The Former and Fallen King of Minor Deities. Formerly knows as Idra, the Storm Lord.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">LE</set>
+			<set name="domains">Order, Trickery, Tempest</set>
+			<set name="symbol">A Bloody Lightning Bolt</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>The Former and Fallen King of Minor Deities. Formerly knows as Ira, the Storm Lord.</description>
+		</sheet>
+	</element>
+	
+	<element name="Yam" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_YAM">
+		<description>
+			<p class="flavor">The Deity of the dead, law, and religion.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">LE</set>
+			<set name="domains">Order, Death, Knowledge</set>
+			<set name="symbol">A Bloody Lightning Bolt</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The Deity of the dead, law, and religion.</description>
+		</sheet>
+	</element>
+	
+	<element name="Vaayoo" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_VAAYOO">
+		<description>
+			<p class="flavor">The currect king of minor deities. The deity of air and the weather.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Tempest, Peace</set>
+			<set name="symbol">A Bloody Lightning Bolt</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The currect king of minor deities. The deity of air and the weather.</description>
+		</sheet>
+	</element>
+	
+	<element name="Ooma" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_OOMA">
+		<description>
+			<p class="flavor">Personification of Sun.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Light, Life</set>
+			<set name="symbol">A Red Sun</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Personification of Sun</description>
+		</sheet>
+	</element>
+	
+	<element name="Soma" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_SOMA">
+		<description>
+			<p class="flavor">Personification of Moon and deity of liquor.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Twilight, Revelry</set>
+			<set name="symbol">Blue Moon</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Personification of Moon</description>
+		</sheet>
+	</element>
+	
+	<element name="Dhani" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_DHANI">
+		<description>
+			<p class="flavor">The Goddess of wealth, fortune, commerce, and prosperity.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">LG</set>
+			<set name="domains">Commerce</set>
+			<set name="symbol">Gold Coin</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Personification of Moon</description>
+		</sheet>
+	</element>
+	
+	<element name="Tvashtr" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_TVASHTR">
+		<description>
+			<p class="flavor">The God of innovation, architecture, and crafting.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">NG</set>
+			<set name="domains">Forge, Arcana</set>
+			<set name="symbol">Forge Fire</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Personification of Moon</description>
+		</sheet>
+	</element>
+	
+	<element name="Kama-Rati" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_KAMA_RATI">
+		<description>
+			<p class="flavor">The dual goddess of love and lust.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Love, Lust</set>
+			<set name="symbol">Interlocked Sexual Organs</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>The dual goddess of love and lust.</description>
+		</sheet>
+	</element>
+	
+	<element name="Pushan" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_PUSHAN">
+		<description>
+			<p class="flavor">The half man, half beast lord of the cattle, woods, journeys, and revelry.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Nature, Revelry</set>
+			<set name="symbol">A trail in the woods</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The dual goddess of love and lust.</description>
+		</sheet>
+	</element>
+	
+	<element name="Shukr" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_SHUKR">
+		<description>
+			<p class="flavor">The sage god of war and knowledge.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">LE</set>
+			<set name="domains">War, Knowledge</set>
+			<set name="symbol">A trail in the woods</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The sage god of war and knowledge.</description>
+		</sheet>
+	</element>
+	
+	<element name="Maya" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_MAYA">
+		<description>
+			<p class="flavor">The goddess of the Arcane Weave.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Arcana</set>
+			<set name="symbol">A tapestry of stars</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>The goddess of the Arcane Weave.</description>
+		</sheet>
+	</element>
+	
+	<element name="Gajpati" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_GAJPATI">
+		<description>
+			<p class="flavor">The patron god of Loxodons and the deity of beginnings.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Knowledge, Peace</set>
+			<set name="symbol">Omkar Symbol</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The patron god of Loxodons and the deity of beginnings.</description>
+		</sheet>
+	</element>
+	
+	<element name="Hanoo" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_HANOO">
+		<description>
+			<p class="flavor">The patron god of Maarut and the deity of mischief.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Trickery</set>
+			<set name="symbol">Glowing Dome Mace</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The patron god of Maarut and the deity of mischief.</description>
+		</sheet>
+	</element>
+	
+	<element name="Maan Sing" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_MAAN_SING">
+		<description>
+			<p class="flavor">The patron god of Leonin and the deity of justice.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">LG</set>
+			<set name="domains">War</set>
+			<set name="symbol">Cracked Pillar</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The patron god of Leonin and the deity of justice.</description>
+		</sheet>
+	</element>
+	
+	<element name="Karan" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_KARAN">
+		<description>
+			<p class="flavor">The Boroshian Name of Corellon.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Arcana, Life, Light, War</set>
+			<set name="symbol">Quarter moon or starburst</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The Boroshian Name of Corellon.</description>
+		</sheet>
+	</element>
+
+	<element name="Sanini" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_SANINI">
+		<description>
+			<p class="flavor">The Boroshian Name of Sehanine.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Grave, Knowledge, Light</set>
+			<set name="symbol">Full moon under a moonbow</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>The Boroshian Name of Sehanine.</description>
+		</sheet>
+	</element>
+	
+	<element name="Ah-Savitri" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_AH_SAVITRI">
+		<description>
+			<p class="flavor">The Boroshian Name of Eilistraee.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Life, Light, Nature</set>
+			<set name="symbol">Sword-wielding, dancing female drow silhouetted against the full moon</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>The Boroshian Name of Eilistraee.</description>
+		</sheet>
+	</element>
+	
+	<element name="Garood" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_GAROOD">
+		<description>
+			<p class="flavor">The patron god of Aaracokra and the deity of travelling.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Nature</set>
+			<set name="symbol">Griffin with a dead snake in its beak.</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The patron god of Aaracokra and the deity of travelling.</description>
+		</sheet>
+	</element>
+	
+	<element name="Jatayoo" type="Deity" source="Jay's Guide To Maa" id="ID_JAY_DEITY_JATAYOO">
+		<description>
+			<p class="flavor">The patron god of Aaracokra and the deity of protection.</p>
+		</description>
+		<setters>
+			<set name="setting">Maa</set>
+			<set name="alignment">CG</set>
+			<set name="domains">Order</set>
+			<set name="symbol">A Pair of Talons</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The patron god of Aaracokra and the deity of protection.</description>
+		</sheet>
+	</element>
+
+</elements>

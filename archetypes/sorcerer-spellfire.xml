@@ -2,15 +2,15 @@
 <elements>
 	<info>
 		<name>Spellfire Sorcery</name>
-		<description>The Spellfire Sorcery subclass from Jay's Guide to Maa.</description>
+		<description>The Spellfire Sorcery subclass from Jay's Guide To Maa.</description>
 		<author>Jay Ahuja</author>
-		<source>Jay's Guide to Maa</source>
-		<update version="2.0">
+		<source>Jay's Guide To Maa</source>
+		<update version="2.3">
 			<file name="sorcerer-spellfire.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/sorcerer-spellfire.xml" />
 		</update>
 	</info>
 
-	<element name="Spellfire Sorcery" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_SORCERER_SPELLFIRE_SORCERY">
+	<element name="Spellfire Sorcery" type="Archetype" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_SORCERER_SPELLFIRE_SORCERY">
 		<supports>Sorcerous Origin</supports>
 		<description>
 			<p class="flavor">Wield Raw Magic</p>
@@ -34,7 +34,7 @@
 		</rules>
 	</element>
 
-	<element name="Spellfire Burst" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_SPELLFIRE_BURST">
+	<element name="Spellfire Burst" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_SPELLFIRE_BURST">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_SORCERER_SPELLFIRE_SPELLFIRE_BURST</requirements>
 		<description>
 			<p><em>3rd-level Spellfire Sorcerer Feature</em></p>
@@ -51,7 +51,7 @@
 		</rules>
 	</element>
 	
-	<element name="Bolstering Flames" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_SPELLFIRE_BURST_BOLSTERING_FLAMES">
+	<element name="Bolstering Flames" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_SPELLFIRE_BURST_BOLSTERING_FLAMES">
 		<compendium display="false" />
 		<supports>Spellfire Bolstering Flames</supports>
 		<description>
@@ -66,7 +66,7 @@
 		</rules>
 	</element>
 	
-	<element name="Radiant Fire" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_SPELLFIRE_BURST_RADIANT_FIRE">
+	<element name="Radiant Fire" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_SPELLFIRE_BURST_RADIANT_FIRE">
 		<compendium display="false" />
 		<supports>Spellfire Radiant Fire</supports>
 		<description>
@@ -78,7 +78,7 @@
 		</sheet>
 	</element>
 
-	<element name="Spellfire Spells" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_SPELLFIRE_SPELLS">
+	<element name="Spellfire Spells" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_SPELLFIRE_SPELLS">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_SORCERER_SPELLFIRE_SPELLFIRE_SPELLS</requirements>
 		<description>
 			<p><em>3rd-level Spellfire Sorcerer Feature</em></p>
@@ -109,7 +109,7 @@
 		</rules>
 	</element>
 	
-	<element name="Innate Sorcery" type="Class Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_INNATE_SORCERY">
+	<element name="Innate Sorcery" type="Class Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_INNATE_SORCERY">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_SORCERER_SPELLFIRE_INNATE_SORCERY</requirements>
 		<description>
 			<p><em>6th-level Spellfire Sorcerer Feature</em></p>
@@ -125,7 +125,7 @@
 		</sheet>
 	</element>	
 
-	<element name="Absorb Spells" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_ABSORB_SPELLS">
+	<element name="Absorb Spells" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_ABSORB_SPELLS">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_SORCERER_SPELLFIRE_ABSORB_SPELLS</requirements>
 		<description>
 			<p><em>6th-level Spellfire Sorcerer Feature</em></p>
@@ -140,7 +140,7 @@
 		</rules>
 	</element>
 
-	<element name="Honed Spellfire" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_HONED_SPELLFIRE">
+	<element name="Honed Spellfire" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_HONED_SPELLFIRE">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_SORCERER_SPELLFIRE_HONED_SPELLFIRE</requirements>
 		<description>
 			<p><em>14th-level Spellfire Sorcerer Feature</em></p>
@@ -149,7 +149,7 @@
 		<sheet display="false"/>
 	</element>
 
-	<element name="Crown of Spellfire" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_CROWN_OF_SPELLFIRE">
+	<element name="Crown of Spellfire" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_CROWN_OF_SPELLFIRE">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_SORCERER_SPELLFIRE_CROWN_OF_SPELLFIRE</requirements>
 		<description>
 			<p><em>18th-level Spellfire Sorcerer Feature</em></p>
@@ -168,7 +168,7 @@
 		</rules>
 	</element>
 	
-	<element name="Burning Life Force" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_CROWN_OF_SPELLFIRE_BURNING_LIFE_FORCE">
+	<element name="Burning Life Force" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_CROWN_OF_SPELLFIRE_BURNING_LIFE_FORCE">
 		<compendium display="false" />
 		<supports>Spellfire Burning Life Force</supports>
 		<description>
@@ -182,7 +182,7 @@
 			<stat name="burning life force:count" value="charisma:modifier" bonus="base"/>
 		</rules>
 	</element>
-	<element name="Flight" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_CROWN_OF_SPELLFIRE_FLIGHT">
+	<element name="Flight" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_CROWN_OF_SPELLFIRE_FLIGHT">
 		<compendium display="false" />
 		<supports>Spellfire Flight</supports>
 		<description>
@@ -192,7 +192,7 @@
 			<description>You gain a Fly Speed of 60 feet and can hover.</description>
 		</sheet>
 	</element>
-	<element name="Spell Avoidance" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_CROWN_OF_SPELLFIRE_SPELL_AVOIDANCE">
+	<element name="Spell Avoidance" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_SORCERER_SPELLFIRE_CROWN_OF_SPELLFIRE_SPELL_AVOIDANCE">
 		<compendium display="false" />
 		<supports>Spellfire Spell Avoidance</supports>
 		<description>

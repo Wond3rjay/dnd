@@ -2,15 +2,15 @@
 <elements>
 	<info>
 		<name>Sleuth</name>
-		<description>The Sleuth, subclass for Rangers, from Jay's Guide to Maa</description>
+		<description>The Sleuth, subclass for Rangers, from Jay's Guide To Maa</description>
 		<author>Jay Ahuja</author>
-		<source>Jay's Guide to Maa</source>
-		<update version="2.0">
+		<source>Jay's Guide To Maa</source>
+		<update version="2.3">
 			<file name="ranger-sleuth.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/ranger-sleuth.xml" />
 		</update>
 	</info>
 
-	<element name="Sleuth" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_RANGER_SLEUTH">
+	<element name="Sleuth" type="Archetype" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_RANGER_SLEUTH">
 		<supports>Ranger Archetype, Ranger Conclave</supports>
 		<description>
 			<p>Like any forest, Concrete Jungles need their watchers and hunters too. Unlike most rangers, you were born in the busy districts of a town or city and made their rooftops and dark alley your hunting grounds. You have a keen sense of urban life and the dangers it comes with, the crime bubbling right underneath the surface of an otherwise civilized society.</p>
@@ -19,6 +19,9 @@
 			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_DISSECTOLOGIST" />
 			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BATTLE_ASSESSMENT" />
 			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_EIDETIC" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_ASTUTE" />
+			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_PERILIOUS" />
 			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_VENGEFUL_STRIKE" />
 			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_DISCOMBOBULATE" />
 		</description>
@@ -33,7 +36,7 @@
 		</rules>
 	</element>
 	
-	<element name="Sleuth Magic" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_SLEUTH_MAGIC">
+	<element name="Sleuth Magic" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_SLEUTH_MAGIC">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_SLEUTH_SLEUTH_SPELLS</requirements>
 		<description>
 			<p>Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Sleuth Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p>       
@@ -49,7 +52,7 @@
 				<tr><td>17th</td><td><em>legend lore</em></td></tr>
 			</table>
 			<p><em>Ritual Practice.</em>The inquisitive mind you possess has an innate curiosity about how magic works, even if its just in theory. You observed and learn to perform rituals to cast arcane spells that you have written down in your detective’s notebooks and you must have the notebook in casting while performing the ritual to cast a spell. At level 3, the notebook already has two additional 1st level Spells with ritual tag. A spell written in the notebook counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know. Your spellcasting ability for these spells is Wisdom.</p>
-			<p>If you come across a spell in written form, such as a magical spell scroll or a wizard’s spell book, you might be able to add it to your ritual book. The spell must be on the spell list for the class you chose, the spell’s level can be no higher than half your level (rounded up), and it must have the ritual tag. The process of copying the spell into your ritual book takes 2 hours per level of the spell, and costs 50 gp per level. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it.</p>
+			<p>If you come across a spell in written form, such as a magical spell scroll or a wizard’s spell book, you might be able to add it to your notebook. The spell’s level can be no higher than third your level (rounded up), and it must have the ritual tag. The process of copying the spell into your notebook takes 2 hours per level of the spell, and costs 50 gp per level. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it.</p>
 			<p><quote>Education never ends, Dear Friend. It is a series of lessons, with the greatest for the last.</quote></p>
 		</description>
 		<sheet name="Ritual Practice">
@@ -65,7 +68,7 @@
 		</rules>
 	</element>
 
-	<element name="Dissectologist" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_DISSECTOLOGIST">
+	<element name="Dissectologist" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_DISSECTOLOGIST">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_SLEUTH_DISSECTOLOGIST</requirements><description>
 			<p>You detest sitting idle, your mind is always looking for a problem to resolve, a puzzle to decipher, or elucidate a mystery. Your instincts, observation and experience makes up for for what you lack in theoretical knowledge.</p>
 			<p>Whenever you make an Intelligence check, you gain a bonus to the check equal to your Wisdom modifier (minimum of +1).</p>
@@ -86,7 +89,7 @@
 		</rules>
 	</element>
 
-	<element name="Battle Assessment" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BATTLE_ASSESSMENT">
+	<element name="Battle Assessment" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BATTLE_ASSESSMENT">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_SLEUTH_BATTLE_ASSESSMENT</requirements>
 		<description>
 			<p>Starting at 3rd level, you learn how to spot openings in your enemy’s moves and use it against them. When an enemy that you can see makes an attack, hit or miss, against you or your allies, you can use your reaction to target that enemy with a weapon attack, given that enemy is within range of the weapon attack.</p>
@@ -96,13 +99,10 @@
 		</sheet>
 	</element>
 	
-	<element name="Beautiful Mind" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND">
+	<element name="Beautiful Mind" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_SLEUTH_BEAUTIFUL_MIND</requirements>
 		<description>
 			<p>Starting at 7th level, you have honed your mind to recognize patterns, recall details, or react to ever changing environment around you. You gain one of the following features:</p>
-			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_EIDETIC" />
-			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_ASTUTE" />
-			<div element="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_PERILIOUS" />
 		</description>
 		<sheet display="false"/>
 		<rules>
@@ -110,7 +110,7 @@
 		</rules>
 	</element>
 	
-	<element name="Vengeful Strike" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_VENGEFUL_STRIKE">
+	<element name="Vengeful Strike" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_VENGEFUL_STRIKE">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_SLEUTH_VENGEFUL_STRIKE</requirements>
 		<description>
 			<p>Starting at 11th level, you can fuel your strikes with vengeance of justice. Once per turn, when you hit a creature with a weapon, you can deal an extra 6d8 psychic damage to the target.</p>
@@ -125,7 +125,7 @@
 		</sheet>
 	</element>
 
-	<element name="Discombobulate" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_DISCOMBOBULATE">
+	<element name="Discombobulate" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_DISCOMBOBULATE">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_SLEUTH_DISCOMBOBULATE</requirements>
 		<description>
 			<p>At 15th level you gain the ability to precisely predict your enemy’s moves and thwart them. When you see a creature about to roll an attack against you, you may use your reaction to counterattack that creature, if you hit, the target’s attack fails and they must roll a wisdom saving throw against your spell DC, on a fail the target is stunned until the end of your next turn. You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
@@ -139,7 +139,7 @@
 		</rules>
 	</element>
 	
-	<element name="Eidetic Memory" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_EIDETIC">
+	<element name="Eidetic Memory" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_EIDETIC">
 		<compendium display="false" />
 		<supports>Beautiful Mind</supports>
 		<description>
@@ -156,7 +156,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Astute Eye" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_ASTUTE">
+	<element name="Astute Eye" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_ASTUTE">
 		<compendium display="false" />
 		<supports>Beautiful Mind</supports>
 		<description>You quickly assess the environment around you. You gain a +5 bonus to your Initiative, passive Wisdom (Perception), and passive Intelligence (Investigation) scores.</description>
@@ -168,7 +168,7 @@
 		</rules>
 	</element>
 	
-	<element name="Perilious Instincts" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_PERILIOUS">
+	<element name="Perilious Instincts" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_SLEUTH_BEAUTIFUL_MIND_PERILIOUS">
 		<compendium display="false" />
 		<supports>Beautiful Mind</supports>
 		<description><p>If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:</p>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="2.0.5">
+		<update version="2.3">
 			<file name="source.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/source.xml" />
 		</update>
 	</info>
-	<element name="Jay's Guide to Maa" type="Source" source="Core" id="ID_JAY">
+	<element name="Jay's Guide To Maa" type="Source" source="Core" id="ID_JAY">
 		<description>
 			<p>Jay's Original Additions to Maa, Improvements on Existing Rules, Third Party and 2024 additions ported to Maa</p>
 		</description>

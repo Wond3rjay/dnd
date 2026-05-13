@@ -4,8 +4,8 @@
 		<name>Jay's Aurora Patch</name>
 		<description>This file improves base coding to provide more functionality to Aurora and Flare</description>
 		<author>Jay Ahuja</author>
-		<source>Jay's Guide to Maa</source>
-		<update version="2.0">
+		<source>Jay's Guide To Maa</source>
+		<update version="2.3">
 			<file name="jays-aurora-patch.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jays-aurora-patch.xml" />
 		</update>
 	</info>

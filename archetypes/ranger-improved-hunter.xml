@@ -2,15 +2,15 @@
 <elements>
 	<info>
 		<name>Jay's Improved Hunter</name>
-		<description>The Hunter from Jay's Guide to Maa, A Ranger Archetype Rework</description>
+		<description>The Hunter from Jay's Guide To Maa, A Ranger Archetype Rework</description>
 		<author>Jay Ahuja</author>
-		<source>Jay's Guide to Maa</source>
-		<update version="2.0">
+		<source>Jay's Guide To Maa</source>
+		<update version="2.3">
 			<file name="ranger-improved-hunter.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/ranger-improved-hunter.xml" />
 		</update>
 	</info>
 
-	<element name="Jay's Improved Hunter" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_RANGER_HUNTER">
+	<element name="Jay's Improved Hunter" type="Archetype" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_RANGER_HUNTER">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter’s path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.</p>
@@ -36,7 +36,7 @@
 		</rules>
 	</element>
 	
-	<element name="Hunter’s Prey" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
+	<element name="Hunter’s Prey" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_HUNTERS_PREY</requirements>
 		<description>
 			<p>At 3rd level, you gain two of the following features of your choice. You may only use one Hunter's Prey feature each round.</p>
@@ -51,7 +51,7 @@
 		</rules>
 	</element>
 	
-	<element name="Hunter’s Lore" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE">
+	<element name="Hunter’s Lore" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_LORE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_HUNTERS_LORE</requirements>
 		<description>
 			<p>3rd-level Hunter feature.</p>
@@ -60,7 +60,7 @@
 		<sheet><description>You have advantage on any Wisdom (Survival) Checks or Intelligence (Nature) checks that you make to track, hunt, or chase a Beast.</description></sheet>
 	</element>
 	
-	<element name="Superior Hunter’s Lore" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_LORE">
+	<element name="Superior Hunter’s Lore" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_LORE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_SUPERIOR_HUNTERS_LORE</requirements>
 		<description>
 			<p><em>7th-level Hunter feature</em></p>
@@ -71,7 +71,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Defensive Tactics" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS">
+	<element name="Defensive Tactics" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_DEFENSIVE_TACTICS</requirements>
 		<description>
 			<p>At 7th level, you gain one of the following features of your choice.</p>
@@ -85,7 +85,7 @@
 		</rules>
 	</element>
 	
-	<element name="Superior Hunter’s Mark" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_MARK">
+	<element name="Superior Hunter’s Mark" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_MARK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_SUPERIOR_HUNTERS_MARK</requirements>
 		<description>
 			<p><em>11th-level Hunter feature</em></p>
@@ -96,7 +96,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Multiattack" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK">
+	<element name="Multiattack" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_MULTIATTACK</requirements>
 		<description>
 			<p>At 11th level, you gain one of the following features of your choice.</p>
@@ -109,7 +109,7 @@
 		</rules>
 	</element>
 	
-	<element name="Superior Hunter’s Defense" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE">
+	<element name="Superior Hunter’s Defense" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_RANGER_HUNTER_SUPERIOR_HUNTERS_DEFENSE</requirements>
 		<description>
 			<p>At 15th level, you gain two of the following features of your choice.</p>
@@ -123,7 +123,7 @@
 		</rules>
 	</element>
 
-	<element name="Colossus Slayer" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
+	<element name="Colossus Slayer" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
 		<compendium display="false" />
 		<supports>Hunters Prey</supports>
 		<description>
@@ -134,7 +134,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Giant Killer" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_GIANT_KILLER">
+	<element name="Giant Killer" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_GIANT_KILLER">
 		<compendium display="false" />
 		<supports>Hunters Prey</supports>
 		<description>
@@ -145,7 +145,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Horde Breaker" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
+	<element name="Horde Breaker" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
 		<compendium display="false" />
 		<supports>Hunters Prey</supports>
 		<description>
@@ -156,7 +156,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Escape the Horde" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_ESCAPE_THE_HORDE">
+	<element name="Escape the Horde" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_ESCAPE_THE_HORDE">
 		<compendium display="false" />
 		<supports>Tactical Defense</supports>
 		<description>
@@ -167,7 +167,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Multiattack Defense" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_MULTIATTACK_DEFENSE">
+	<element name="Multiattack Defense" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_MULTIATTACK_DEFENSE">
 		<compendium display="false" />
 		<supports>Tactical Defense</supports>
 		<description>
@@ -178,7 +178,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Steel Will" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_STEEL_WILL">
+	<element name="Steel Will" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_STEEL_WILL">
 		<compendium display="false" />
 		<supports>Tactical Defense</supports>
 		<description>
@@ -189,7 +189,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Volley" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK_VOLLEY">
+	<element name="Volley" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK_VOLLEY">
 		<compendium display="false" />
 		<supports>Hunters Multiattack</supports>
 		<description>
@@ -200,7 +200,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Whirlwind Attack" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK_WHIRLWIND_ATTACK">
+	<element name="Whirlwind Attack" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_MULTIATTACK_WHIRLWIND_ATTACK">
 		<compendium display="false" />
 		<supports>Hunters Multiattack</supports>
 		<description>
@@ -211,7 +211,7 @@
 		</sheet>
 	</element>
 
-	<element name="Evasion" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_EVASION">
+	<element name="Evasion" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_EVASION">
 		<compendium display="false" />
 		<supports>Superior Hunters Defence</supports>
 		<description>
@@ -222,7 +222,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Stand Against the Tide" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_STAND_AGAINST_THE_TIDE">
+	<element name="Stand Against the Tide" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_STAND_AGAINST_THE_TIDE">
 		<compendium display="false" />
 		<supports>Superior Hunters Defence</supports>
 		<description>
@@ -233,7 +233,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Uncanny Dodge" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_UNCANNY_DODGE">
+	<element name="Uncanny Dodge" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_UNCANNY_DODGE">
 		<compendium display="false" />
 		<supports>Superior Hunters Defence</supports>
 		<description>

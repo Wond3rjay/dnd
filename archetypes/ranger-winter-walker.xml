@@ -2,15 +2,15 @@
 <elements>
 	<info>
 		<name>WINTER WALKER</name>
-		<description>The Winter Walker, subclass for Rangers, from Jay's Guide to Maa</description>
+		<description>The Winter Walker, subclass for Rangers, from Jay's Guide To Maa</description>
 		<author>Jay Ahuja</author>
-		<source>Jay's Guide to Maa</source>
-		<update version="2.0">
+		<source>Jay's Guide To Maa</source>
+		<update version="2.3">
 			<file name="ranger-winter-walker.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/ranger-winter-walker.xml" />
 		</update>
 	</info>
 
-	<element name="Winter Walker" type="Archetype" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_RANGER_WW">
+	<element name="Winter Walker" type="Archetype" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_RANGER_WW">
 		<supports>Ranger Archetype</supports>
 		<description>
 			<p>Winter Walkers hone their craft in the bleak and frozen wilds of places. These ruthless, rimed Rangers hunt monsters that haunt arctic wastelands, eventually becoming frigid terrors themselves. Winter Walkers are well versed in the phenomena of tundra and ice capped mountains, including the latent magic of fallen ancient cities, endemic monsters like yetis and crag cats, and the rising threat of Underdark invaders. Due to their cold pragmatism, terrifying magic, and mastery of the region, Winter Walkers are regarded with equal parts respect and fear. Some people say that Winter Walkers' frequent exposure to malignant entities gives them their fearsome powers. Many nomads, on the other hand, believe that nature spirits bestow on Winter Walkers a unique curse.</p>
@@ -32,7 +32,7 @@
 		</rules>
 	</element>
 	
-	<element name="Winter Walker Magic" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_WW_MAGIC">
+	<element name="Winter Walker Magic" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_WW_MAGIC">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_WW_SPELLS</requirements>
 		<description>
 			<p>When you reach a Ranger level specified in the Winter Walker Spells table, you thereafter always have the listed spells prepared.</p>       
@@ -58,7 +58,7 @@
 		</rules>
 	</element>
 
-	<element name="Frigid Explorer" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER">
+	<element name="Frigid Explorer" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_FRIGID_EXPLORER</requirements>
 		<description>
 			<p>You gain the following benefits.</p>
@@ -74,7 +74,7 @@
 		</rules>
 	</element>
 
-	<element name="Hunter's Rime" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_HUNTERS_RIME">
+	<element name="Hunter's Rime" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_HUNTERS_RIME">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_HUNTERS_RIME</requirements>
 		<description>
 			<p>Ice rimes you and your prey, protecting you and slowing them. When you cast Hunter's Mark, you gain Temporary Hit Points equal to 1d10 plus your Ranger level.</p>
@@ -85,7 +85,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Fortifying Soul" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FORTIFYING_SOUL">
+	<element name="Fortifying Soul" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FORTIFYING_SOUL">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_HUNTERS_RIME</requirements>
 		<description>
 			<p>Your experience surviving harrowing environments allows you to bolster your allies in addition to yourself. As an action, choose a number of creatures you can see equal to your Wisdom modifier (minimum of one). Each chosen creature regains Hit Points equal to 1d10 plus your Ranger level and has Advantage on saving throws to avoid or end the Frightened condition for 1 hour.</p>
@@ -96,7 +96,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Chilling Retribution" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_CHILLING_RETRIBUTION">
+	<element name="Chilling Retribution" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_CHILLING_RETRIBUTION">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_CHILLING_RETRIBUTION</requirements>
 		<description>
 			<p>When a creature hits you with an attack roll, you can take a Reaction to force the creature to make a Wisdom saving throw against your spell save DC. On a failed save, the target has the Stunned condition until the end of your next turn. While the target is Stunned, its Speed is reduced to 0 feet.</p>
@@ -107,7 +107,7 @@
 		</sheet>
 	</element>
 
-	<element name="Frozen Haunt" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT">
+	<element name="Frozen Haunt" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT">
 		<requirements>!ID_INTERNAL_JAY_FEATURE_REPLACEMENT_RANGER_WW_HUNTERS_RIME</requirements>
 		<description>
 			<p>When you cast Hunter's Mark, you can adopt a ghostly, snowy form. This form lasts until the spell ends, and while you are in this form, you gain the following benefits. Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a level 4+ spell slot (no action required).</p>
@@ -124,7 +124,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Biting Cold" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER_BITING_COLD">
+	<element name="Biting Cold" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER_BITING_COLD">
 		<supports>Frigid Explorer</supports>
 		<compendium display="false" />
 		<sheet>
@@ -132,7 +132,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Polar Strikes" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER_POLAR_STRIKES">
+	<element name="Polar Strikes" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FRIGID_EXPLORER_POLAR_STRIKES">
 		<supports>Frigid Explorer</supports>
 		<compendium display="false" />
 		<sheet>
@@ -141,7 +141,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Frozen Soul" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT_FROZEN_SOUL">
+	<element name="Frozen Soul" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT_FROZEN_SOUL">
 		<compendium display="false" />
 		<supports>Frozen Haunt</supports>
 		<sheet>
@@ -149,7 +149,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Partially Incorporeal" type="Archetype Feature" source="Jay's Guide to Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT_PARTIALLY_INCORPOREAL">
+	<element name="Partially Incorporeal" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_FEATURE_RANGER_WW_FROZEN_HAUNT_PARTIALLY_INCORPOREAL">
 		<compendium display="false" />
 		<supports>Frozen Haunt</supports>
 		<sheet>
