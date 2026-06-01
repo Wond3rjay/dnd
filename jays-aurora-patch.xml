@@ -5,7 +5,7 @@
 		<description>This file improves base coding to provide more functionality to Aurora and Flare</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide To Maa</source>
-		<update version="2.3.1">
+		<update version="2.3.2">
 			<file name="jays-aurora-patch.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jays-aurora-patch.xml" />
 		</update>
 	</info>
@@ -413,4 +413,31 @@
 			<select type="Spell" name="Cantrip (Wood Elf Magic)" supports="Druid,0" />
 		</rules>
 	</element>
+	
+	<element name="Potion of Comprehension" type="Magic Item" source="Waterdeep: Dungeon of the Mad Mage" id="ID_WOTC_WDMM_ITEM_POTION_OF_COMPREHENSION">		
+		<description>
+			<p>When you drink this potion, you gain the effect of a comprehend languages spell for 1 hour. This liquid is a clear concoction with bits of salt and soot swirling in it.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	
+	<element name="Potion of Watchful Rest" type="Magic Item" source="Waterdeep: Dungeon of the Mad Mage" id="ID_WOTC_WDMM_ITEM_POTION_OF_WATCHFUL_REST">		
+		<description>
+			<p>When you drink this potion, you gain the following benefits for the next 8 hours: magic can't put you to sleep, and you can remain awake during a long rest and still gain its benefits. This sweet, amber-colored brew has no effect on creatures that don't require sleep, such as elves.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">½ lb.</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>	
+
 </elements>
