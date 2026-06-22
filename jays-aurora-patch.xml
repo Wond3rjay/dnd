@@ -5,10 +5,44 @@
 		<description>This file improves base coding to provide more functionality to Aurora and Flare</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide To Maa</source>
-		<update version="2.3.3">
+		<update version="2.3.4">
 			<file name="jays-aurora-patch.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jays-aurora-patch.xml" />
 		</update>
 	</info>
+	
+	<element name="Vision: Darkvision +30 Feet" type="Item" source="Internal" id="ID_INTERNAL_RACIAL_TRAIT_DARKVISION_30">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have an additional 30 feet of darkvision.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="30" />
+		</rules>
+	</element>
+	
+	<element name="Vision: Darkvision +60 Feet" type="Item" source="Internal" id="ID_INTERNAL_RACIAL_TRAIT_DARKVISION_60">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p>You have an additional 30 feet of darkvision.</p>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_LESSER_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+		</rules>
+	</element>
 	
 	<element name="Font of Magic" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_FONT_OF_MAGIC</requirements>
