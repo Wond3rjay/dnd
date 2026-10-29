@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="monk-mystic-arts.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/archetypes/rogue-arcane-trickster.xml" />
+		</update>
+	</info>
+
+	<element name="Mystic Arts Warrior" type="Archetype" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<p><em>Weave Martial and Mystic Arts</em></p>
+			<p>The Mystic Arts Warrior wield magic to supplement their martial skill. They harness mystical focus to enhance their magical and physical abilities.</p>
+			<div element="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_SPELLCASTING" />
+			<div element="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_ARCANE_ARMS" />
+			<div element="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_KI_SORCERY" />
+			<div element="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_ENERVATING_STRIKE" />
+			<div element="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_EMPOWERED_ARCANE_ARMS" />
+		</description>
+		<sheet display="false">
+			<description>You harness mystical focus to enhance your magical and physical abilities and blend them together for something far more devstating.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_SPELLCASTING" level="3"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_ARCANE_ARMS" level="6"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_KI_SORCERY" level="6"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_ENERVATING_STRIKE" level="11"/>
+			<grant type="Archetype Feature" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_EMPOWERED_ARCANE_ARMS" level="17"/>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+		</rules>
+	</element>
+
+	<element name="Spellcasting" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_SPELLCASTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MYSTIC_ARTS_WARRIOR_SPELLCASTING</requirements>
+		<description>
+			<p>You have learned to cast spells. See the Player's Handbook for the rules on spellcasting. The information below details how you use those rules as a Warrior of the Mystic Arts.</p>
+			<p class="indent"><b><i>Cantrips.</i></b> You know two cantrips of your choice from the Sorcerer spell list. Blade Ward and Thunderclap are recommended. Whenever you gain a Monk level, you can replace one of these cantrips with another cantrip of your choice from the Sorcerer spell list.</p>
+			<p> When you reach Monk level 10, you learn another Sorcerer cantrip of your choice.</p>
+			<p class="indent"><b><i>Spell Slots.</i></b> The Mystic Arts Warrior Spellcasting table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p>
+			<p class="indent"><b><i>Prepared Spells of Level 1+.</i></b> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Sorcerer spell list. Jump, Magic Missile, and Shield are recommended.</p>
+			<p class="indent">The number of spells on your list increases as you gain Monk levels, as shown in the Prepared Spells column of the Warrior of the Mystic Arts Spellcasting table. Whenever that number increases, choose additional spells from the Sorcerer spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Monk, your list of prepared spells can include five Sorcerer spells of levels 1 and 2 in any combination.</p>
+			<p class="indent"><b><i>Changing Your Prepared Spells.</i></b>Whenever you gain a Monk level, you can replace one spell on your list with another Sorcerer spell for which you have spell slots.</p>
+			<p class="indent"><b><i> Spellcasting Ability.</i></b> Wisdom is your spellcasting ability for your Sorcerer spells.</p>
+			<p class="indent"><b><i> Spellcasting Focus.</i></b> You can use an Arcane Focus as a Spellcasting Focus for your Sorcerer spells.</p>
+			<p class="indent"><b><i> Multiclassing.</i></b> If you multiclass and have the Spellcasting feature from more than one class, add one third of your Monk levels (round down) to determine your available spell slots.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+			</center>
+			<h5 class="caption">MYSTIC ART WARRIOR SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Monk Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Prepared Spells</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>				
+		</description>
+		<sheet display="false" />
+		<spellcasting name="Mystic Arts Warrior" ability="Wisdom" allowReplace="true">
+			<list>Sorcerer</list>
+		</spellcasting>
+		<rules>
+			<stat name="mystic arts warrior:spellcasting:slots:1" value="2" level="3" />
+			<stat name="mystic arts warrior:spellcasting:slots:1" value="1" level="4" />
+			<stat name="mystic arts warrior:spellcasting:slots:1" value="1" level="7" />
+			<stat name="mystic arts warrior:spellcasting:slots:2" value="2" level="7" />
+			<stat name="mystic arts warrior:spellcasting:slots:2" value="1" level="10" />
+			<stat name="mystic arts warrior:spellcasting:slots:3" value="2" level="13" />
+			<stat name="mystic arts warrior:spellcasting:slots:3" value="1" level="16" />
+			<stat name="mystic arts warrior:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Mystic Arts Warrior)" supports="Sorcerer, 0" level="3" number="2" spellcasting="Mystic Arts Warrior" />
+			<select type="Spell" name="Cantrip (Mystic Arts Warrior)" supports="Sorcerer, 0" level="10" number="1" spellcasting="Mystic Arts Warrior" />
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="Sorcerer, 1" level="3" number="1" spellcasting="Mystic Arts Warrior" />
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Mystic Arts Warrior" />
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Mystic Arts Warrior"/>
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Mystic Arts Warrior"/>
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Mystic Arts Warrior"/>
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Mystic Arts Warrior"/>
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Mystic Arts Warrior"/>
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Mystic Arts Warrior"/>
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Mystic Arts Warrior"/>
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Mystic Arts Warrior"/>
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Mystic Arts Warrior"/>
+			<select type="Spell" name="Spell (Mystic Arts Warrior)" supports="(Sorcerer||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Mystic Arts Warrior"/>
+		</rules>
+	</element>
+	<element name="Arcane Arms" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_ARCANE_ARMS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MYSTIC_ARTS_WARRIOR_ARCANE_ARMS</requirements>
+		<description>
+			<p>When you take the Attack action on your turn, you can replace one attack made with that action with a casting of one of your Sorcerer cantrips that has a casting time of an action.</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action on your turn, you can replace one attack made with that action with a casting of one of your Sorcerer cantrips that has a casting time of an action.</description>
+		</sheet>
+	</element>
+	<element name="Ki Sorcery" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_KI_SORCERY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MYSTIC_ARTS_WARRIOR_KI_SORCERY</requirements>
+		<description>
+			<p>You keep your magical power and martial ki in perfect balance, allowing you to convert spell slots into Ki Points, or convert Ki Points into spell slots.</p>
+			<p class="indent"><b><i>Converting Spell Slots to Ki Points.</i></b> You can expend a spell slot to regain a number of expended Ki Points equal to the slot's level (no action required).</p>
+			<p class="indent"><b><i>Recovering Spell Slots.</i></b> When you finish a Short Rest, you can transform unexpended KI Points to recover one expended spell slot. The Recovering Spell Slots table shows the cost of recovering a spell slot of a given level, and it lists the minimum Monk level you must be to recover a slot. You can recover a spell slot no higher than level 4.</p>
+			<h5 class="caption">MYSTIC ART WARRIOR SPELLCASTING</h5>
+			<table>
+				<thead>
+					<tr><td class="col-30">Spell Slot Level</td><td class="col-30">Ki Point Cost</td><td class="col-30">Min. Monk Level</td></tr>
+				</thead>
+				<tr><td> 1</td><td>2</td><td> 6</td></tr>
+				<tr><td> 2</td><td>3</td><td> 7</td></tr>
+				<tr><td> 3</td><td>5</td><td> 13</td></tr>
+				<tr><td> 4</td><td>6</td><td> 19</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>Starting at level 6, you can convert spell slots into a number of Ki Points equal to the level of spell slot expended as a free action. You may also convert unexpended Ki Points into spell slots when you finish a short rest. Refer to the Recovering Spell Slots table in Jay's Guide to Maa for conversion cost.</description>
+		</sheet>
+	</element>
+	<element name="Enervating Strike" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_ENERVATING_STRIKE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MYSTIC_ARTS_WARRIOR_ENERVATING_STRIKE</requirements>
+		<description>
+			<p>Starting at 11th level, when you use your Stunning Strike, whether the target succeeds or fails on the saving throw, the target has Disadvantage on saving throws against your spells until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you use your Stunning Strike, whether the target succeeds or fails on the saving throw, the target has Disadvantage on saving throws against your spells until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Empowered Arcane Arms" type="Archetype Feature" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR_EMPOWERED_ARCANE_ARMS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MYSTIC_ARTS_WARRIOR_EMPOWERED_ARCANE_ARMS</requirements>
+		<description>
+			<p>Starting at 17th level, When you use Flurry of Blows, you can replace two of the Unarmed Strikes with a casting of one of your level 1 or 2 Sorcerer spells that has a casting time of an action, and you cast it as part of the same Bonus Action you use to activate Flurry of Blows.</p>
+		</description>
+		<sheet>
+			<description>When you use Flurry of Blows, you can replace two of the Unarmed Strikes with a casting of one of your level 1 or 2 Sorcerer spells that has a casting time of an action, and you cast it as part of the same Bonus Action you use to activate Flurry of Blows.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Spellcasting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MYSTIC_ARTS_WARRIOR_SPELLCASTING" />
+	<element name="Arcane Arms Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MYSTIC_ARTS_WARRIOR_ARCANE_ARMS" />
+	<element name="Ki Sorcery Feature Replacement " type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MYSTIC_ARTS_WARRIOR_KI_SORCERY" />
+	<element name="Versatile Trickster Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MYSTIC_ARTS_WARRIOR_ENERVATING_STRIKE" />
+	<element name="Empowered Arcane Arms Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MYSTIC_ARTS_WARRIOR_EMPOWERED_ARCANE_ARMS" />
+</elements>

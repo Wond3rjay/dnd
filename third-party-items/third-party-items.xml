@@ -483,6 +483,25 @@
 		</rules>
 	</element>
 	
+	<element name="Wandbracer" type="Magic Item" source="Jay's Guide to Maa" id="ID_JAY_ADDITIONS_WANDBRACER">		
+		<description>
+			<p>This leather bracer has a pocket big enough to fit a wand along with mechanism to spring the wand in the wizard's hand at the flick of a wrist when needed. Additionally, if the wizard wearing this bracer attunes to the runes on the bracer, they can cast a cantrip as a bonus action immediately after casting a leveled spell as an action on the same turn. Once this property is used, it cannot be used again until next dawn.</p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.1">0.4 lbs.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement" addition="by a wizard">true</set>
+			<set name="stackable">false</set>
+			<set name="slot">arms</set>			
+		</setters>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>While wearing and attuned to this bracer, you may cast a cantrip immediately after casting a leveled spell as an action on the same turn</description>
+		</sheet>
+	</element>
+	
 	<!-- Potions -->
 	
 	<element name="Sream's Stoppered Oasis" type="Magic Item" source="Jay's Guide to Maa" id="ID_JAY_ADDITIONS_SREAMS_STOPPERED_OASIS">

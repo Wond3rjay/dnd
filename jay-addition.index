@@ -5,7 +5,7 @@
 		<author>Jay Ahuja</author>
 		<description>This is a collection repository of 2024 additions and third party additions from several Non-WOTC sources that we have incorporated in Maa games. The new Fantastic Fletcher update is Live! Sidenote, Fixed Goddess Kaalraatri's vestige-champion weapon's additional damage. Now with Reworked Monk Class, Maarut Lineage.</description>
 		<source>Jay's Guide To Maa</source>
-		<update version="2.3.4">
+		<update version="2.3.5">
 			<file name="jay-addition.index" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jay-addition.index" />
 		</update>
 	</info>
@@ -19,6 +19,7 @@
 		<file name="bard-improved-whispers.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-improved-whispers.xml" />
 		<file name="bard-dance.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-dance.xml" />
 		<file name="bard-moon.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/bard-moon.xml" />
+		<file name="monk-mystic-arts.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/monk-mystic-arts.xml" />
 		<file name="ranger-sleuth.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/ranger-sleuth.xml" />
 		<file name="ranger-winter-walker.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/ranger-winter-walker.xml" />
 		<file name="sorcerer-spellfire.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/sorcerer-spellfire.xml" />
