@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.1">
 			<file name="monk-mystic-arts.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/archetypes/monk-mystic-arts.xml" />
 		</update>
 	</info>
 
 	<element name="Mystic Arts Warrior" type="Archetype" source="Jay's Guide To Maa" id="ID_JAY_ARCHETYPE_MYSTIC_ARTS_WARRIOR">
-		<supports>Roguish Archetype</supports>
+		<supports>Monastic Tradition</supports>
 		<description>
 			<p><em>Weave Martial and Mystic Arts</em></p>
 			<p>The Mystic Arts Warrior wield magic to supplement their martial skill. They harness mystical focus to enhance their magical and physical abilities.</p>
