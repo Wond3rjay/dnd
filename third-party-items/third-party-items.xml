@@ -5,7 +5,7 @@
 		<description>This is a collection of third party items from several Non-WOTC sources that we have incorporated in Maa games</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide to Maa</source>
-		<update version="2.3">
+		<update version="2.3.5">
 			<file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
 		</update>
 	</info>

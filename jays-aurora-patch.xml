@@ -5,7 +5,7 @@
 		<description>This file improves base coding to provide more functionality to Aurora and Flare</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide To Maa</source>
-		<update version="2.3.4">
+		<update version="2.3.6">
 			<file name="jays-aurora-patch.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/jays-aurora-patch.xml" />
 		</update>
 	</info>
@@ -55,7 +55,7 @@
 				<p><strong>Maneuver save DC</strong> = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
 			</center>
 		</description>
-		<sheet usage="{{superiority dice:amount}}/short rest">
+		<sheet usage="{{superiority dice:amount}}/Short Rest">
 			<description>You learn maneuvers that are fueled by special dice called superiority dice. You have {{superiority dice:amount}} superiority dice which are d{{superiority dice:size}}s. DC {{superiority dice:dc}}</description>
 		</sheet>
 		<rules>
