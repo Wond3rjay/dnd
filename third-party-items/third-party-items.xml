@@ -5,7 +5,7 @@
 		<description>This is a collection of third party items from several Non-WOTC sources that we have incorporated in Maa games</description>
 		<author>Jay Ahuja</author>
 		<source>Jay's Guide to Maa</source>
-		<update version="2.3.5">
+		<update version="2.3.8">
 			<file name="third-party-items.xml" url="https://raw.githubusercontent.com/Wond3rjay/dnd/refs/heads/main/third-party-items/third-party-items.xml" />
 		</update>
 	</info>
@@ -497,8 +497,17 @@
 			<set name="stackable">false</set>
 			<set name="slot">arms</set>			
 		</setters>
+		<rules>
+			<grant type="Class Feature" name="Wandbracer" id="ID_JAY_ADDITIONS_WANDBRACER_BA"/>
+		</rules>
+	</element>
+	
+	<element name="Wandbracer" type="Class Feature" source="Jay's Guide to Maa" id="ID_JAY_ADDITIONS_WANDBRACER_BA">
+		<description>
+			<p>While wearing and attuned to this bracer, you may cast a cantrip immediately after casting a leveled spell as an action on the same turn.</p>
+		</description>
 		<sheet action="Bonus Action" usage="1/Long Rest">
-			<description>While wearing and attuned to this bracer, you may cast a cantrip immediately after casting a leveled spell as an action on the same turn</description>
+			<description>While wearing and attuned to this bracer, you may cast a cantrip immediately after casting a leveled spell as an action on the same turn.</description>
 		</sheet>
 	</element>
 	
